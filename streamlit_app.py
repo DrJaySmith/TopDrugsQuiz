@@ -227,7 +227,8 @@ def initialize_quiz():
     st.session_state.update({
         'questions': question_pool[:st.session_state.selected['num_questions']],
         'current_question': 0,
-        'score': 0
+        'score': 0,
+        'quiz_start_time': time.time()  # 👈 Add this line
     })
 
 
@@ -608,12 +609,7 @@ def main():
         _, center_col, _ = st.columns([1, 3, 1])
         with center_col:
             st.write("\n" * 2)  # Add vertical space
-            if st.button(
-                "🚀 Start Quiz",
-                key="main_start_btn",
-                use_container_width=True,
-                type="primary"
-            ):
+            if st.button("🚀 Start Quiz", key="main_start_btn", use_container_width=True, type="primary"):
                 st.session_state.quiz_started = True
                 initialize_quiz()
                 st.rerun()
