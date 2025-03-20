@@ -56,10 +56,16 @@ def load_drugs(dataset):
         with open(filename, 'r') as f:
             data = json.load(f)
             
-        # Filter sections based on selection
-        return [drug for section in data
-                if section['section_number'] in st.session_state.selected['sections']
-                for drug in section['drugs']]
+        # Modified to include section number with each drug
+        loaded_drugs = []
+        for section in data:
+            if section['section_number'] in st.session_state.selected['sections']:
+                for drug in section['drugs']:
+                    # Add section number to drug data
+                    drug_with_section = drug.copy()
+                    drug_with_section['section_number'] = section['section_number']
+                    loaded_drugs.append(drug_with_section)
+        return loaded_drugs
                 
     except FileNotFoundError:
         st.error(f"Data file not found: {filename}")
