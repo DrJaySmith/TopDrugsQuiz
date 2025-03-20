@@ -1,0 +1,96 @@
+1
+Benazepril; Lotensin; ; ; ; Angiotensin converting enzyme inhibitor (ACE-I); Hypertension
+Enalapril; Vasotec; ; ; ; Angiotensin converting enzyme inhibitor (ACE-I); Hypertension, Heart failure
+Quinapril; Accupril; ; ; ; Angiotensin converting enzyme inhibitor (ACE-I); Hypertension, Heart failure
+Irbesartan; Avapro; ; ; ; Angiotensin II receptor antagonist (ARB); Hypertension, Diabetic nephropathy in patients with type II diabetes
+Olmesartan; Benicar; ; ; ; Angiotensin II receptor antagonist (ARB); Hypertension
+Doxazosin; Cardura; Cardura XL; ; ; alpha1-adrenergic blocker; Hypertension, Benign prostatic hyperplasia
+Terazosin; Hytrin; ; ; ; alpha1-adrenergic blocker; Hypertension, Benign prostatic hyperplasia
+Carvedilol; Coreg; Coreg CR; ; ; alpha/beta-adrenergic blocker; Hypertension, Heart failure
+Labetalol; Normodyne; ; ; ; alpha/beta-adrenergic blocker; Hypertension
+Propranolol; Inderal; Inderal LA; Inderal XL; ; beta-adrenergic blocker, nonselective; Hypertension, Angina pectoris, Cardiac dysrhythmia, Migraine
+2
+Diltiazem; Cardizem; Cartia XT; Dilt-XR; Tiazac; Calcium channel blocker (non-dihydropyridine); Hypertension, Angina, Atrial arrhythmia, Paroxysmal supraventricular tachycardia
+Verapamil; Calan; Calan SR; ; ; Calcium channel blocker (non-dihydropyridine); Hypertension, Angina, Atrial arrhythmia, Paroxysmal supraventricular tachycardia
+Nifedipine; Adalat CC; Procardia XL; ; ; Calcium channel blocker (dihydropyridine); Hypertension, Angina
+Isosorbide Mononitrate; Imdur; ; ; ; Nitrate; Angina
+Nitroglycerin; Minitran; Nitro-Dur; Nitrostat; ; Nitrate; Angina, Anal fissure
+Spironolactone; Aldactone; ; ; ; Potassium-sparing diuretic; Hypertension, Edema, Heart failure, Hypokalemia
+Triamterene/hydrochlorothiazide; Dyazide; Maxide; ; ; Potassium sparing/thiazide diuretic combination; Hypertension, Edema
+Chlorthalidone; Thalitone; ; ; ; Thiazide diuretic; Hypertension, Edema
+Clonidine; Catapres; ; ; ; alpha2-adrenergic agonist; Hypertension, Attention-deficit hyperactivity disorder (ADHD)
+Tizanidine; Zanaflex; ; ; ; alpha2-adrenergic agonist; Muscle spasticity
+3
+Ezetimibe; Zetia; ; ; ; Antihyperlipidemic; Hyperlipidemia
+Gemfibrozil; Lopid; ; ; ; Antihyperlipidemic; Hyperlipidemia, Coronary atherosclerosis
+Niacin; Niaspan; Slo-niacin; ; ; Antihyperlipidemic; Hyperlipidemia, Prevent myocardial infarction
+Lovastatin; Altoprev; ; ; ; HMG-CoA reductase inhibitor; Hyperlipidemia, Coronary atherosclerosis
+Pravastatin; Pravachol; ; ; ; HMG-CoA reductase inhibitor; Hyperlipidemia, Coronary atherosclerosis, Prevent cerebrovascular accident
+Rosuvastatin; Crestor; ; ; ; HMG-CoA reductase inhibitor; Hyperlipidemia
+Prasugrel; Effient; ; ; ; Antiplatelet agent; Prevent thromboembolism
+Dabigatran; Pradaxa; ; ; ; Direct oral anticoagulant (DOAC); Atrial fibrillation, Prevent cerebrovascular accident, deep vein thrombosis (DVT), and thromboembolism
+Warfarin; Coumadin; ; ; ; Anticoagulant; Atrial fibrillation, Prevent pulmonary embolism and thrombosis, Treat pulmonary embolism and thrombosis after Myocardial Infarction
+Digoxin; Lanoxin; ; ; ; Digitalis glycoside; Atrial fibrillation, Heart failure, Supraventricular tachyarrhythmia
+4
+Celecoxib; Celebrex; ; ; ; Nonsteroidal anti-inflammatory agent (NSAID); Osteoarthritis, Rheumatoid arthritis
+Diclofenac (oral); Zipsor; Zorvolex; ; ; Nonsteroidal anti-inflammatory agent (NSAID); Osteoarthritis, Rheumatoid arthritis, Dysmenorrhea, Migraine
+Diclofenac (gel); Voltaren (gel); ; ; ; Nonsteroidal anti-inflammatory agent (NSAID); Osteoarthritis
+Indomethacin; Indocin; ; ; ; Nonsteroidal anti-inflammatory agent (NSAID); Osteoarthritis, Rheumatoid arthritis, Gout
+Naproxen; Naprosyn; ; ; ; Nonsteroidal anti-inflammatory agent (NSAID); Osteoarthritis, Rheumatoid arthritis, Gout, Fever
+Lidocaine patch; Lidoderm; ; ; ; Local anesthetic; Pain (localized)
+Allopurinol; Zyloprim; ; ; ; Xanthine oxidase inhibitor; Gout
+Colchicine; Colcrys; ; ; ; Antigout; Gout
+Baclofen; Lioresal; ; ; ; Centrally acting skeletal muscle relaxant; Spasticity
+Cyclobenzaprine; Flexeril; ; ; ; Centrally acting skeletal muscle relaxant; Spasticity
+5
+Codeine; Tylenol with Codeine; ; ; ; Opioid; Pain
+Fentanyl (Transdermal); Duragesic; ; ; ; Opioid; Pain
+Methadone; Dolophine; ; ; ; Opioid; Pain, Drug detoxification after opioid abuse
+Morphine; Kadian; MS Contin; ; ; Opioid; Pain
+Tramadol; Ultram; ; ; ; Opioid; Pain
+Buprenorphine/naloxone; Suboxone; ; ; ; Opioid partial agonist and antagonist combination; Opioid use disorder
+Naloxone; Narcan; ; ; ; Opioid antagonist; Opioid overdose
+Gabapentin; Neurontin; ; ; ; Gamma aminobutyric acid (GABA) analog, anticonvulsant; Nerve pain, Seizures
+Pregabalin; Lyrica; ; ; ; Analgesic, anticonvulsant; Nerve pain, Seizures
+Conjugated estrogen; Premarin; ; ; ; Estrogen; Menopause, Primary ovarian failure
+6
+Estradiol; Estrace; ; ; ; Estrogen; Abnormal vasomotor function, Menopause, Breast cancer, Decreased estrogen level
+Ethinyl estradiol; NuvaRing; ; ; ; Contraceptive; Contraception
+Oral contraceptives; Various; ; ; ; Contraceptive; Contraception, Acne
+Medroxyprogesterone; Depo-Provera; Provera; ; ; Progestin hormone; Breast cancer
+Testosterone (Topical); AndroGel; Androderm; ; ; Androgen; Hypogonadism
+Finasteride; Proscar; Propecia; ; ; 5alpha-reductase inhibitor; Benign prostatic hyperplasia, Male pattern alopecia
+Efavirenz; Sustiva; ; ; ; Antiretroviral agent, reverse transcriptase inhibitor; Treatment of HIV-1 infections
+Emtricitabine/tenofovir; Truvada; ; ; ; Antiretroviral agent, reverse transcriptase inhibitor; Treatment of HIV-1 infections, Prevention of HIV-1
+7
+Budesonide/formoterol; Symbicort; ; ; ; Inhaled corticosteroid/bronchodilator combination; Asthma, Chronic obstructive pulmonary disease (COPD)
+Fluticasone nasal; Flonase; ; ; ; Intranasal adrenal glucocorticosteroid; Allergic rhinitis, Non-allergic rhinitis
+Fluticasone oral; Flovent Diskus; ; ; ; Inhaled adrenal corticosteroid; Asthma
+Fluticasone/salmeterol; Advair Diskus; Advair HFA; AirDuo RespiClick; ; Inhaled corticosteroid and long-acting beta2-adrenergic agonist combination; Asthma
+Ipratropium/albuterol; Combivent respimat; ; ; ; Anticholinergic/selective beta2-agonist combination; Chronic obstructive pulmonary disease (COPD)
+Methylprednisolone; Medrol; ; ; ; Adrenal corticosteroid; Conditions affecting the majority of organ systems
+Mometasone (Nasal); Nasonex; ; ; ; Intranasal corticosteroid; Allergic rhinitis
+Tiotropium; Sprivia HandiHaler; Spriva Respimat; ; ; Anticholinergic bronchodilator; Asthma, Chronic obstructive pulmonary disease (COPD)
+Triamcinolone (Topical); No Brand; ; ; ; Topical corticosteroid; Skin rash
+Varenicline; Chantix; ; ; ; Smoking cessation agent; Tobacco cessation
+8
+Carbidopa/levodopa; Sinemet; ; ; ; Antiparkinson; Parkinson Disease
+Divalproex; Depakote; ; ; ; Anticonvulsant; Seizures, Bipolar disorder
+Lamotrigine; Lamictal; ; ; ; Anticonvulsant; Seizures, Bipolar disorder
+Levetiracetam; Keppra; ; ; ; Anticonvulsant; Seizures
+Topiramate; Topamax; ; ; ; Anticonvulsant; Seizures, Migraine headaches
+Pramipexole; Mirapex; ; ; ; Dopamine agonist; Parkinson Disease, Restless Leg Syndrome
+Ropinirole; Requip; ; ; ; Dopamine agonist; Parkinson Disease, Restless Leg Syndrome
+Phenobarbital; Luminal; ; ; ; Long-acting barbiturate; Seizures, Daytime sedation
+Sumatriptan; Imitrex; ; ; ; Antimigraine serotonergic receptor agonist; Migraine & Cluster headaches
+Benzonatate; Tessalon Perles; ; ; ; Antitussive; Cough
+9
+Bimatoprost; Lumigan; Latisse; ; ; Prostaglandin, antiglaucoma agent, cosmetic agent for eyelash growth; Ocular hypertension, open-angle glaucoma, Hypotrichosis of the eyelashes
+Hydrocortisone (Topical); Cortizone; ; ; ; Topical corticosteroid; Skin disorders
+Hydroxychloroquine; Plaquenil; ; ; ; Aminoquinoline; Lupus, Malaria
+Latanoprost; Xalantan; ; ; ; Prostaglandin, antiglaucoma agent; Ocular hypertension, open-angle glaucoma
+Methotrexate; Trexall; ; ; ; Antimetabolite; Psoriasis, Rheumatoid arthritis
+Ondansetron; Zofran; ; ; ; Antiemetic; Nausea
+Phenazopyridine; Pyridium; ; ; ; Urinary tract analgesic; Dysuria
+Promethazine; Phenergan; ; ; ; Phenothiazine antihistamine; Motion sickness, Nausea & vomiting
+10

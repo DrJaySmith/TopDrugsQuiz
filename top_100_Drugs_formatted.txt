@@ -1,0 +1,124 @@
+1
+Albuterol; ProAir HFA; ProAir Respiclick; Proventil HFA; Ventolin HFA; Selective β2-adrenergic agonist; Asthma, Exercise-induced asthma
+Montelukast; Singulair; ; ; ; Leukotriene receptor antagonist; Asthma, Exercise-induced bronchoconstriction, Seasonal allergic rhinitis
+Hydroxyzine; Atarax; Vistaril; ; ; 1st generation antihistamine; Anxiety, Pruritis, Sedation
+Meclizine; Antivert; Dramamine; ; ; 1st generation antihistamine;Motion sickness, Vertigo
+Cetirizine; Zyrtec; ; ; ; 2nd generation antihistamine; Allergic rhinitis, Urticaria
+Fexofenadine; Allegra; ; ; ; 2nd generation antihistamine; Seasonal allergic rhinitis, Urticaria
+Olopatadine (eye); Patanol; Pataday; ; ; 2nd generation antihistamine; Allergic conjunctivitis
+Epinephrine; Auvi-Q; EpiPen; ; ; Anaphylaxis agent; Emergency treatment of anaphylaxis due to allergic reactions
+2
+Metformin; Glucophage; ; ; ; Biguanide; Type 2 diabetes mellitus, Polycystic ovary syndrome
+Glimepiride; Amaryl; ; ; ; Sulfonylurea; Type 2 diabetes mellitus
+Glipizide; Glucotrol; ; ; ; Sulfonylurea; Type 2 diabetes mellitus
+Exenatide; Byetta; Bydureon; ; ; Glucagon-like peptide-1 receptor agonist; Type 2 diabetes mellitus
+Sitagliptin; Januvia; ; ; ; Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor); Type 2 diabetes mellitus
+Pioglitazone; Actos; ; ; ; Thiazolidinedione; Type 2 diabetes mellitus
+Insulin Aspart; NovoLog; Novolog FexPen; ; ; Rapid-acting insulin; Type 1 and type 2 diabetes mellitus
+Insulin glargine; Lantus; ; ; ; Long-acting insulin; Type 1 and type 2 diabetes mellitus
+Clopidogrel; Plavix; ; ; ; Platelet aggregation inhibitor; Myocardial infarction, Prevention of thrombosis in arteriosclerotic vascular disease
+3
+Zolpidem; Ambien; ; ; ; Nonbarbiturate hypnotic [C-IV]; Insomnia
+Eszopiclone; Lunesta; ; ; ; Nonbarbiturate hypnotic [C-IV]; Insomnia
+Hydrocodone and acetaminophen; Lorcet; Norco; ; ; Opioid analgesic [C-II]; Pain (severe)
+Ibuprofen; Motrin; ; ; ; Nonsteroidal antiinflammatory drug; Fever, Osteoarthritis, Pain, Rheumatoid arthritis
+Meloxicam; Mobic; ; ; ; Nonsteroidal antiinflammatory drug; Osteoarthritis, Rheumatoid arthritis
+Lisdexamfetamine; Vyvanse; ; ; ; CNS stimulant [C-II]; Attention-deficit hyperactivity disorder (ADHD), Binge eating disorder
+Methylphenidate; Concerta; Ritalin; ; ; CNS stimulant [C-II]; Attention-deficit hyperactivity disorder, Narcolepsy
+Atomoxetine; Strattera; ; ; ; Norepinephrine reuptake inhibitor (NRI); Attention-deficit hyperactivity disorder (ADHD)
+Donepezil; Aricept; ; ; ; Central cholinesterase inhibitor; Alzheimer disease, dementia
+Memantine; Namenda; ; ; ; N-methyl-d-aspartate receptor antagonist; Alzheimer disease
+4
+Esomeprazole; Nexium; ; ; ; Proton Pump Inhibitor (PPI); Helicobacter pylori GI tract infection, Gastroesophageal reflux disease (GERD), Prevention of NSAID-induced gastropathy, Zollinger-Ellison syndrome
+Pantoprazole; Protonix; ; ; ; Proton Pump Inhibitor (PPI); Gastroesophageal reflux disease (GERD), Gastric hypersecretion, Zollinger-Ellison syndrome
+Rabeprazole; AcipHex; ; ; ; Proton Pump Inhibitor (PPI); Duodenal or gastric ulcer disease, Gastroesophageal reflux disease (GERD), Gastric hypersecretion, Helicobacter pylori GI tract infection (part of triple therapy)
+Omeprazole; Prilosec; ; ; ; Proton Pump Inhibitor (PPI); Duodenal or gastric ulcer disease, Gastroesophageal reflux disease (GERD), Helicobacter pylori GI tract infection (part of triple therapy)
+Lansoprazole; Prevacid; ; ; ; Proton Pump Inhibitor (PPI); Duodenal or gastric ulcer disease, Gastroesophageal reflux disease (GERD), Helicobacter pylori GI tract infection (part of triple therapy)
+Famotidine; Pepcid; ; ; ; Histamine H2 receptor antagonist (H2RA); Duodenal or gastric ulcer disease, Gastroesophageal reflux disease (GERD)
+Ranitidine; Zantac; ; ; ; Histamine H2 receptor antagonist (H2RA); Duodenal ulcer, Indigestion (prevention or treatment), Helicobacter pylori GI tract infection
+Polyethylene Glycol; Golytely; ; ; ; Hyperosmotic laxative; Colonoscopy or barium enema preparation, Constipation
+Cyanocobalamin; Cobolin-M; ; ; ; Essential vitamin; Cobalamin (vitamin B12) deficiency
+Potassium Chloride; Klor-Con; ; ; ; Electrolyte, potassium; Hypokalemia
+5
+Sildenafil; Viagra; Revatio; ; ; Phosphodiesterase-5 inhibitor (PDE-5 inhibitor); Erectile dysfunction, Pulmonary hypertension
+Tadalafil; Adcirca; Cialis; ; ; Phosphodiesterase-5 inhibitor (PDE-5 inhibitor); Benign prostatic hyperplasia (Cialis), Erectile dysfunction (Cialis), Pulmonary hypertension (Adcirca)
+Tamsulosin; Flomax; ; ; ; α1-Adrenergic blocker; Benign prostatic hyperplasia
+Tolterodine; Detrol; Detrol LA; ; ; Antimuscarinic; Overactive bladder
+Oxybutynin; Ditropan; ; ; ; Urinary antispasmodic; Overactive or neurogenic bladder
+Levothyroxine; Synthroid; ; ; ; Thyroid supplement; Hypothyroidism
+Thyroid; Armour; ; ; ; Thyroid; Hypothyroidism
+Alendronate; Fosamax; Binosto; ; ; Bisphosphonate; Postmenopausal osteoporosis, prophylaxis or treatment, Osteoporosis, treatment in men, Glucocorticoid-induced osteoporosis, Paget disease
+Ibandronate; Boniva; ; ; ; Bisphosphonate; Postmenopausal osteoporosis, Prevention of postmenopausal osteoporosis
+Risedronate; Actonel; Atelvia; ; ; Bisphosphonate; Postmenopausal osteoporosis, Paget disease, Osteoporosis due to glucocorticoids, Osteoporosis in men
+Raloxifene; Evista; ; ; ; Selective estrogen receptor modular; Prevention of breast cancer in postmenopausal women, Prevention or treatment of postmenopausal osteoporosis
+6
+Lisinopril; Prinivil; Zestril; ; ; Angiotensin converting enzyme (ACE) inhibitor; Heart failure, Hypertension, Myocardial infarction
+Ramipril; Altace; ; ; ; Angiotensin converting enzyme (ACE) inhibitor; Heart failure, Hypertension, Reduce risk of cardiovascular events and death from cardiovascular disease
+Losartan; Cozaar; ; ; ; Angiotensin II Receptor Antagonist/Blocker (ARB); Diabetic nephropathy, Hypertension
+Valsartan; Diovan; ; ; ; Angiotensin II Receptor Antagonist/Blocker (ARB); Heart failure, Hypertension, Myocardial infarction
+Atenolol; Tenormin; ; ; ; β-Adrenergic Blocker, Cardioselective; Angina, Hypertension
+Metoprolol; Lopressor; Toprol XL; ; ; β-Adrenergic Blocker, Cardioselective; Angina, Heart failure, Hypertension, Myocardial infarction
+Amlodipine; Norvasc; ; ; ; Calcium channel blocker; Angina, Hypertension
+Furosemide; Lasix; ; ; ; Loop diuretic; Edema, Hypertension
+Hydrochlorothiazide; -; ; ; ; Thiazide diuretic; Edema, Hypertension
+Atorvastatin; Lipitor; ; ; ; HMG-CoA Reductase Inhibitor; Hyperlipidemia, Primary and secondary prevention of atherosclerotic cardiovascular disease & events, Familial hypercholesterolemia
+Simvastatin; Zocor; ; ; ; HMG-CoA Reductase Inhibitor; Hyperlipidemia, Primary and secondary prevention of atherosclerotic cardiovascular disease & events, Familial hypercholesterolemia
+Fenofibrate; Lofibra; Tricor; ; ; Antihyperlipidemic; Hypercholesterolemia, Hypertriglyceridemia
+Omega 3; Lovaza; ; ; ; Antihyperlipidemic; Hypertriglyceridemia
+7
+Azithromycin; Zithromax; Z-Pak; ; ; Macrolide antibiotic; Bacterial sinusitis, Community-acquired pneumonia, Streptococcal pharyngitis
+Clarithromycin; Biaxin; ; ; ; Macrolide antibiotic; Community-acquired pneumonia, Sinusitis, Pharyngitis
+Ciprofloxacin (oral); Cipro; Cipro XR; ; ; Fluoroquinolone antibiotic; Bronchitis, Sinusitis, Urinary tract infection
+Ciprofloxacin (ear); Cetraxal; Otiprio; ; ; Fluoroquinolone antibiotic; Otitis externa, Otitis media with effusion
+Levofloxacin; Levaquin; ; ; ; Fluoroquinolone antibiotic; Bacterial sinusitis, Bronchitis, Community-acquired pneumonia
+Moxifloxacin (oral); Avelox; ; ; ; Fluoroquinolone antibiotic; Bacterial sinusitis, Community-acquired pneumonia
+Moxifloxacin (eye); Vigamox; ; ; ; Fluoroquinolone antibiotic; Bacterial conjunctivitis
+Amoxicillin; Amoxil; ; ; ; β-Lactam antibiotic; Acute otitis media, Streptococcal pharyngitis
+Penicillin; no brand; ; ; ; β-Lactam antibiotic; Otitis media, Streptococcal pharyngitis
+Amoxicillin/Clavulanate; Augmentin; ; ; ; β-Lactam antibiotic + β-Lactamase inhibitor; Otitis media, Sinusitis, Urinary tract infections
+Cephalexin; Keflex; ; ; ; First-generation cephalosporin; Otitis media, Urinary tract infection, Streptococcal pharyngitis
+Cefdinir; Omnicef; ; ; ; Third-generation cephalosporin; Acute otitis media, Pharyngitis, Bronchitis, Community-acquired pneumonia
+Acyclovir; Zovirax; ; ; ; Viral DNA polymerase inhibitor; Genital herpes simplex, Herpes zoster, Varicella
+Valacyclovir; Valtrex; ; ; ; Viral DNA polymerase inhibitor; Genital herpes simplex, Herpes zoster, Herpes labialis (cold sores)
+Oseltamivir; Tamiflu; ; ; ; Neuraminidase Inhibitor, antiviral; Influenza virus types A and B: treatment and prophylaxis
+8
+Clindamycin oral; Cleocin; ; ; ; Lincosamide Antibiotic; Infection of skin/ subcutaneous tissue, Lower respiratory tract infection
+Clindamycin topical; Cleocin T; ; ; ; Lincosamide Antibiotic; Acne vulgaris
+Doxycycline; Vibramycin; ; ; ; Tetracycline Antibiotic; Acne vulgaris, Staphylococcal infection of the skin
+Metronidazole; Flagyl; ; ; ; Nitroimidazole Antibiotic, Antiprotozoal; Abscess
+Chlorhexidine Gluconate; Peridex; Hibiclens; ; ; Antibacterial Cleansing Agent; Gingivitis, Skin or wound cleansing
+Mupirocin; Bactroban; ; ; ; Topical Antibiotic; Impetigo
+Nitrofurantoin; Macrodantin; Macrobid; ; ; Nitrofuran Antibiotic; Urinary tract infection
+Trimethoprim-sulfamethoxazole; Bactrim; Septra; ; ; Sulfonamide Antibiotic; Urinary tract infection
+Fluconazole; Diflucan; ; ; ; Imidazole Antifungal; Candidiasis
+Ketoconazole; Nizoral; ; ; ; Imidazole Antifungal; Dandruff, Tinea corporis, Tinea cruris, Tinea pedis
+Nystatin systemic; Bio-Statin; ; ; ; Polyene Antifungal; Oropharyngeal candidiasis
+Nystatin topical; Mycostatin; Nyamyc; Nystop; ; Polyene Antifungal; Candidiasis of skin
+Terbinafine; Lamisil; ; ; ; Antifungal; Onychomycosis
+Clobetasol; Temovate; ; ; ; Topical corticosteroid; Plaque psoriasis
+Prednisone; Deltasone; ; ; ; Corticosteroid; Disorders due to an inflammatory response (e.g., asthma, ulcerative colitis, multiple sclerosis, rheumatoid arthritis)
+9
+Amitriptyline; Elavil; ; ; ; Tricyclic antidepressant; Depression
+Nortriptyline; Pamelor; ; ; ; Tricyclic antidepressant; Depression
+Citalopram; Celexa; ; ; ; Selective serotonin reuptake inhibitor (SSRI); Depression
+Paroxetine; Paxil; Paxil CR; ; ; Selective serotonin reuptake inhibitor (SSRI); Depression, Generalized anxiety disorder, Social anxiety disorder, Obsessive compulsive disorder, Panic disorder, Posttraumatic stress disorder, Premenstrual dysphoric disorder, Vasomotor symptoms of menopause
+Escitalopram; Lexapro; ; ; ; Selective serotonin reuptake inhibitor (SSRI); Depression, Generalized anxiety disorder
+Fluoxetine; Prozac; Sarafem; ; ; Selective serotonin reuptake inhibitor (SSRI); Depression, Obsessive compulsive disorder, Panic disorder, Premenstrual dysphoric disorder
+Sertraline; Zoloft; ; ; ; Selective serotonin reuptake inhibitor (SSRI); Depression, Obsessive compulsive disorder, Panic disorder, Premenstrual dysphoric disorder
+Duloxetine; Cymbalta; ; ; ; Serotonin/norepinephrine reuptake inhibitor (SNRI); Anxiety, Depression, Diabetic peripheral neuropathy pain
+Venlafaxine; Effexor; Effexor XR; ; ; Serotonin/norepinephrine reuptake inhibitor (SNRI); Depression, Generalized anxiety disorder, Panic disorder, Social anxiety disorder
+Lithium; Eskalith; Eskalith-CR; Lithobid; ; Antimanic; Bipolar disorder
+Mirtazapine; Remeron; ; ; ; Antidepressant, alpha-2 antagonist; Depression
+Bupropion; Wellbutrin; Zyban; ; ; Monocyclic antidepressant; Depression, Seasonal affective disorder, Smoking cessation assistance
+Trazodone; Desyrel; ; ; ; Antidepressant; Depression (uncommon use), Insomnia (off label but typical use)
+10
+Aripiprazole; Abilify; ; ; ; 2nd generation (atypical) antipsychotic; Bipolar disorder, Schizophrenia, Depression, Tourette’s disorder
+Olanzapine; Zyprexa; ; ; ; 2nd generation (atypical) antipsychotic; Bipolar disorder, Schizophrenia, Depression
+Risperidone; Risperdal; ; ; ; 2nd generation (atypical) antipsychotic; Irritability associated with autism spectrum disorder, Bipolar disorder, Schizophrenia, Tourette syndrome
+Quetiapine; Seroquel; Seroquel XR; ; ; 2nd generation (atypical) antipsychotic; Bipolar disorder, Major depressive disorder (adjunct to antidepressant), Schizophrenia
+Alprazolam; Xanax; ; ; ; Benzodiazepine [C-IV]; Anxiety, Panic disorder
+Clonazepam; Klonopin; ; ; ; Benzodiazepine [C-IV]; Panic disorder, Seizure
+Diazepam; Valium; ; ; ; Benzodiazepine [C-IV]; Alcohol withdrawal syndrome, Anxiety, Seizure
+Temazepam; Restoril; ; ; ; Benzodiazepine [C-IV]; Insomnia
+Lorazepam; Ativan; ; ; ; Benzodiazepine [C-IV]; Anxiety, Insomnia due to anxiety or situational stress
+Buspirone; BuSpar; ; ; ; Antianxiety; Anxiety
