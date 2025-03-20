@@ -7,9 +7,9 @@ from pathlib import Path
 def initialize_session():
     st.session_state.update({
         'selected': {
-            'dataset': '200',  # Default to 200 drugs
-            'sections': list(range(1, 11)),  # All sections
-            'quiz_types': [  # All question types
+            'dataset': '200',
+            'sections': list(range(1, 11)),  # Default to 1-10
+            'quiz_types': [
                 "Generic to Brand",
                 "Brand to Generic",
                 "Generic to Class",
@@ -24,7 +24,8 @@ def initialize_session():
         'score': 0,
         'show_answer': False,
         'current_drug': None,
-        'selected_answer': None
+        'selected_answer': None,
+        'quiz_started': False  # Add this flag
     })
 
 def restart_quiz():
@@ -36,14 +37,22 @@ def restart_quiz():
 def load_drugs(dataset):
     """Load drugs from selected dataset and sections"""
     try:
-        with open(f'data/drugs_{dataset}.json', 'r') as f:
+        # Modified filename handling for combined dataset
+        filename = 'data/drugs_both.json' if dataset == 'Both' \
+                  else f'data/drugs_{dataset}.json'
+        
+        with open(filename, 'r') as f:
             data = json.load(f)
-        return [drug for section in data 
+            
+        # Filter sections based on selection
+        return [drug for section in data
                 if section['section_number'] in st.session_state.selected['sections']
                 for drug in section['drugs']]
+                
     except FileNotFoundError:
-        st.error("Data file not found")
+        st.error(f"Data file not found: {filename}")
         return []
+
 
 def quiz_setup():
     """Quiz configuration sidebar"""
@@ -63,20 +72,39 @@ def quiz_setup():
             key='num_choices'
         )
         
+        # Dataset selection
         dataset = st.radio(
             "Select Drug Set:",
-            ('100', '200'),
-            index=1 if '200' in st.session_state.selected['dataset'] else 0,
+            ('100', '200', 'Both'),
             key='dataset_select'
         )
         
-        sections = list(range(1, 11))
+        # Dynamic section handling
+        if dataset == 'Both':
+            max_section = 20
+            default_sections = list(range(1, 21))
+        else:
+            max_section = 10
+            default_sections = list(range(1, 11))
+            
+        # Section multiselect
         selected_sections = st.multiselect(
             "Select Sections to Study:",
-            options=sections,
-            default=sections,
+            options=list(range(1, max_section + 1)),
+            default=default_sections,
             key='section_select'
         )
+        
+        # Ensure at least one section is selected
+        if not selected_sections:
+            st.error("Please select at least one section")
+            st.stop()
+        
+        # Store selections
+        st.session_state.selected.update({
+            'dataset': dataset,
+            'sections': selected_sections
+        })
         
         quiz_types = [
             "Generic to Brand",
@@ -101,14 +129,15 @@ def quiz_setup():
             'num_choices': num_choices  # Store choices
         }
         
-        if st.button("Start Quiz"):
-            initialize_quiz()
 
 def initialize_quiz():
     """Generate quiz questions"""
     drugs = load_drugs(st.session_state.selected['dataset'])
+    
     if not drugs:
-        return
+        st.error("No drugs found in selected sections")
+        st.session_state.quiz_started = False
+        st.rerun()
     
     question_pool = []
     num_choices = st.session_state.selected['num_choices']
@@ -337,17 +366,60 @@ def main():
     st.title("Top Drugs Quiz")
     
     # Add signature
+        # Add signature with better positioning
     st.markdown(
         """
-        <div style="position: fixed; bottom: 10px; right: 10px; color: #666;">
+        <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #666;
+            padding: 10px;
+            z-index: 1000;
+        }
+        </style>
+        
+        <div class="footer">
             by Jay Smith, Class of 2028
         </div>
         """,
         unsafe_allow_html=True
     )
-    
-    if not st.session_state.questions:
-        quiz_setup()
+
+    if not st.session_state.get('quiz_started'):
+        # Show configuration in sidebar
+        quiz_setup()  # This now only contains the sidebar controls
+        
+        # Centered start button in main area
+        _, center_col, _ = st.columns([1, 3, 1])
+        with center_col:
+            st.write("\n" * 2)  # Add vertical space
+            if st.button(
+                "🚀 Start Quiz",
+                key="main_start_btn",
+                use_container_width=True,
+                type="primary"
+            ):
+                st.session_state.quiz_started = True
+                initialize_quiz()
+                st.rerun()
+            
+            # Optional styling for the button
+            st.markdown("""
+                <style>
+                    div[data-testid="stHorizontalBlock"] {
+                        justify-content: center;
+                    }
+                    button[kind="primary"] {
+                        padding: 1rem 2rem;
+                        font-size: 1.25rem;
+                        width: 100%;
+                    }
+                </style>
+            """, unsafe_allow_html=True)
     else:
         display_question()
 
