@@ -385,9 +385,13 @@ def update_analytics(result):
         Path("data").mkdir(exist_ok=True)
         analytics = {"quizzes": []}
 
+        # Handle empty/corrupted file
         if os.path.exists(ANALYTICS_FILE):
-            with open(ANALYTICS_FILE, "r") as f:
-                analytics = json.load(f)
+            try:
+                with open(ANALYTICS_FILE, "r") as f:
+                    analytics = json.load(f)
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                analytics = {"quizzes": []}
 
         # Add new quiz record
         analytics["quizzes"].append({
@@ -423,6 +427,11 @@ def show_minimal_analytics():
     """Enhanced analytics with filters"""
     with st.sidebar.expander("📊 Advanced Analytics"):
         try:
+            # Check if file exists and has content
+            if not os.path.exists(ANALYTICS_FILE) or os.stat(ANALYTICS_FILE).st_size == 0:
+                st.warning("No analytics data yet")
+                return
+
             with open(ANALYTICS_FILE, "r") as f:
                 data = json.load(f)
                 
@@ -536,8 +545,14 @@ def show_minimal_analytics():
                     "Score (%)": [(q['score']/q['total'])*100 for q in filtered]
                 }))
                 
-        except FileNotFoundError:
-            st.warning("No analytics data yet")
+        except json.JSONDecodeError:
+            st.error("Corrupted analytics data. Resetting...")
+            # Create empty valid structure
+            with open(ANALYTICS_FILE, "w") as f:
+                json.dump({"quizzes": []}, f)
+            st.rerun()
+        except Exception as e:
+            st.error(f"Error loading analytics: {str(e)}")
 
 
 def main():
