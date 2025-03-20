@@ -5,11 +5,13 @@ from pathlib import Path
 # Add to imports
 from collections import defaultdict
 import pandas as pd
+import os
+import time
 
 # Add analytics constants
 ANALYTICS_FILE = "data/aggregate_analytics.json"
 ANALYTICS_LOCK = "data/analytics.lock"
-
+DATA_DIR = "data"
 
 # Initialize session state
 def initialize_session():
@@ -368,38 +370,55 @@ def display_question():
             st.session_state.show_answer = False
             st.rerun()
 
+# Update the update_analytics function
 def update_analytics(score, total_questions):
     """Update aggregate analytics with file locking"""
-    Path("data").mkdir(parents=True, exist_ok=True)
-    
-    # Load existing data
-    analytics = defaultdict(int)
     try:
-        with open(ANALYTICS_FILE, "r") as f:
-            analytics.update(json.load(f))
-    except (FileNotFoundError, json.JSONDecodeError):
-        pass
-    
-    # Update metrics
-    analytics["total_quizzes"] += 1
-    analytics["total_questions"] += total_questions
-    analytics["correct_answers"] += score
-    analytics["average_score"] = (analytics["correct_answers"] / analytics["total_questions"]) * 100
-    
-    # Save with file locking
-    while os.path.exists(ANALYTICS_LOCK):
-        time.sleep(0.1)
+        # Create data directory if needed
+        Path(DATA_DIR).mkdir(parents=True, exist_ok=True)
         
-    try:
-        with open(ANALYTICS_LOCK, "w") as f:
-            pass  # Create lock file
+        # Initialize default analytics
+        analytics = {
+            "total_quizzes": 0,
+            "total_questions": 0,
+            "correct_answers": 0,
+            "average_score": 0.0
+        }
+
+        # Load existing data if available
+        if os.path.exists(ANALYTICS_FILE):
+            with open(ANALYTICS_FILE, "r") as f:
+                analytics.update(json.load(f))
+
+        # Update metrics
+        analytics["total_quizzes"] += 1
+        analytics["total_questions"] += total_questions
+        analytics["correct_answers"] += score
+        if analytics["total_questions"] > 0:
+            analytics["average_score"] = round(
+                (analytics["correct_answers"] / analytics["total_questions"]) * 100, 
+                1
+            )
+
+        # Safe file writing with locking
+        while os.path.exists(ANALYTICS_LOCK):
+            time.sleep(0.1)
             
-        with open(ANALYTICS_FILE, "w") as f:
-            json.dump(dict(analytics), f)
+        try:
+            # Create lock file
+            with open(ANALYTICS_LOCK, "w") as f:
+                pass
             
-    finally:
-        if os.path.exists(ANALYTICS_LOCK):
-            os.remove(ANALYTICS_LOCK)
+            # Write updated analytics
+            with open(ANALYTICS_FILE, "w") as f:
+                json.dump(analytics, f)
+                
+        finally:
+            if os.path.exists(ANALYTICS_LOCK):
+                os.remove(ANALYTICS_LOCK)
+                
+    except Exception as e:
+        st.error(f"Error updating analytics: {str(e)}")
 
 def show_minimal_analytics():
     """Compact analytics display"""
