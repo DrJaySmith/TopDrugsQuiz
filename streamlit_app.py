@@ -406,7 +406,7 @@ def update_analytics(result):
         Path("data").mkdir(exist_ok=True)
         analytics = {"quizzes": []}
 
-        # Handle empty/corrupted file
+        # Handle existing data
         if os.path.exists(ANALYTICS_FILE):
             try:
                 with open(ANALYTICS_FILE, "r") as f:
@@ -425,21 +425,10 @@ def update_analytics(result):
             "time_taken": result['time_taken']
         })
 
-        # Save with locking
-        while os.path.exists(ANALYTICS_LOCK):
-            time.sleep(0.1)
-            
-        try:
-            with open(ANALYTICS_LOCK, "w") as f:
-                pass
-        
-            with open(ANALYTICS_FILE, "w") as f:
-                json.dump(analytics, f)
-                
-        finally:
-            if os.path.exists(ANALYTICS_LOCK):
-                os.remove(ANALYTICS_LOCK)
-                
+        # Simplified save without locking
+        with open(ANALYTICS_FILE, "w") as f:
+            json.dump(analytics, f)
+
     except Exception as e:
         st.error(f"Analytics update failed: {str(e)}")
 
