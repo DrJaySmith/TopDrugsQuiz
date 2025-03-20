@@ -311,6 +311,9 @@ def get_indication_options(drugs, correct_answer, num_choices):
     return options[:num_choices]
 
 def handle_answer(option, question):
+    # Track time per question
+    question['time_taken'] = time.time() - question.get('start_time', time.time())
+    
     st.session_state.update({
         'selected_answer': option,
         'show_answer': True,
@@ -357,6 +360,7 @@ def display_question():
         return
 
     question = st.session_state.questions[st.session_state.current_question]
+    question['start_time'] = time.time()  # Track question start time
     
     st.subheader(f"Question {st.session_state.current_question + 1}")
     st.write(f"**{question['question']}**")
@@ -412,18 +416,28 @@ def update_analytics(result):
             except (json.JSONDecodeError, UnicodeDecodeError):
                 analytics = {"quizzes": []}
 
-        # Add new quiz record
-        analytics["quizzes"].append({
+        # Add detailed question tracking
+        quiz_data = {
             "timestamp": datetime.now().isoformat(),
             "dataset": result['dataset'],
             "sections": result['sections'],
             "question_types": result['question_types'],
             "score": result['score'],
             "total": result['total'],
-            "time_taken": result['time_taken']
-        })
+            "time_taken": result['time_taken'],
+            "questions": [
+                {
+                    "section": q['drug']['section_number'],
+                    "type": q['type'],
+                    "correct": st.session_state.selected_answer in q['answer'],
+                    "time_per_question": q.get('time_taken', 0)
+                }
+                for q in st.session_state.questions
+            ]
+        }
 
-        # Simplified save without locking
+        analytics["quizzes"].append(quiz_data)
+
         with open(ANALYTICS_FILE, "w") as f:
             json.dump(analytics, f)
 
@@ -454,32 +468,10 @@ def show_minimal_analytics():
             dataset = st.radio("Dataset:", 
                              ["All", "100", "200", "Both"],
                              horizontal=True)
-            
-            # Section filter
-            sections = st.multiselect(
-                "Sections:",
-                options=list(range(1, 21)),
-                default=[]
-            )
-            
-            # Question type filter
-            question_types = st.multiselect(
-                "Question Types:",
-                options=[
-                    "Generic to Brand", "Brand to Generic",
-                    "Generic to Class", "Brand to Class",
-                    "Generic to Indication", "Brand to Indication"
-                ],
-                default=[]
-            )
+
 
             # Process data
-            filtered = [
-                q for q in data["quizzes"]
-                if (dataset == "All" or q['dataset'] == dataset) and
-                (not sections or any(s in q['sections'] for s in sections)) and
-                (not question_types or any(t in q['question_types'] for t in question_types))
-            ]
+            filtered = [q for q in data["quizzes"] if (dataset == "All" or q['dataset'] == dataset)]
             
             if not filtered:
                 st.warning("No data matching filters")
@@ -503,7 +495,7 @@ def show_minimal_analytics():
             # Pluralization handling
             hours_label = "hour" if hours == 1 else "hours"
             minutes_label = "minute" if minutes == 1 else "minutes"
-            time_str = f"{hours} {hours_label}\n {minutes} {minutes_label}" if hours >= 0 else f"{minutes} {minutes_label}"
+            time_str = f"{hours} {hours_label}, {minutes} {minutes_label}"
 
             # Add this in your show_minimal_analytics() function before the metrics
             st.markdown("""
@@ -516,7 +508,7 @@ def show_minimal_analytics():
 
             /* For metric values */
             [data-testid="stMetricValue"] {
-                font-size: 18px !important;
+                font-size: 12px !important;
             }
 
             /* For metric labels */
@@ -536,44 +528,39 @@ def show_minimal_analytics():
             col21.metric("Average Score", f"{avg_score:.1f}%")
             col22.metric("Total Time Spent", time_str)
             
-            # Section performance
+            # Extract all questions across all quizzes
+            all_questions = []
+            for quiz in data["quizzes"]:
+                for q in quiz.get("questions", []):
+                    all_questions.append(q)
+
+            # Section Performance
             st.subheader("Section Performance")
-            section_counts = Counter()
-            for q in filtered:
-                section_counts.update(q['sections'])
-                
-            if section_counts:
-                df_sections = pd.DataFrame(
-                    section_counts.most_common(10),  # ✅ Correct
-                    columns=["Section", "Attempts"]
-                )
-                st.bar_chart(df_sections.set_index("Section"))
-                
-            # Question type analysis
-            st.subheader("Question Type Analysis")
-            type_counts = Counter()
-            for q in filtered:
-                type_counts.update(q['question_types'])
-                
-            if type_counts:
-                df_types = pd.DataFrame(
-                    type_counts.most_common(),
-                    columns=["Question Type", "Count"]
-                )
-                st.dataframe(
-                    df_types.style.bar(color='#5fba7d'),
-                    use_container_width=True
-                )
-            
-            # Time analysis
-            st.subheader("Completion Times")
-            times = [q['time_taken'] for q in filtered]
-            if times:
-                st.write(f"Average Time: {sum(times)/len(times):.1f}s")
-                st.line_chart(pd.DataFrame({
-                    "Time Taken": times,
-                    "Score (%)": [(q['score']/q['total'])*100 for q in filtered]
-                }))
+            section_data = pd.DataFrame(all_questions)
+            if not section_data.empty:
+                section_stats = section_data.groupby('section')['correct'].agg(
+                    ['mean', 'count']
+                ).reset_index()
+                section_stats.columns = ['Section', 'Average Score', 'Attempts']
+                st.bar_chart(section_stats.set_index('Section')['Average Score'])
+
+            # Question Type Analysis
+            st.subheader("Question Type Accuracy")
+            type_data = pd.DataFrame(all_questions)
+            if not type_data.empty:
+                type_stats = type_data.groupby('type')['correct'].mean().reset_index()
+                type_stats.columns = ['Question Type', 'Accuracy']
+                st.bar_chart(type_stats.set_index('Question Type'))
+
+            # Time Analysis
+            st.subheader("Time vs Accuracy")
+            time_data = pd.DataFrame(all_questions)
+            if not time_data.empty:
+                time_data['time_bin'] = pd.cut(time_data['time_per_question'],
+                                             bins=5,
+                                             labels=['0-20s', '20-40s', '40-60s', '60-80s', '80+'])
+                time_stats = time_data.groupby('time_bin')['correct'].mean().reset_index()
+                st.line_chart(time_stats.set_index('time_bin'))
                 
         except json.JSONDecodeError:
             st.error("Corrupted analytics data. Resetting...")
