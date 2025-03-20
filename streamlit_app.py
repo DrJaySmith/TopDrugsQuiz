@@ -3,13 +3,15 @@ import json
 import random
 from pathlib import Path
 # Add to imports
-from collections import defaultdict
+from collections import Counter, defaultdict
 import pandas as pd
 import os
 import time
+import uuid
+from datetime import datetime
 
 # Add analytics constants
-ANALYTICS_FILE = "data/aggregate_analytics.json"
+ANALYTICS_FILE = "data/enhanced_analytics.json"
 ANALYTICS_LOCK = "data/analytics.lock"
 DATA_DIR = "data"
 
@@ -319,8 +321,15 @@ def handle_answer(option, question):
 def display_question():
     """Render current question and handle answers"""
     if st.session_state.current_question >= len(st.session_state.questions):
-        # Update analytics
-        update_analytics(st.session_state.score, len(st.session_state.questions))
+        result = {
+            'score': st.session_state.score,
+            'total': len(st.session_state.questions),
+            'dataset': st.session_state.selected['dataset'],
+            'sections': st.session_state.selected['sections'],
+            'question_types': st.session_state.selected['quiz_types'],
+            'time_taken': round(time.time() - st.session_state.quiz_start_time, 1)
+        }
+        update_analytics(result)
 
         st.success(f"Final Score: {st.session_state.score}/{len(st.session_state.questions)}")
         if st.button("🔄 Take Quiz Again"):
@@ -370,46 +379,35 @@ def display_question():
             st.session_state.show_answer = False
             st.rerun()
 
-# Update the update_analytics function
-def update_analytics(score, total_questions):
-    """Update aggregate analytics with file locking"""
+def update_analytics(result):
+    """Update analytics with detailed tracking"""
     try:
-        # Create data directory if needed
-        Path(DATA_DIR).mkdir(parents=True, exist_ok=True)
-        
-        # Initialize default analytics
-        analytics = {
-            "total_quizzes": 0,
-            "total_questions": 0,
-            "correct_answers": 0,
-            "average_score": 0.0
-        }
+        Path("data").mkdir(exist_ok=True)
+        analytics = {"quizzes": []}
 
-        # Load existing data if available
         if os.path.exists(ANALYTICS_FILE):
             with open(ANALYTICS_FILE, "r") as f:
-                analytics.update(json.load(f))
+                analytics = json.load(f)
 
-        # Update metrics
-        analytics["total_quizzes"] += 1
-        analytics["total_questions"] += total_questions
-        analytics["correct_answers"] += score
-        if analytics["total_questions"] > 0:
-            analytics["average_score"] = round(
-                (analytics["correct_answers"] / analytics["total_questions"]) * 100, 
-                1
-            )
+        # Add new quiz record
+        analytics["quizzes"].append({
+            "timestamp": datetime.now().isoformat(),
+            "dataset": result['dataset'],
+            "sections": result['sections'],
+            "question_types": result['question_types'],
+            "score": result['score'],
+            "total": result['total'],
+            "time_taken": result['time_taken']
+        })
 
-        # Safe file writing with locking
+        # Save with locking
         while os.path.exists(ANALYTICS_LOCK):
             time.sleep(0.1)
             
         try:
-            # Create lock file
             with open(ANALYTICS_LOCK, "w") as f:
                 pass
-            
-            # Write updated analytics
+        
             with open(ANALYTICS_FILE, "w") as f:
                 json.dump(analytics, f)
                 
@@ -418,29 +416,124 @@ def update_analytics(score, total_questions):
                 os.remove(ANALYTICS_LOCK)
                 
     except Exception as e:
-        st.error(f"Error updating analytics: {str(e)}")
+        st.error(f"Analytics update failed: {str(e)}")
 
+# Updated show_minimal_analytics function
 def show_minimal_analytics():
-    """Compact analytics display"""
-    st.sidebar.markdown("---")
-    with st.sidebar.expander("📊 View Analytics"):
+    """Enhanced analytics with filters"""
+    with st.sidebar.expander("📊 Advanced Analytics"):
         try:
             with open(ANALYTICS_FILE, "r") as f:
                 data = json.load(f)
                 
-            st.caption("Overall Quiz Statistics")
+            if not data.get("quizzes"):
+                st.warning("No analytics data yet")
+                return
+
+            # Filters
+            st.subheader("Filters")
             
-            col1, col2 = st.columns(2)
-            col1.metric("Total Quizzes", data.get("total_quizzes", 0))
-            col2.metric("Total Questions", data.get("total_questions", 0))
+            # Dataset filter
+            dataset = st.radio("Dataset:", 
+                             ["All", "100", "200", "Both"],
+                             horizontal=True)
             
-            st.write(f"Average Score: {data.get('average_score', 0):.1f}%")
+            # Section filter
+            sections = st.multiselect(
+                "Sections:",
+                options=list(range(1, 21)),
+                default=[]
+            )
             
-            # Simple bar chart of recent activity
-            if st.checkbox("Show usage trends"):
+            # Question type filter
+            question_types = st.multiselect(
+                "Question Types:",
+                options=[
+                    "Generic to Brand", "Brand to Generic",
+                    "Generic to Class", "Brand to Class",
+                    "Generic to Indication", "Brand to Indication"
+                ],
+                default=[]
+            )
+
+            # Process data
+            filtered = [
+                q for q in data["quizzes"]
+                if (dataset == "All" or q['dataset'] == dataset) and
+                (not sections or any(s in q['sections'] for s in sections)) and
+                (not question_types or any(t in q['question_types'] for t in question_types))
+            ]
+            
+            if not filtered:
+                st.warning("No data matching filters")
+                return
+            
+
+            # Calculate metrics
+            total_quizzes = len(filtered)
+            total_questions = sum(q['total'] for q in filtered)
+            correct_answers = sum(q['score'] for q in filtered)
+            avg_score = (correct_answers / total_questions) * 100 if total_questions else 0
+            
+                        # Calculate total time
+            total_seconds = sum(q['time_taken'] for q in filtered)
+            
+            # Convert to hours and minutes with proper rounding
+            total_minutes = round(total_seconds / 60)
+            hours = total_minutes // 60
+            minutes = total_minutes % 60
+            
+            # Pluralization handling
+            hours_label = "hour" if hours == 1 else "hours"
+            minutes_label = "minute" if minutes == 1 else "minutes"
+            time_str = f"{hours} {hours_label}, {minutes} {minutes_label}" if hours > 0 else f"{minutes} {minutes_label}"
+
+            # Display metrics
+            # Update performance insights
+            st.subheader("Performance Insights")
+            col1, col2, col3, col4 = st.columns(4)
+            col1.metric("Total Quizzes", total_quizzes)
+            col2.metric("Total Questions", total_questions)
+            col3.metric("Average Score", f"{avg_score:.1f}%")
+            col4.metric("Total Time", time_str)
+            
+            # Section performance
+            st.subheader("Section Performance")
+            section_counts = Counter()
+            for q in filtered:
+                section_counts.update(q['sections'])
+                
+            if section_counts:
+                df_sections = pd.DataFrame(
+                    section_counts.most_10(),
+                    columns=["Section", "Attempts"]
+                )
+                st.bar_chart(df_sections.set_index("Section"))
+                
+            # Question type analysis
+            st.subheader("Question Type Analysis")
+            type_counts = Counter()
+            for q in filtered:
+                type_counts.update(q['question_types'])
+                
+            if type_counts:
+                df_types = pd.DataFrame(
+                    type_counts.most_common(),
+                    columns=["Question Type", "Count"]
+                )
+                st.dataframe(
+                    df_types.style.bar(color='#5fba7d'),
+                    use_container_width=True
+                )
+            
+            # Time analysis
+            st.subheader("Completion Times")
+            times = [q['time_taken'] for q in filtered]
+            if times:
+                st.write(f"Average Time: {sum(times)/len(times):.1f}s")
                 st.line_chart(pd.DataFrame({
-                    'Quizzes': [data['total_quizzes']],
-                    'Questions': [data['total_questions']]
+                    "Time Taken": times,
+                    "Score (%)": [(q['score']/q['total'])*100 for q in filtered]
                 }))
                 
         except FileNotFoundError:
@@ -453,14 +546,17 @@ def main():
     if 'selected' not in st.session_state:
         initialize_session()
     
-    st.markdown(
-        """
-        <div style="text-align: center;">
-            <h1>Top Drugs Quiz</h1>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+        # Only show title before quiz starts
+    if not st.session_state.get('quiz_started'):
+        st.markdown(
+            """
+            <div style="text-align: center;">
+                <h1>Top Drugs Quiz</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
     
     # Add signature
         # Add signature with better positioning
