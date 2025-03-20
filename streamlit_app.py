@@ -2,6 +2,14 @@ import streamlit as st
 import json
 import random
 from pathlib import Path
+# Add to imports
+from collections import defaultdict
+import pandas as pd
+
+# Add analytics constants
+ANALYTICS_FILE = "data/aggregate_analytics.json"
+ANALYTICS_LOCK = "data/analytics.lock"
+
 
 # Initialize session state
 def initialize_session():
@@ -61,7 +69,7 @@ def quiz_setup():
         
         num_questions = st.slider(
             "Number of Questions:",
-            min_value=5, max_value=50, value=20,
+            min_value=5, max_value=100, value=20,
             key='num_questions'
         )
 
@@ -309,6 +317,9 @@ def handle_answer(option, question):
 def display_question():
     """Render current question and handle answers"""
     if st.session_state.current_question >= len(st.session_state.questions):
+        # Update analytics
+        update_analytics(st.session_state.score, len(st.session_state.questions))
+
         st.success(f"Final Score: {st.session_state.score}/{len(st.session_state.questions)}")
         if st.button("🔄 Take Quiz Again"):
             initialize_session()
@@ -357,9 +368,72 @@ def display_question():
             st.session_state.show_answer = False
             st.rerun()
 
+def update_analytics(score, total_questions):
+    """Update aggregate analytics with file locking"""
+    Path("data").mkdir(parents=True, exist_ok=True)
+    
+    # Load existing data
+    analytics = defaultdict(int)
+    try:
+        with open(ANALYTICS_FILE, "r") as f:
+            analytics.update(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    
+    # Update metrics
+    analytics["total_quizzes"] += 1
+    analytics["total_questions"] += total_questions
+    analytics["correct_answers"] += score
+    analytics["average_score"] = (analytics["correct_answers"] / analytics["total_questions"]) * 100
+    
+    # Save with file locking
+    while os.path.exists(ANALYTICS_LOCK):
+        time.sleep(0.1)
+        
+    try:
+        with open(ANALYTICS_LOCK, "w") as f:
+            pass  # Create lock file
+            
+        with open(ANALYTICS_FILE, "w") as f:
+            json.dump(dict(analytics), f)
+            
+    finally:
+        if os.path.exists(ANALYTICS_LOCK):
+            os.remove(ANALYTICS_LOCK)
+
+def show_minimal_analytics():
+    """Compact analytics display"""
+    st.sidebar.markdown("---")
+    with st.sidebar.expander("📊 View Analytics"):
+        try:
+            with open(ANALYTICS_FILE, "r") as f:
+                data = json.load(f)
+                
+            st.caption("Overall Quiz Statistics")
+            
+            col1, col2 = st.columns(2)
+            col1.metric("Total Quizzes", data.get("total_quizzes", 0))
+            col2.metric("Total Questions", data.get("total_questions", 0))
+            
+            st.write(f"Average Score: {data.get('average_score', 0):.1f}%")
+            
+            # Simple bar chart of recent activity
+            if st.checkbox("Show usage trends"):
+                st.line_chart(pd.DataFrame({
+                    'Quizzes': [data['total_quizzes']],
+                    'Questions': [data['total_questions']]
+                }))
+                
+        except FileNotFoundError:
+            st.warning("No analytics data yet")
+
+
 def main():
     st.set_page_config(page_title="Drug Quiz", layout="wide")
     
+    # Add analytics toggle to sidebar
+    show_minimal_analytics()
+
     if 'selected' not in st.session_state:
         initialize_session()
     

@@ -1128,11 +1128,7 @@
           ],
           "drug_class": "Corticosteroid",
           "conditions": [
-            "Disorders due to an inflammatory response (e.g.",
-            "asthma",
-            "ulcerative colitis",
-            "multiple sclerosis",
-            "rheumatoid arthritis)"
+            "Disorders due to an inflammatory response (e.g.asthma, ulcerative colitis, multiple sclerosis, rheumatoid arthritis)"
           ],
           "section": 8
         }
@@ -1786,7 +1782,7 @@
             "Atrial fibrillation",
             "Prevent cerebrovascular accident",
             "deep vein thrombosis (DVT)",
-            "and thromboembolism"
+            "thromboembolism"
             ],
             "section": 13
         },
