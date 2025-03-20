@@ -431,9 +431,6 @@ def show_minimal_analytics():
 def main():
     st.set_page_config(page_title="Drug Quiz", layout="wide")
     
-    # Add analytics toggle to sidebar
-    show_minimal_analytics()
-
     if 'selected' not in st.session_state:
         initialize_session()
     
@@ -473,7 +470,10 @@ def main():
     if not st.session_state.get('quiz_started'):
         # Show configuration in sidebar
         quiz_setup()  # This now only contains the sidebar controls
-        
+
+        # Add analytics toggle to sidebar
+        show_minimal_analytics()
+
         # Centered start button in main area
         _, center_col, _ = st.columns([1, 3, 1])
         with center_col:
