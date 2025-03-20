@@ -1498,7 +1498,8 @@
         {
             "generic_name": "Doxazosin",
             "brand_names": [
-            "Cardura"
+            "Cardura", 
+            "Cardura XL"
             ],
             "drug_class": "alpha1-adrenergic blocker",
             "conditions": [
@@ -1522,7 +1523,8 @@
         {
             "generic_name": "Carvedilol",
             "brand_names": [
-            "Coreg"
+              "Coreg", 
+              "Coreg CR"
             ],
             "drug_class": "alpha/beta-adrenergic blocker",
             "conditions": [
@@ -1545,7 +1547,9 @@
         {
             "generic_name": "Propranolol",
             "brand_names": [
-            "Inderal"
+            "Inderal", 
+            "Inderal LA", 
+            "Inderal XL"
             ],
             "drug_class": "beta-adrenergic blocker, nonselective",
             "conditions": [
@@ -1564,7 +1568,10 @@
         {
             "generic_name": "Diltiazem",
             "brand_names": [
-            "Cardizem"
+            "Cardizem", 
+            "Cartia XT",
+            "Dilt-XR",
+            "Tiazac"
             ],
             "drug_class": "Calcium channel blocker (non-dihydropyridine)",
             "conditions": [
@@ -1578,7 +1585,8 @@
         {
             "generic_name": "Verapamil",
             "brand_names": [
-            "Calan"
+            "Calan",
+            "Calan SR"
             ],
             "drug_class": "Calcium channel blocker (non-dihydropyridine)",
             "conditions": [
@@ -1592,7 +1600,8 @@
         {
             "generic_name": "Nifedipine",
             "brand_names": [
-            "Adalat CC"
+            "Adalat CC", 
+            "Procardia XL"
             ],
             "drug_class": "Calcium channel blocker (dihydropyridine)",
             "conditions": [
@@ -1615,7 +1624,9 @@
         {
             "generic_name": "Nitroglycerin",
             "brand_names": [
-            "Minitran"
+            "Minitran", 
+            "Nitro-Dur",
+            "Nitrostat"
             ],
             "drug_class": "Nitrate",
             "conditions": [
@@ -1641,7 +1652,8 @@
         {
             "generic_name": "Triamterene/hydrochlorothiazide",
             "brand_names": [
-            "Dyazide"
+            "Dyazide", 
+            "Maxzide"
             ],
             "drug_class": "Potassium sparing/thiazide diuretic combination",
             "conditions": [
@@ -1716,7 +1728,8 @@
         {
             "generic_name": "Niacin",
             "brand_names": [
-            "Niaspan"
+            "Niaspan", 
+            "Slo-Niacin"
             ],
             "drug_class": "Antihyperlipidemic",
             "conditions": [
@@ -1832,7 +1845,8 @@
         {
             "generic_name": "Diclofenac (oral)",
             "brand_names": [
-            "Zipsor"
+            "Zipsor", 
+            "Zorvolex"
             ],
             "drug_class": "Nonsteroidal anti-inflammatory agent (NSAID)",
             "conditions": [
@@ -1978,7 +1992,8 @@
         {
             "generic_name": "Morphine",
             "brand_names": [
-            "Kadian"
+            "Kadian",
+            "MS Contin"
             ],
             "drug_class": "Opioid",
             "conditions": [
@@ -2100,7 +2115,8 @@
         {
             "generic_name": "Medroxyprogesterone",
             "brand_names": [
-            "Depo-Provera"
+            "Depo-Provera",
+            "Provera"
             ],
             "drug_class": "Progestin hormone",
             "conditions": [
@@ -2111,7 +2127,8 @@
         {
             "generic_name": "Testosterone (Topical)",
             "brand_names": [
-            "AndroGel"
+            "AndroGel",
+            "Androderm"
             ],
             "drug_class": "Androgen",
             "conditions": [
@@ -2122,7 +2139,8 @@
         {
             "generic_name": "Finasteride",
             "brand_names": [
-            "Proscar"
+            "Proscar",
+            "Propecia"
             ],
             "drug_class": "5alpha-reductase inhibitor",
             "conditions": [
@@ -2197,7 +2215,9 @@
         {
             "generic_name": "Fluticasone/salmeterol",
             "brand_names": [
-            "Advair Diskus"
+            "Advair Diskus",
+            "Advair HFA",
+            "AirDuo RespiClick"
             ],
             "drug_class": "Inhaled corticosteroid and long-acting beta2-adrenergic agonist combination",
             "conditions": [
@@ -2241,7 +2261,8 @@
         {
             "generic_name": "Tiotropium",
             "brand_names": [
-            "Sprivia HandiHaler"
+            "Sprivia HandiHaler", 
+            "Sprivia Respimat"
             ],
             "drug_class": "Anticholinergic bronchodilator",
             "conditions": [
@@ -2401,7 +2422,8 @@
         {
             "generic_name": "Bimatoprost",
             "brand_names": [
-            "Lumigan"
+            "Lumigan",
+            "Latisse"
             ],
             "drug_class": "Prostaglandin, antiglaucoma agent, cosmetic agent for eyelash growth",
             "conditions": [
