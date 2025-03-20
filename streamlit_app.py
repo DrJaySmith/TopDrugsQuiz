@@ -321,6 +321,26 @@ def handle_answer(option, question):
 
 def display_question():
     """Render current question and handle answers"""
+    # Add session state validation
+    required_keys = ['selected', 'questions', 'current_question', 'score']
+    for key in required_keys:
+        if key not in st.session_state:
+            st.error("Session configuration error. Please restart the quiz.")
+            if st.button("🔄 Restart Quiz"):
+                restart_quiz()
+            return
+
+    # Validate selected configuration
+    selected = st.session_state.selected
+    required_config = ['dataset', 'sections', 'quiz_types']
+    for key in required_config:
+        if key not in selected:
+            st.error(f"Missing configuration: {key}. Please restart the quiz.")
+            if st.button("🔄 Restart Quiz"):
+                restart_quiz()
+            return
+    
+    """Render current question and handle answers"""
     if st.session_state.current_question >= len(st.session_state.questions):
         result = {
             'score': st.session_state.score,
