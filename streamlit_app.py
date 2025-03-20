@@ -507,15 +507,37 @@ def show_minimal_analytics():
             minutes_label = "minute" if minutes == 1 else "minutes"
             time_str = f"{hours} {hours_label}, {minutes} {minutes_label}" if hours > 0 else f"{minutes} {minutes_label}"
 
+            # Add this in your show_minimal_analytics() function before the metrics
+            st.markdown("""
+            <style>
+            .performance-insights h3 {
+                font-size: 22px !important;
+                color: #2c3e50 !important;
+                margin-bottom: 15px !important;
+            }
+
+            /* For metric values */
+            [data-testid="stMetricValue"] {
+                font-size: 18px !important;
+            }
+
+            /* For metric labels */
+            [data-testid="stMetricLabel"] {
+                font-size: 14px !important;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+
             # Display metrics
             # Update performance insights
-            st.subheader("Performance Insights")
+            st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
             col11, col12 = st.columns(2)
-            col21, col22 = st.columns(2)
+            col21 = st.columns(1)
+            col31 = st.columns(1)
             col11.metric("Total Quizzes", total_quizzes)
             col12.metric("Total Questions", total_questions)
             col21.metric("Average Score", f"{avg_score:.1f}%")
-            col22.metric("Total Time Spent", time_str)
+            col31.metric("Total Time Spent", time_str)
             
             # Section performance
             st.subheader("Section Performance")
@@ -590,14 +612,20 @@ def main():
         """
         <style>
         .footer {
-            position: fixed;
+            position: relative;  # Changed from fixed
             left: 0;
-            bottom: 0;
+            bottom: auto;       # Remove fixed positioning
             width: 100%;
             text-align: center;
             color: #666;
             padding: 10px;
-            z-index: 1000;
+            margin-top: 2rem;  # Add margin above footer
+            z-index: 1;        # Lower than content z-index
+        }
+        
+        /* Add padding to prevent content overlap */
+        .main .block-container {
+            padding-bottom: 2rem;
         }
         </style>
         
