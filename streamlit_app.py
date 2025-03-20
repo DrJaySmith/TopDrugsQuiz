@@ -320,7 +320,6 @@ def handle_answer(option, question):
     st.rerun()
 
 def display_question():
-    """Render current question and handle answers"""
     # Add session state validation
     required_keys = ['selected', 'questions', 'current_question', 'score']
     for key in required_keys:
@@ -340,7 +339,6 @@ def display_question():
                 restart_quiz()
             return
     
-    """Render current question and handle answers"""
     if st.session_state.current_question >= len(st.session_state.questions):
         result = {
             'score': st.session_state.score,
@@ -532,12 +530,11 @@ def show_minimal_analytics():
             # Update performance insights
             st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
             col11, col12 = st.columns(2)
-            col21 = st.columns(1)
-            col31 = st.columns(1)
+            col21, col22 = st.columns(2)
             col11.metric("Total Quizzes", total_quizzes)
             col12.metric("Total Questions", total_questions)
             col21.metric("Average Score", f"{avg_score:.1f}%")
-            col31.metric("Total Time Spent", time_str)
+            col22.metric("Total Time Spent", time_str)
             
             # Section performance
             st.subheader("Section Performance")
@@ -612,17 +609,15 @@ def main():
         """
         <style>
         .footer {
-            position: relative;  # Changed from fixed
+            position: fixed;
             left: 0;
-            bottom: auto;       # Remove fixed positioning
+            bottom: 0;
             width: 100%;
             text-align: center;
             color: #666;
             padding: 10px;
-            margin-top: 2rem;  # Add margin above footer
-            z-index: 1;        # Lower than content z-index
-        }
-        
+            z-index: 1000;
+        }        
         /* Add padding to prevent content overlap */
         .main .block-container {
             padding-bottom: 2rem;
