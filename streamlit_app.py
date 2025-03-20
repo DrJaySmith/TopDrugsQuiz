@@ -510,11 +510,12 @@ def show_minimal_analytics():
             # Display metrics
             # Update performance insights
             st.subheader("Performance Insights")
-            col1, col2, col3, col4 = st.columns(4)
-            col1.metric("Total Quizzes", total_quizzes)
-            col2.metric("Total Questions", total_questions)
-            col3.metric("Average Score", f"{avg_score:.1f}%")
-            col4.metric("Total Time", time_str)
+            col11, col12 = st.columns(2)
+            col21, col22 = st.columns(2)
+            col11.metric("Total Quizzes", total_quizzes)
+            col12.metric("Total Questions", total_questions)
+            col21.metric("Average Score", f"{avg_score:.1f}%")
+            col22.metric("Total Time Spent", time_str)
             
             # Section performance
             st.subheader("Section Performance")
@@ -524,7 +525,7 @@ def show_minimal_analytics():
                 
             if section_counts:
                 df_sections = pd.DataFrame(
-                    section_counts.most_10(),
+                    section_counts.most_common(10),  # ✅ Correct
                     columns=["Section", "Attempts"]
                 )
                 st.bar_chart(df_sections.set_index("Section"))
