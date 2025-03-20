@@ -503,7 +503,7 @@ def show_minimal_analytics():
             # Pluralization handling
             hours_label = "hour" if hours == 1 else "hours"
             minutes_label = "minute" if minutes == 1 else "minutes"
-            time_str = f"{hours} {hours_label}, {minutes} {minutes_label}" if hours > 0 else f"{minutes} {minutes_label}"
+            time_str = f"{hours} {hours_label}\n {minutes} {minutes_label}" if hours >= 0 else f"{minutes} {minutes_label}"
 
             # Add this in your show_minimal_analytics() function before the metrics
             st.markdown("""
