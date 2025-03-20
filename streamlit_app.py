@@ -32,6 +32,7 @@ def initialize_session():
         'show_answer': False,
         'current_drug': None,
         'selected_answer': None,
+        'analytics_updated': False,  # Add this line
         'quiz_started': False  # Add this flag
     })
 
@@ -156,7 +157,7 @@ def initialize_quiz():
             options = get_brand_options(drugs, drug, num_choices)
             question_pool.append({
                 'type': 'generic_to_brand',
-                'question': f"Brand names for {drug['generic_name']}?",
+                'question': f"What is the brand names for {drug['generic_name']}?",
                 'answer': drug['brand_names'],
                 'drug': drug,
                 'options': options
@@ -166,7 +167,7 @@ def initialize_quiz():
             for brand in drug['brand_names']:
                 question_pool.append({
                     'type': 'brand_to_generic',
-                    'question': f"Generic name for {brand}?",
+                    'question': f"What is the generic name for {brand}?",
                     'answer': [drug['generic_name']],
                     'drug': drug,
                     'options': get_generic_options(drugs, drug, num_choices)
@@ -175,7 +176,7 @@ def initialize_quiz():
         if "Generic to Class" in st.session_state.selected['quiz_types']:
             question_pool.append({
                 'type': 'generic_to_class',
-                'question': f"Class of {drug['generic_name']}?",
+                'question': f"What is the drug class of {drug['generic_name']}?",
                 'answer': [drug['drug_class']],
                 'drug': drug,
                 'options': get_class_options(drugs, drug, num_choices)
@@ -186,7 +187,7 @@ def initialize_quiz():
             for brand in drug['brand_names']:
                 question_pool.append({
                     'type': 'brand_to_class',
-                    'question': f"Class of {brand}?",
+                    'question': f"What is the drug class of {brand}?",
                     'answer': [drug['drug_class']],
                     'drug': drug,
                     'options': get_class_options(drugs, drug, num_choices)
@@ -335,15 +336,18 @@ def display_question():
             return
     
     if st.session_state.current_question >= len(st.session_state.questions):
-        result = {
-            'score': st.session_state.score,
-            'total': len(st.session_state.questions),
-            'dataset': st.session_state.selected['dataset'],
-            'sections': st.session_state.selected['sections'],
-            'question_types': st.session_state.selected['quiz_types'],
-            'time_taken': round(time.time() - st.session_state.quiz_start_time, 1)
-        }
-        update_analytics(result)
+        # Only update analytics if not already done for this quiz
+        if not st.session_state.get('analytics_updated'):
+            result = {
+                'score': st.session_state.score,
+                'total': len(st.session_state.questions),
+                'dataset': st.session_state.selected['dataset'],
+                'sections': st.session_state.selected['sections'],
+                'question_types': st.session_state.selected['quiz_types'],
+                'time_taken': round(time.time() - st.session_state.quiz_start_time, 1)
+            }
+            update_analytics(result)
+            st.session_state.analytics_updated = True  # Flag to prevent duplicates
 
         st.success(f"Final Score: {st.session_state.score}/{len(st.session_state.questions)}")
         if st.button("🔄 Take Quiz Again"):
@@ -416,7 +420,7 @@ def update_analytics(result):
             "question_types": result['question_types'],
             "score": result['score'],
             "total": result['total'],
-            "time_taken": result['time_taken'],
+            "time_taken": result['time_taken']
         }
 
         analytics["quizzes"].append(quiz_data)
@@ -467,7 +471,7 @@ def show_minimal_analytics():
             correct_answers = sum(q['score'] for q in filtered)
             avg_score = (correct_answers / total_questions) * 100 if total_questions else 0
             
-                        # Calculate total time
+            # Calculate total time
             total_seconds = sum(q['time_taken'] for q in filtered)
             
             # Convert to hours and minutes with proper rounding
@@ -526,16 +530,6 @@ def main():
     if 'selected' not in st.session_state:
         initialize_session()
     
-        # Only show title before quiz starts
-    if not st.session_state.get('quiz_started'):
-        st.markdown(
-            """
-            <div style="text-align: center;">
-                <h1>Top Drugs Quiz</h1>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
 
     
     # Add signature
@@ -543,11 +537,11 @@ def main():
     st.markdown(
         """
         <style>
-        .footer {
+        .header {
             position: fixed;
             left: 0;
-            bottom: 0;
-            width: 20%;
+            top: 0;
+            width: 100%;
             text-align: center;
             color: #666;
             padding: 10px;
@@ -565,6 +559,17 @@ def main():
         """,
         unsafe_allow_html=True
     )
+
+    # Only show title before quiz starts
+    if not st.session_state.get('quiz_started'):
+        st.markdown(
+            """
+            <div style="text-align: center;">
+                <h1>Top Drugs Quiz</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
     if not st.session_state.get('quiz_started'):
         # Show configuration in sidebar

@@ -534,9 +534,9 @@
         {
           "generic_name": "Thyroid",
           "brand_names": [
-            "Armour"
+            "Armour Thyroid"
           ],
-          "drug_class": "Thyroid",
+          "drug_class": "Thyroid supplement",
           "conditions": [
             "Hypothyroidism"
           ],
