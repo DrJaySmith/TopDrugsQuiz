@@ -363,7 +363,14 @@ def main():
     if 'selected' not in st.session_state:
         initialize_session()
     
-    st.title("Top Drugs Quiz")
+    st.markdown(
+        """
+        <div style="text-align: center;">
+            <h1>Top Drugs Quiz</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     
     # Add signature
         # Add signature with better positioning
