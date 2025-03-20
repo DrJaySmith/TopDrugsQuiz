@@ -3,17 +3,12 @@ import json
 import random
 from pathlib import Path
 # Add to imports
-from collections import Counter, defaultdict
-import pandas as pd
 import os
 import time
-import uuid
 from datetime import datetime
 
 # Add analytics constants
 ANALYTICS_FILE = "data/enhanced_analytics.json"
-ANALYTICS_LOCK = "data/analytics.lock"
-DATA_DIR = "data"
 
 # Initialize session state
 def initialize_session():
@@ -56,16 +51,12 @@ def load_drugs(dataset):
         with open(filename, 'r') as f:
             data = json.load(f)
             
-        # Modified to include section number with each drug
-        loaded_drugs = []
-        for section in data:
-            if section['section_number'] in st.session_state.selected['sections']:
-                for drug in section['drugs']:
-                    # Add section number to drug data
-                    drug_with_section = drug.copy()
-                    drug_with_section['section_number'] = section['section_number']
-                    loaded_drugs.append(drug_with_section)
-        return loaded_drugs
+        return [
+            drug
+            for section in data
+            if section['section_number'] in st.session_state.selected['sections']
+            for drug in section['drugs']
+        ]
                 
     except FileNotFoundError:
         st.error(f"Data file not found: {filename}")
@@ -163,14 +154,13 @@ def initialize_quiz():
     for drug in drugs:
         if "Generic to Brand" in st.session_state.selected['quiz_types']:
             options = get_brand_options(drugs, drug, num_choices)
-            if len(options) == num_choices:
-                question_pool.append({
-                    'type': 'generic_to_brand',
-                    'question': f"Brand names for {drug['generic_name']}?",
-                    'answer': drug['brand_names'],
-                    'drug': drug,
-                    'options': options
-                })
+            question_pool.append({
+                'type': 'generic_to_brand',
+                'question': f"Brand names for {drug['generic_name']}?",
+                'answer': drug['brand_names'],
+                'drug': drug,
+                'options': options
+            })
 
         if "Brand to Generic" in st.session_state.selected['quiz_types']:
             for brand in drug['brand_names']:
@@ -206,28 +196,26 @@ def initialize_quiz():
         if "Generic to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
             correct_answer = random.choice(drug['conditions'])
             options = get_indication_options(drugs, correct_answer, num_choices)
-            if len(options) == num_choices:  # Changed from 4 to num_choices
-                question_pool.append({
-                    'type': 'generic_to_indication',
-                    'question': f"Which FDA indication applies to {drug['generic_name']}?",
-                    'answer': [correct_answer],
-                    'drug': drug,
-                    'options': options
-                })
+            question_pool.append({
+                'type': 'generic_to_indication',
+                'question': f"Which FDA indication applies to {drug['generic_name']}?",
+                'answer': [correct_answer],
+                'drug': drug,
+                'options': options
+            })
 
         # Brand to Indication (updated)
         if "Brand to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
             for brand in drug['brand_names']:
                 correct_answer = random.choice(drug['conditions'])
                 options = get_indication_options(drugs, correct_answer, num_choices)
-                if len(options) == num_choices:  # Changed from 4 to num_choices
-                    question_pool.append({
-                        'type': 'brand_to_indication',
-                        'question': f"Which FDA indication applies to {brand}?",
-                        'answer': [correct_answer],
-                        'drug': drug,
-                        'options': options
-                    })
+                question_pool.append({
+                    'type': 'brand_to_indication',
+                    'question': f"Which FDA indication applies to {brand}?",
+                    'answer': [correct_answer],
+                    'drug': drug,
+                    'options': options
+                })
         # Add shuffle and session state update
     random.shuffle(question_pool)
     st.session_state.update({
@@ -317,8 +305,6 @@ def get_indication_options(drugs, correct_answer, num_choices):
     return options[:num_choices]
 
 def handle_answer(option, question):
-    # Track time per question
-    question['time_taken'] = time.time() - question.get('start_time', time.time())
     
     st.session_state.update({
         'selected_answer': option,
@@ -431,15 +417,6 @@ def update_analytics(result):
             "score": result['score'],
             "total": result['total'],
             "time_taken": result['time_taken'],
-            "questions": [
-                {
-                    "section": q['drug']['section_number'],
-                    "type": q['type'],
-                    "correct": st.session_state.selected_answer in q['answer'],
-                    "time_per_question": q.get('time_taken', 0)
-                }
-                for q in st.session_state.questions
-            ]
         }
 
         analytics["quizzes"].append(quiz_data)
@@ -514,7 +491,7 @@ def show_minimal_analytics():
 
             /* For metric values */
             [data-testid="stMetricValue"] {
-                font-size: 12px !important;
+                font-size: 14px !important;
             }
 
             /* For metric labels */
@@ -533,41 +510,6 @@ def show_minimal_analytics():
             col12.metric("Total Questions", total_questions)
             col21.metric("Average Score", f"{avg_score:.1f}%")
             col22.metric("Total Time Spent", time_str)
-            
-            # Extract all questions across all quizzes
-            all_questions = []
-            for quiz in data["quizzes"]:
-                for q in quiz.get("questions", []):
-                    all_questions.append(q)
-
-            # Section Performance
-            st.subheader("Section Performance")
-            section_data = pd.DataFrame(all_questions)
-            if not section_data.empty:
-                section_stats = section_data.groupby('section')['correct'].agg(
-                    ['mean', 'count']
-                ).reset_index()
-                section_stats.columns = ['Section', 'Average Score', 'Attempts']
-                st.bar_chart(section_stats.set_index('Section')['Average Score'])
-
-            # Question Type Analysis
-            st.subheader("Question Type Accuracy")
-            type_data = pd.DataFrame(all_questions)
-            if not type_data.empty:
-                type_stats = type_data.groupby('type')['correct'].mean().reset_index()
-                type_stats.columns = ['Question Type', 'Accuracy']
-                st.bar_chart(type_stats.set_index('Question Type'))
-
-            # Time Analysis
-            st.subheader("Time vs Accuracy")
-            time_data = pd.DataFrame(all_questions)
-            if not time_data.empty:
-                time_data['time_bin'] = pd.cut(time_data['time_per_question'],
-                                             bins=5,
-                                             labels=['0-20s', '20-40s', '40-60s', '60-80s', '80+'])
-                time_stats = time_data.groupby('time_bin')['correct'].mean().reset_index()
-                st.line_chart(time_stats.set_index('time_bin'))
-                
         except json.JSONDecodeError:
             st.error("Corrupted analytics data. Resetting...")
             # Create empty valid structure
@@ -605,7 +547,7 @@ def main():
             position: fixed;
             left: 0;
             bottom: 0;
-            width: 100%;
+            width: 20%;
             text-align: center;
             color: #666;
             padding: 10px;
