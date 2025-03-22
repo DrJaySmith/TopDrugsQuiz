@@ -13,7 +13,7 @@
           "drug_class": "Selective \u03b22-adrenergic agonist",
           "conditions": [
             "Asthma",
-            "Exercise-induced asthma"
+            "Exercise-induced bronchoconstriction (EIB)"
           ],
           "section": 1
         },
@@ -25,7 +25,7 @@
           "drug_class": "Leukotriene receptor antagonist",
           "conditions": [
             "Asthma",
-            "Exercise-induced bronchoconstriction",
+            "Exercise-induced bronchoconstriction (EIB)",
             "Seasonal allergic rhinitis"
           ],
           "section": 1
@@ -320,8 +320,8 @@
           ],
           "drug_class": "Central cholinesterase inhibitor",
           "conditions": [
-            "Alzheimer disease",
-            "dementia"
+            "Alzheimer\u2019s disease",
+            "Dementia"
           ],
           "section": 3
         },
@@ -332,7 +332,7 @@
           ],
           "drug_class": "N-methyl-d-aspartate receptor antagonist",
           "conditions": [
-            "Alzheimer disease"
+            "Alzheimer\u2019s disease"
           ],
           "section": 3
         }
@@ -563,11 +563,9 @@
           ],
           "drug_class": "Bisphosphonate",
           "conditions": [
-            "Postmenopausal osteoporosis",
-            "prophylaxis or treatment",
-            "Osteoporosis",
-            "treatment in men",
-            "Glucocorticoid-induced osteoporosis",
+            "Prophylaxis or treatment of postmenopausal osteoporosis",
+            "Osteoporosis in men",
+            "Osteoporosis due to glucocorticoids",
             "Paget disease"
           ],
           "section": 5
@@ -579,8 +577,7 @@
           ],
           "drug_class": "Bisphosphonate",
           "conditions": [
-            "Postmenopausal osteoporosis",
-            "Prevention of postmenopausal osteoporosis"
+            "Prophylaxis or treatment of postmenopausal osteoporosis"
           ],
           "section": 5
         },
@@ -592,7 +589,7 @@
           ],
           "drug_class": "Bisphosphonate",
           "conditions": [
-            "Postmenopausal osteoporosis",
+            "Prophylaxis or treatment of postmenopausal osteoporosis",
             "Paget disease",
             "Osteoporosis due to glucocorticoids",
             "Osteoporosis in men"
@@ -1349,7 +1346,7 @@
             "Bipolar disorder",
             "Schizophrenia",
             "Depression",
-            "Tourette\u2019s disorder"
+            "Tourette\u2019s disorder (syndrome)"
           ],
           "section": 10
         },
@@ -1376,7 +1373,7 @@
             "Irritability associated with autism spectrum disorder",
             "Bipolar disorder",
             "Schizophrenia",
-            "Tourette syndrome"
+            "Tourette\u2019s disorder (syndrome)"
           ],
           "section": 10
         },

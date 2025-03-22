@@ -149,24 +149,33 @@ def initialize_quiz():
     
     for drug in drugs:
         if "Generic to Brand" in st.session_state.selected['quiz_types']:
-            options = get_brand_options(drugs, drug, num_choices)
+            generic = drug['generic_name']
+            target_brands = drug['brand_names']
+            target_brand = random.choice(target_brands)
+            # Get all brands EXCEPT current drug's brands
+            other_brands = list({
+                b for d in drugs 
+                for b in d['brand_names'] 
+                if d != drug and b not in target_brands
+            })
+            
+            options = get_brand_options(target_brand, other_brands, num_choices)  # Modified function call
             question_pool.append({
                 'type': 'generic_to_brand',
-                'question': f"What is the brand names for {drug['generic_name']}?",
-                'answer': drug['brand_names'],
+                'question': f"What are the brand names for {generic}?",
+                'answer': target_brands,
                 'drug': drug,
                 'options': options
             })
         if "Brand to Generic" in st.session_state.selected['quiz_types']:
-            for brand in drug['brand_names']:
-                question_pool.append({
-                    'type': 'brand_to_generic',
-                    'question': f"What is the generic name for {brand}?",
-                    'answer': [drug['generic_name']],
-                    'drug': drug,
-                    'options': get_generic_options(drugs, drug, num_choices)
-                })
-                # Generic to Class
+            question_pool.append({
+                'type': 'brand_to_generic',
+                'question': f"What is the generic name for {random.choice(drug['brand_names'])}?",
+                'answer': [drug['generic_name']],
+                'drug': drug,
+                'options': get_generic_options(drugs, drug, num_choices)
+            })
+        # Generic to Class
         if "Generic to Class" in st.session_state.selected['quiz_types']:
             question_pool.append({
                 'type': 'generic_to_class',
@@ -178,39 +187,54 @@ def initialize_quiz():
         
         # Brand to Class
         if "Brand to Class" in st.session_state.selected['quiz_types']:
-            for brand in drug['brand_names']:
-                question_pool.append({
-                    'type': 'brand_to_class',
-                    'question': f"What is the drug class of {brand}?",
-                    'answer': [drug['drug_class']],
-                    'drug': drug,
-                    'options': get_class_options(drugs, drug, num_choices)
-                })
+            question_pool.append({
+                'type': 'brand_to_class',
+                'question': f"What is the drug class of {random.choice(drug['brand_names'])}?",
+                'answer': [drug['drug_class']],
+                'drug': drug,
+                'options': get_class_options(drugs, drug, num_choices)
+            })
         
         # Generic to Indication (updated)
         if "Generic to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
-            correct_answer = random.choice(drug['conditions'])
-            options = get_indication_options(drugs, correct_answer, num_choices)
+            generic = drug['generic_name']
+            target_indications = drug['conditions']
+            target_indication = random.choice(target_indications)
+            # Get all brands EXCEPT current drug's brands
+            other_indications = list({
+                cond for d in drugs 
+                for cond in d['conditions'] 
+                if d != drug and cond not in target_indications
+            })
+            
+            options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
             question_pool.append({
                 'type': 'generic_to_indication',
-                'question': f"Which FDA indication applies to {drug['generic_name']}?",
-                'answer': [correct_answer],
+                'question': f"Which FDA approved indication applies to {generic}?",
+                'answer': target_indications,
                 'drug': drug,
                 'options': options
             })
         # Brand to Indication (updated)
         if "Brand to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
-            for brand in drug['brand_names']:
-                correct_answer = random.choice(drug['conditions'])
-                options = get_indication_options(drugs, correct_answer, num_choices)
-                question_pool.append({
-                    'type': 'brand_to_indication',
-                    'question': f"Which FDA indication applies to {brand}?",
-                    'answer': [correct_answer],
-                    'drug': drug,
-                    'options': options
-                })
-        # Add shuffle and session state update
+            target_brand = random.choice(drug['brand_names'])
+            target_indications = drug['conditions']
+            target_indication = random.choice(target_indications)
+            # Get all brands EXCEPT current drug's brands
+            other_indications = list({
+                cond for d in drugs 
+                for cond in d['conditions'] 
+                if d != drug and cond not in target_indications
+            })
+            
+            options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
+            question_pool.append({
+                'type': 'brand_to_indication',
+                'question': f"Which FDA approved indication applies to {target_brand}?",
+                'answer': target_indications,
+                'drug': drug,
+                'options': options
+            })    # Add shuffle and session state update
     random.shuffle(question_pool)
     st.session_state.update({
         'questions': question_pool[:st.session_state.selected['num_questions']],
@@ -218,45 +242,38 @@ def initialize_quiz():
         'score': 0,
         'quiz_start_time': time.time()  # 👈 Add this line
     })
-def get_brand_options(drugs, current_drug, num_choices):
-    """Generate brand name options with safe sampling"""
-    correct = current_drug['brand_names']
-    others = list({
-        b for d in drugs
-        for b in d['brand_names']
-        if d != current_drug and b not in correct
-    })
-    
-    remaining = max(num_choices - len(correct), 0)
+
+
+def get_brand_options(answer, other_brands, num_choices):
+    """Generate brand name options from pre-filtered list"""
+    needed_incorrect = num_choices - 1
     sampled = []
     
-    if others:
-        sample_size = min(remaining, len(others))
-        sampled = random.sample(others, sample_size)
-        remaining -= sample_size
-        
-        if remaining > 0:
-            sampled += random.choices(others, k=remaining)
-    else:
-        sampled = ["Unknown"] * remaining
+    if other_brands:
+        sampled = random.sample(other_brands, min(needed_incorrect, len(other_brands)))
     
-    options = correct + sampled
+    sampled += ['Unknown'] * (needed_incorrect - len(sampled))
+    
+    options = sampled + [answer]
     random.shuffle(options)
     return options[:num_choices]
+    
+
 def get_generic_options(drugs, current_drug, num_choices):
     """Generate generic name options with dynamic choice count"""
     others = [d['generic_name'] for d in drugs if d != current_drug]
-    
     try:
         # Get required number of wrong answers (total choices - 1 correct)
         wrong_answers = random.sample(others, num_choices - 1)
+
     except ValueError:
         # If not enough unique options, use random choices with fallback
         wrong_answers = random.choices(others, k=num_choices - 1) if others else ["Unknown"] * (num_choices - 1)
-    
     options = [current_drug['generic_name']] + wrong_answers
     random.shuffle(options)
     return options[:num_choices]
+
+
 def get_class_options(drugs, current_drug, num_choices):
     """Generate drug class options with dynamic choice count"""
     others = list({d['drug_class'] for d in drugs if d != current_drug})
@@ -270,28 +287,22 @@ def get_class_options(drugs, current_drug, num_choices):
     options = [current_drug['drug_class']] + wrong_answers
     random.shuffle(options)
     return options[:num_choices]
-def get_indication_options(drugs, correct_answer, num_choices):
-    """Generate indication options with dynamic choice count"""
-    others = list({
-        cond for drug in drugs
-        for cond in drug['conditions']
-        if cond != correct_answer
-    })
-    
-    # Calculate needed incorrect answers
+
+def get_indication_options(answer, other_conditions, num_choices):
+    """Generate indication options from pre-filtered list"""
     needed_incorrect = num_choices - 1
+    sampled = []
     
-    try:
-        incorrect = random.sample(others, needed_incorrect)
-    except ValueError:
-        # Get as many unique as possible, then fill with duplicates/unknowns
-        unique_incorrect = random.sample(others, min(len(others), needed_incorrect)) if others else []
-        remaining = needed_incorrect - len(unique_incorrect)
-        incorrect = unique_incorrect + random.choices(others, k=remaining) if others else ["Unknown"] * remaining
+    if other_conditions:
+        sampled = random.sample(other_conditions, min(needed_incorrect, len(other_conditions)))
     
-    options = [correct_answer] + incorrect
+    sampled += ['Unknown'] * (needed_incorrect - len(sampled))
+    
+    options = sampled + [answer]
     random.shuffle(options)
     return options[:num_choices]
+
+
 def handle_answer(option, question):
     
     st.session_state.update({
@@ -301,6 +312,8 @@ def handle_answer(option, question):
     })
     st.session_state.score += 1 if option in question['answer'] else 0
     st.rerun()
+
+
 def display_question():
     # Add session state validation
     required_keys = ['selected', 'questions', 'current_question', 'score']
@@ -378,6 +391,7 @@ def display_question():
             st.session_state.current_question += 1
             st.session_state.show_answer = False
             st.rerun()
+
 def update_analytics(result):
     """Update analytics with detailed tracking"""
     try:
@@ -405,6 +419,9 @@ def update_analytics(result):
             json.dump(analytics, f)
     except Exception as e:
         st.error(f"Analytics update failed: {str(e)}")
+
+
+
 # Updated show_minimal_analytics function
 def show_minimal_analytics():
     """Enhanced analytics with filters"""
@@ -487,6 +504,8 @@ def show_minimal_analytics():
             st.rerun()
         except Exception as e:
             st.error(f"Error loading analytics: {str(e)}")
+
+
 def main():
     st.set_page_config(page_title="Drug Quiz", layout="wide")
     
