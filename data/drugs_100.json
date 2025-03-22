@@ -5,7 +5,10 @@
       {
         "generic_name": "Albuterol",
         "brand_names": [
-          "ProAir HFA"
+          "ProAir HFA", 
+          "ProAir Respiclick", 
+          "Proventil HFA", 
+          "Ventolin HFA"
         ],
         "drug_class": "Selective \u03b22-adrenergic agonist",
         "conditions": [
@@ -30,7 +33,8 @@
       {
         "generic_name": "Hydroxyzine",
         "brand_names": [
-          "Atarax"
+          "Atarax", 
+          "Vistaril"
         ],
         "drug_class": "1st generation antihistamine",
         "conditions": [
@@ -43,7 +47,8 @@
       {
         "generic_name": "Meclizine",
         "brand_names": [
-          "Antivert"
+          "Antivert", 
+          "Dramamine"
         ],
         "drug_class": "1st generation antihistamine",
         "conditions": [
@@ -79,7 +84,8 @@
       {
         "generic_name": "Olopatadine (eye)",
         "brand_names": [
-          "Patanol"
+          "Patanol", 
+          "Pataday"
         ],
         "drug_class": "2nd generation antihistamine",
         "conditions": [
@@ -90,7 +96,8 @@
       {
         "generic_name": "Epinephrine",
         "brand_names": [
-          "Auvi-Q"
+          "Auvi-Q", 
+          "EpiPen"
         ],
         "drug_class": "Anaphylaxis agent",
         "conditions": [
@@ -129,7 +136,8 @@
       {
         "generic_name": "Glipizide",
         "brand_names": [
-          "Glucotrol"
+          "Glucotrol", 
+          "Bydureon"
         ],
         "drug_class": "Sulfonylurea",
         "conditions": [
@@ -140,7 +148,8 @@
       {
         "generic_name": "Exenatide",
         "brand_names": [
-          "Byetta"
+          "Byetta", 
+          "Bydureon"
         ],
         "drug_class": "Glucagon-like peptide-1 receptor agonist",
         "conditions": [
@@ -173,7 +182,8 @@
       {
         "generic_name": "Insulin Aspart",
         "brand_names": [
-          "NovoLog"
+          "NovoLog", 
+          "Novolog FexPen"
         ],
         "drug_class": "Rapid-acting insulin",
         "conditions": [
@@ -234,7 +244,8 @@
       {
         "generic_name": "Hydrocodone and acetaminophen",
         "brand_names": [
-          "Lorcet"
+          "Lorcet", 
+          "Norco"
         ],
         "drug_class": "Opioid analgesic [C-II]",
         "conditions": [
@@ -465,7 +476,8 @@
       {
         "generic_name": "Sildenafil",
         "brand_names": [
-          "Viagra"
+          "Viagra", 
+          "Revatio"
         ],
         "drug_class": "Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)",
         "conditions": [
@@ -477,7 +489,8 @@
       {
         "generic_name": "Tadalafil",
         "brand_names": [
-          "Adcirca"
+          "Adcirca", 
+          "Cialis"
         ],
         "drug_class": "Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)",
         "conditions": [
@@ -501,7 +514,8 @@
       {
         "generic_name": "Tolterodine",
         "brand_names": [
-          "Detrol"
+          "Detrol", 
+          "Detrol LA"
         ],
         "drug_class": "Antimuscarinic",
         "conditions": [
@@ -545,7 +559,8 @@
       {
         "generic_name": "Alendronate",
         "brand_names": [
-          "Fosamax"
+          "Fosamax", 
+          "Binosto"
         ],
         "drug_class": "Bisphosphonate",
         "conditions": [
@@ -573,7 +588,8 @@
       {
         "generic_name": "Risedronate",
         "brand_names": [
-          "Actonel"
+          "Actonel", 
+          "Atelvia"
         ],
         "drug_class": "Bisphosphonate",
         "conditions": [
@@ -604,7 +620,8 @@
       {
         "generic_name": "Lisinopril",
         "brand_names": [
-          "Prinivil"
+          "Prinivil", 
+          "Zestril"
         ],
         "drug_class": "Angiotensin converting enzyme (ACE) inhibitor",
         "conditions": [
@@ -667,7 +684,8 @@
       {
         "generic_name": "Metoprolol",
         "brand_names": [
-          "Lopressor"
+          "Lopressor", 
+          "Toprol XL"
         ],
         "drug_class": "\u03b2-Adrenergic Blocker, Cardioselective",
         "conditions": [
@@ -743,7 +761,8 @@
       {
         "generic_name": "Fenofibrate",
         "brand_names": [
-          "Lofibra"
+          "Lofibra", 
+          "Tricor"
         ],
         "drug_class": "Antihyperlipidemic",
         "conditions": [
@@ -771,7 +790,8 @@
       {
         "generic_name": "Azithromycin",
         "brand_names": [
-          "Zithromax"
+          "Zithromax", 
+          "Z-Pak"
         ],
         "drug_class": "Macrolide antibiotic",
         "conditions": [
@@ -797,7 +817,8 @@
       {
         "generic_name": "Ciprofloxacin (oral)",
         "brand_names": [
-          "Cipro"
+          "Cipro", 
+          "Cipro XR"
         ],
         "drug_class": "Fluoroquinolone antibiotic",
         "conditions": [
@@ -810,7 +831,8 @@
       {
         "generic_name": "Ciprofloxacin (ear)",
         "brand_names": [
-          "Cetraxal"
+          "Cetraxal", 
+          "Otiprio"
         ],
         "drug_class": "Fluoroquinolone antibiotic",
         "conditions": [
@@ -1010,7 +1032,8 @@
       {
         "generic_name": "Chlorhexidine Gluconate",
         "brand_names": [
-          "Peridex"
+          "Peridex", 
+          "Hibiclens"
         ],
         "drug_class": "Antibacterial Cleansing Agent",
         "conditions": [
@@ -1033,7 +1056,8 @@
       {
         "generic_name": "Nitrofurantoin",
         "brand_names": [
-          "Macrodantin"
+          "Macrodantin", 
+          "Macrobid"
         ],
         "drug_class": "Nitrofuran Antibiotic",
         "conditions": [
@@ -1044,7 +1068,8 @@
       {
         "generic_name": "Trimethoprim-sulfamethoxazole",
         "brand_names": [
-          "Bactrim"
+          "Bactrim", 
+          "Septra"
         ],
         "drug_class": "Sulfonamide Antibiotic",
         "conditions": [
@@ -1091,7 +1116,9 @@
       {
         "generic_name": "Nystatin topical",
         "brand_names": [
-          "Mycostatin"
+          "Mycostatin", 
+          "Nyamyc", 
+          "Nystop"
         ],
         "drug_class": "Polyene Antifungal",
         "conditions": [
@@ -1173,7 +1200,8 @@
       {
         "generic_name": "Paroxetine",
         "brand_names": [
-          "Paxil"
+          "Paxil", 
+          "Paxil CR"
         ],
         "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
         "conditions": [
@@ -1203,7 +1231,8 @@
       {
         "generic_name": "Fluoxetine",
         "brand_names": [
-          "Prozac"
+          "Prozac", 
+          "Sarafem"
         ],
         "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
         "conditions": [
@@ -1244,7 +1273,8 @@
       {
         "generic_name": "Venlafaxine",
         "brand_names": [
-          "Effexor"
+          "Effexor", 
+          "Effexor XR"
         ],
         "drug_class": "Serotonin/norepinephrine reuptake inhibitor (SNRI)",
         "conditions": [
@@ -1258,7 +1288,9 @@
       {
         "generic_name": "Lithium",
         "brand_names": [
-          "Eskalith"
+          "Eskalith", 
+          "Eskalith-CR", 
+          "Lithobid"
         ],
         "drug_class": "Antimanic",
         "conditions": [
@@ -1280,7 +1312,8 @@
       {
         "generic_name": "Bupropion",
         "brand_names": [
-          "Wellbutrin"
+          "Wellbutrin", 
+          "Zyban"
         ],
         "drug_class": "Monocyclic antidepressant",
         "conditions": [
@@ -1351,7 +1384,8 @@
       {
         "generic_name": "Quetiapine",
         "brand_names": [
-          "Seroquel"
+          "Seroquel", 
+          "Seroquel XR"
         ],
         "drug_class": "2nd generation (atypical) antipsychotic",
         "conditions": [
