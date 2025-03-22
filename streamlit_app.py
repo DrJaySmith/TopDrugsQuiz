@@ -3,9 +3,10 @@ import json
 import random
 from pathlib import Path
 # Add to imports
-import os
+# import os
 import time
 from datetime import datetime
+
 
 # Add analytics constants
 ANALYTICS_FILE = "data/enhanced_analytics.json"
@@ -36,6 +37,7 @@ def initialize_session():
         'quiz_started': False  # Add this flag
     })
 
+
 def restart_quiz():
     st.session_state.clear()
     initialize_session()
@@ -62,7 +64,7 @@ def load_drugs(dataset):
     except FileNotFoundError:
         st.error(f"Data file not found: {filename}")
         return []
-
+    
 
 def quiz_setup():
     """Quiz configuration sidebar"""
@@ -74,7 +76,6 @@ def quiz_setup():
             min_value=5, max_value=100, value=20,
             key='num_questions'
         )
-
         # New answer choices slider
         num_choices = st.slider(
             "Number of Answer Choices:",
@@ -162,7 +163,6 @@ def initialize_quiz():
                 'drug': drug,
                 'options': options
             })
-
         if "Brand to Generic" in st.session_state.selected['quiz_types']:
             for brand in drug['brand_names']:
                 question_pool.append({
@@ -204,7 +204,6 @@ def initialize_quiz():
                 'drug': drug,
                 'options': options
             })
-
         # Brand to Indication (updated)
         if "Brand to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
             for brand in drug['brand_names']:
@@ -253,6 +252,7 @@ def get_brand_options(drugs, current_drug, num_choices):
     random.shuffle(options)
     return options[:num_choices]
 
+
 def get_generic_options(drugs, current_drug, num_choices):
     """Generate generic name options with dynamic choice count"""
     others = [d['generic_name'] for d in drugs if d != current_drug]
@@ -268,6 +268,7 @@ def get_generic_options(drugs, current_drug, num_choices):
     random.shuffle(options)
     return options[:num_choices]
 
+
 def get_class_options(drugs, current_drug, num_choices):
     """Generate drug class options with dynamic choice count"""
     others = list({d['drug_class'] for d in drugs if d != current_drug})
@@ -281,6 +282,7 @@ def get_class_options(drugs, current_drug, num_choices):
     options = [current_drug['drug_class']] + wrong_answers
     random.shuffle(options)
     return options[:num_choices]
+
 
 def get_indication_options(drugs, correct_answer, num_choices):
     """Generate indication options with dynamic choice count"""
@@ -305,6 +307,7 @@ def get_indication_options(drugs, correct_answer, num_choices):
     random.shuffle(options)
     return options[:num_choices]
 
+
 def handle_answer(option, question):
     
     st.session_state.update({
@@ -315,6 +318,7 @@ def handle_answer(option, question):
     st.session_state.score += 1 if option in question['answer'] else 0
     st.rerun()
 
+
 def display_question():
     # Add session state validation
     required_keys = ['selected', 'questions', 'current_question', 'score']
@@ -324,7 +328,6 @@ def display_question():
             if st.button("🔄 Restart Quiz"):
                 restart_quiz()
             return
-
     # Validate selected configuration
     selected = st.session_state.selected
     required_config = ['dataset', 'sections', 'quiz_types']
@@ -348,24 +351,20 @@ def display_question():
             }
             update_analytics(result)
             st.session_state.analytics_updated = True  # Flag to prevent duplicates
-
         st.success(f"Final Score: {st.session_state.score}/{len(st.session_state.questions)}")
         if st.button("🔄 Take Quiz Again"):
             initialize_session()
             st.rerun()
         return
-
     question = st.session_state.questions[st.session_state.current_question]
     question['start_time'] = time.time()  # Track question start time
     
     st.subheader(f"Question {st.session_state.current_question + 1}")
     st.write(f"**{question['question']}**")
-
     if not st.session_state.show_answer:
         num_cols = 2
         cols = st.columns(num_cols, gap="small")
         chunk_size = (len(question['options']) + num_cols - 1) // num_cols
-
         for col_idx, col in enumerate(cols):
             with col:
                 start_idx = col_idx * chunk_size
@@ -398,12 +397,12 @@ def display_question():
             st.session_state.show_answer = False
             st.rerun()
 
+
 def update_analytics(result):
     """Update analytics with detailed tracking"""
     try:
         Path("data").mkdir(exist_ok=True)
         analytics = {"quizzes": []}
-
         # Handle existing data
         if os.path.exists(ANALYTICS_FILE):
             try:
@@ -411,7 +410,6 @@ def update_analytics(result):
                     analytics = json.load(f)
             except (json.JSONDecodeError, UnicodeDecodeError):
                 analytics = {"quizzes": []}
-
         # Add detailed question tracking
         quiz_data = {
             "timestamp": datetime.now().isoformat(),
@@ -422,14 +420,12 @@ def update_analytics(result):
             "total": result['total'],
             "time_taken": result['time_taken']
         }
-
         analytics["quizzes"].append(quiz_data)
-
         with open(ANALYTICS_FILE, "w") as f:
             json.dump(analytics, f)
-
     except Exception as e:
         st.error(f"Analytics update failed: {str(e)}")
+
 
 # Updated show_minimal_analytics function
 def show_minimal_analytics():
@@ -440,14 +436,12 @@ def show_minimal_analytics():
             if not os.path.exists(ANALYTICS_FILE) or os.stat(ANALYTICS_FILE).st_size == 0:
                 st.warning("No analytics data yet")
                 return
-
             with open(ANALYTICS_FILE, "r") as f:
                 data = json.load(f)
                 
             if not data.get("quizzes"):
                 st.warning("No analytics data yet")
                 return
-
             # Filters
             st.subheader("Filters")
             
@@ -455,8 +449,6 @@ def show_minimal_analytics():
             dataset = st.radio("Dataset:", 
                              ["All", "100", "200", "Both"],
                              horizontal=True)
-
-
             # Process data
             filtered = [q for q in data["quizzes"] if (dataset == "All" or q['dataset'] == dataset)]
             
@@ -464,7 +456,6 @@ def show_minimal_analytics():
                 st.warning("No data matching filters")
                 return
             
-
             # Calculate metrics
             total_quizzes = len(filtered)
             total_questions = sum(q['total'] for q in filtered)
@@ -483,7 +474,6 @@ def show_minimal_analytics():
             hours_label = "hour" if hours == 1 else "hours"
             minutes_label = "minute" if minutes == 1 else "minutes"
             time_str = f"{hours} {hours_label}, {minutes} {minutes_label}"
-
             # Add this in your show_minimal_analytics() function before the metrics
             st.markdown("""
             <style>
@@ -492,19 +482,16 @@ def show_minimal_analytics():
                 color: #2c3e50 !important;
                 margin-bottom: 15px !important;
             }
-
             /* For metric values */
             [data-testid="stMetricValue"] {
                 font-size: 14px !important;
             }
-
             /* For metric labels */
             [data-testid="stMetricLabel"] {
                 font-size: 14px !important;
             }
             </style>
             """, unsafe_allow_html=True)
-
             # Display metrics
             # Update performance insights
             st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
@@ -530,7 +517,6 @@ def main():
     if 'selected' not in st.session_state:
         initialize_session()
     
-
     
     # Add signature
         # Add signature with better positioning
@@ -559,7 +545,6 @@ def main():
         """,
         unsafe_allow_html=True
     )
-
     # Only show title before quiz starts
     if not st.session_state.get('quiz_started'):
         st.markdown(
@@ -570,14 +555,11 @@ def main():
             """,
             unsafe_allow_html=True
         )
-
     if not st.session_state.get('quiz_started'):
         # Show configuration in sidebar
         quiz_setup()  # This now only contains the sidebar controls
-
         # Add analytics toggle to sidebar
         show_minimal_analytics()
-
         # Centered start button in main area
         _, center_col, _ = st.columns([1, 3, 1])
         with center_col:
@@ -602,6 +584,5 @@ def main():
             """, unsafe_allow_html=True)
     else:
         display_question()
-
 if __name__ == "__main__":
     main()
