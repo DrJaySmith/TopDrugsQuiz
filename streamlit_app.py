@@ -490,6 +490,7 @@ def show_minimal_analytics():
             # Display metrics
             # Update performance insights
             st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
+            st.markdown('(section in progress)')
             col11, col12 = st.columns(2)
             col21, col22 = st.columns(2)
             col11.metric("Total Quizzes", total_quizzes)
