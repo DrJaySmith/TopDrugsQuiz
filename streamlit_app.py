@@ -6,9 +6,53 @@ from pathlib import Path
 import os
 import time
 from datetime import datetime
+# added for github analytics updating
+import requests
+from base64 import b64encode, b64decode
 
 # Add analytics constants
 ANALYTICS_FILE = "data/enhanced_analytics.json"
+
+def update_github_file(result):
+    try: 
+        # GitHub credentials from Streamlit secrets
+        token = st.secrets["GITHUB_TOKEN"]
+        repo = "DrJaySmith/TopDrugsQuiz"
+        path = "data/enhanced_analytics.json"
+        
+        # Get current file contents
+        headers = {"Authorization": f"token {token}"}
+        url = f"https://api.github.com/repos/{repo}/contents/{path}"
+        response = requests.get(url, headers=headers)
+        
+        # Update contents
+        current_content = b64decode(response.json()['content']).decode()
+        analytics_data = json.loads(current_content)
+        analytics_data["quizzes"].append(result)  # Add your new data
+        
+        # Commit changes
+        commit_message = "Update analytics data"
+        updated_content = b64encode(json.dumps(analytics_data).encode()).decode()
+        data = {
+            "message": commit_message,
+            "content": updated_content,
+            "sha": response.json()["sha"]
+        }
+        
+        response = requests.put(url, headers=headers, json=data)
+        response.raise_for_status()
+        return True
+    except requests.RequestException as e:
+        st.error(f"GitHub API error: {str(e)}")
+        return False
+
+def update_github_file_with_retry(result, max_retries=3):
+    for attempt in range(max_retries):
+        if update_github_file(result):
+            return True
+        time.sleep(2 ** attempt)
+    return False
+
 
 # Initialize session state
 def initialize_session():
@@ -223,7 +267,7 @@ def initialize_quiz():
         'questions': question_pool[:st.session_state.selected['num_questions']],
         'current_question': 0,
         'score': 0,
-        'quiz_start_time': time.time()  # 👈 Add this line
+        'quiz_start_time': time.time()  # ðŸ‘ˆ Add this line
     })
 
 
@@ -243,12 +287,12 @@ def get_brand_options(drugs, current_drug, num_choices):
         sample_size = min(remaining, len(others))
         sampled = random.sample(others, sample_size)
         remaining -= sample_size
-        
         if remaining > 0:
             sampled += random.choices(others, k=remaining)
     else:
         sampled = ["Unknown"] * remaining
     
+    # Combine correct answers with sampled incorrect options
     options = correct + sampled
     random.shuffle(options)
     return options[:num_choices]
@@ -321,7 +365,7 @@ def display_question():
     for key in required_keys:
         if key not in st.session_state:
             st.error("Session configuration error. Please restart the quiz.")
-            if st.button("🔄 Restart Quiz"):
+            if st.button("ðŸ”„ Restart Quiz"):
                 restart_quiz()
             return
 
@@ -331,7 +375,7 @@ def display_question():
     for key in required_config:
         if key not in selected:
             st.error(f"Missing configuration: {key}. Please restart the quiz.")
-            if st.button("🔄 Restart Quiz"):
+            if st.button("ðŸ”„ Restart Quiz"):
                 restart_quiz()
             return
     
@@ -350,7 +394,7 @@ def display_question():
             st.session_state.analytics_updated = True  # Flag to prevent duplicates
 
         st.success(f"Final Score: {st.session_state.score}/{len(st.session_state.questions)}")
-        if st.button("🔄 Take Quiz Again"):
+        if st.button("ðŸ”„ Take Quiz Again"):
             initialize_session()
             st.rerun()
         return
@@ -379,7 +423,7 @@ def display_question():
     else:
         # Show answer feedback
         if st.session_state.selected_answer in question['answer']:
-            st.success("Correct! 🎉")
+            st.success("Correct! ðŸŽ‰")
         else:
             st.error(f"Incorrect. Correct answer: {', '.join(question['answer'])}")
         
@@ -393,13 +437,20 @@ def display_question():
         - **Indications**: {', '.join(drug['conditions'])}
         """)
         
-        if st.button("Next Question →"):
+        if st.button("Next Question â†’"):
             st.session_state.current_question += 1
             st.session_state.show_answer = False
             st.rerun()
 
 def update_analytics(result):
     """Update analytics with detailed tracking"""
+    if not update_github_file_with_retry(result):
+        st.warning("Failed to update GitHub. Saving locally.")
+        save_local_analytics(result)
+    save_local_analytics(result)
+
+
+def save_local_analytics(result):
     try:
         Path("data").mkdir(exist_ok=True)
         analytics = {"quizzes": []}
@@ -426,24 +477,32 @@ def update_analytics(result):
         analytics["quizzes"].append(quiz_data)
 
         with open(ANALYTICS_FILE, "w") as f:
-            json.dump(analytics, f)
+            json.dump(analytics, f, indent=0)
 
     except Exception as e:
         st.error(f"Analytics update failed: {str(e)}")
 
 # Updated show_minimal_analytics function
 def show_minimal_analytics():
-    """Enhanced analytics with filters"""
+    """Enhanced analytics with filters, fetching data from GitHub"""
     with st.sidebar.expander("📊 Advanced Analytics"):
         try:
-            # Check if file exists and has content
-            if not os.path.exists(ANALYTICS_FILE) or os.stat(ANALYTICS_FILE).st_size == 0:
-                st.warning("No analytics data yet")
+            # Fetch data from GitHub
+            token = st.secrets["GITHUB_TOKEN"]
+            repo = "DrJaySmith/TopDrugsQuiz"
+            path = "data/enhanced_analytics.json"
+            
+            headers = {"Authorization": f"token {token}"}
+            url = f"https://api.github.com/repos/{repo}/contents/{path}"
+            response = requests.get(url, headers=headers)
+            
+            if response.status_code != 200:
+                st.warning("No analytics data available from GitHub")
                 return
-
-            with open(ANALYTICS_FILE, "r") as f:
-                data = json.load(f)
-                
+            
+            content = b64decode(response.json()['content']).decode('utf-8')
+            data = json.loads(content)
+            
             if not data.get("quizzes"):
                 st.warning("No analytics data yet")
                 return
@@ -456,14 +515,12 @@ def show_minimal_analytics():
                              ["All", "100", "200", "Both"],
                              horizontal=True)
 
-
             # Process data
             filtered = [q for q in data["quizzes"] if (dataset == "All" or q['dataset'] == dataset)]
             
             if not filtered:
                 st.warning("No data matching filters")
                 return
-            
 
             # Calculate metrics
             total_quizzes = len(filtered)
@@ -473,40 +530,15 @@ def show_minimal_analytics():
             
             # Calculate total time
             total_seconds = sum(q['time_taken'] for q in filtered)
-            
-            # Convert to hours and minutes with proper rounding
             total_minutes = round(total_seconds / 60)
             hours = total_minutes // 60
             minutes = total_minutes % 60
             
-            # Pluralization handling
             hours_label = "hour" if hours == 1 else "hours"
             minutes_label = "minute" if minutes == 1 else "minutes"
             time_str = f"{hours} {hours_label}, {minutes} {minutes_label}"
 
-            # Add this in your show_minimal_analytics() function before the metrics
-            st.markdown("""
-            <style>
-            .performance-insights h3 {
-                font-size: 22px !important;
-                color: #2c3e50 !important;
-                margin-bottom: 15px !important;
-            }
-
-            /* For metric values */
-            [data-testid="stMetricValue"] {
-                font-size: 14px !important;
-            }
-
-            /* For metric labels */
-            [data-testid="stMetricLabel"] {
-                font-size: 14px !important;
-            }
-            </style>
-            """, unsafe_allow_html=True)
-
             # Display metrics
-            # Update performance insights
             st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
             col11, col12 = st.columns(2)
             col21, col22 = st.columns(2)
@@ -514,14 +546,8 @@ def show_minimal_analytics():
             col12.metric("Total Questions", total_questions)
             col21.metric("Average Score", f"{avg_score:.1f}%")
             col22.metric("Total Time Spent", time_str)
-        except json.JSONDecodeError:
-            st.error("Corrupted analytics data. Resetting...")
-            # Create empty valid structure
-            with open(ANALYTICS_FILE, "w") as f:
-                json.dump({"quizzes": []}, f)
-            st.rerun()
         except Exception as e:
-            st.error(f"Error loading analytics: {str(e)}")
+            st.error(f"Error loading analytics from GitHub: {str(e)}")
 
 
 def main():
@@ -529,8 +555,6 @@ def main():
     
     if 'selected' not in st.session_state:
         initialize_session()
-    
-
     
     # Add signature
         # Add signature with better positioning
@@ -582,7 +606,7 @@ def main():
         _, center_col, _ = st.columns([1, 3, 1])
         with center_col:
             st.write("\n" * 2)  # Add vertical space
-            if st.button("🚀 Start Quiz", key="main_start_btn", use_container_width=True, type="primary"):
+            if st.button("ðŸš€ Start Quiz", key="main_start_btn", use_container_width=True, type="primary"):
                 st.session_state.quiz_started = True
                 initialize_quiz()
                 st.rerun()
