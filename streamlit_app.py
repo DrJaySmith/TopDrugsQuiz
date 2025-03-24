@@ -162,7 +162,7 @@ def initialize_quiz():
             options = get_brand_options(target_brand, other_brands, num_choices)  # Modified function call
             question_pool.append({
                 'type': 'generic_to_brand',
-                'question': f"What are the brand names for {generic}?",
+                'question': f"Which is a brand name for {generic}?",
                 'answer': target_brands,
                 'drug': drug,
                 'options': options
@@ -245,14 +245,24 @@ def initialize_quiz():
 
 
 def get_brand_options(answer, other_brands, num_choices):
-    """Generate brand name options from pre-filtered list"""
+    """Generate unique brand name options with case normalization"""
+    # Create normalization dictionary preserving original casing
+    unique_brands = {
+        brand.strip().lower(): brand 
+        for brand in other_brands
+    }
+    
+    # Get maximum needed wrong answers
     needed_incorrect = num_choices - 1
+    unique_wrong = list(unique_brands.values())
+    
     sampled = []
-    
-    if other_brands:
-        sampled = random.sample(other_brands, min(needed_incorrect, len(other_brands)))
-    
-    sampled += ['Unknown'] * (needed_incorrect - len(sampled))
+    if len(unique_wrong) >= needed_incorrect:
+        sampled = random.sample(unique_wrong, needed_incorrect)
+    else:
+        # Use available unique + fill with "Unknown"
+        sampled = unique_wrong.copy()
+        sampled += ['Unknown'] * (needed_incorrect - len(unique_wrong))
     
     options = sampled + [answer]
     random.shuffle(options)
@@ -260,43 +270,87 @@ def get_brand_options(answer, other_brands, num_choices):
     
 
 def get_generic_options(drugs, current_drug, num_choices):
-    """Generate generic name options with dynamic choice count"""
-    others = [d['generic_name'] for d in drugs if d != current_drug]
-    try:
-        # Get required number of wrong answers (total choices - 1 correct)
-        wrong_answers = random.sample(others, num_choices - 1)
-
-    except ValueError:
-        # If not enough unique options, use random choices with fallback
-        wrong_answers = random.choices(others, k=num_choices - 1) if others else ["Unknown"] * (num_choices - 1)
-    options = [current_drug['generic_name']] + wrong_answers
+    """Generate unique generic name options with case normalization"""
+    # Create normalization dictionary preserving original casing
+    unique_generics = {
+        d['generic_name'].strip().lower(): d['generic_name']
+        for d in drugs
+        if d != current_drug
+    }
+    
+    # Get maximum needed wrong answers
+    needed = num_choices - 1
+    sampled = []
+    
+    if len(unique_generics) >= needed:
+        # Get random unique samples
+        sampled = random.sample(list(unique_generics.values()), needed)
+    else:
+        # Use available unique + fill with "Unknown"
+        sampled = list(unique_generics.values())
+        sampled += ['Unknown'] * (needed - len(sampled))
+    
+    options = [current_drug['generic_name']] + sampled
     random.shuffle(options)
     return options[:num_choices]
 
 
 def get_class_options(drugs, current_drug, num_choices):
-    """Generate drug class options with dynamic choice count"""
-    others = list({d['drug_class'] for d in drugs if d != current_drug})
+    """Generate drug class options with guaranteed unique wrong answers"""
+    # Normalized unique classes
+    all_classes = {
+        d['drug_class'].strip().lower(): d['drug_class']
+        for d in drugs
+    }
     
-    try:
-        wrong_answers = random.sample(others, num_choices - 1)
-    except ValueError:
-        # Handle insufficient unique classes
-        wrong_answers = random.choices(others, k=num_choices - 1) if others else ["Unknown"] * (num_choices - 1)
+    current_class_norm = current_drug['drug_class'].strip().lower()
+    unique_wrong = [
+        all_classes[c] for c in all_classes
+        if c != current_class_norm
+    ]
     
-    options = [current_drug['drug_class']] + wrong_answers
+    # Get maximum possible unique wrong answers
+    needed = num_choices - 1
+    sampled = []
+    
+    if len(unique_wrong) >= needed:
+        sampled = random.sample(unique_wrong, needed)
+    else:
+        # Use available unique + fill with "Unknown"
+        sampled = unique_wrong.copy()
+        sampled += ['Unknown'] * (needed - len(unique_wrong))
+    
+    options = [current_drug['drug_class']] + sampled
     random.shuffle(options)
     return options[:num_choices]
 
 def get_indication_options(answer, other_conditions, num_choices):
-    """Generate indication options from pre-filtered list"""
+    """Generate unique indication options with case normalization"""
+    # Create normalization dictionary preserving original casing
+    unique_conditions = {
+        cond.strip().lower(): cond 
+        for cond in other_conditions
+    }
+    
+    # Normalize answer for comparison
+    answer_norm = answer.strip().lower()
+    
+    # Remove answer variations (case/whitespace)
+    filtered_conditions = [
+        cond for cond in unique_conditions.values()
+        if cond.strip().lower() != answer_norm
+    ]
+    
+    # Get maximum needed wrong answers
     needed_incorrect = num_choices - 1
     sampled = []
     
-    if other_conditions:
-        sampled = random.sample(other_conditions, min(needed_incorrect, len(other_conditions)))
-    
-    sampled += ['Unknown'] * (needed_incorrect - len(sampled))
+    if len(filtered_conditions) >= needed_incorrect:
+        sampled = random.sample(filtered_conditions, needed_incorrect)
+    else:
+        # Use available unique + fill with "Unknown"
+        sampled = filtered_conditions.copy()
+        sampled += ['Unknown'] * (needed_incorrect - len(sampled))
     
     options = sampled + [answer]
     random.shuffle(options)
