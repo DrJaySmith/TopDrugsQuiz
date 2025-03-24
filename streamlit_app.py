@@ -87,16 +87,16 @@ def quiz_setup():
         
         # Dynamic section handling
         if dataset == 'Both':
-            max_section = 20
-            default_sections = list(range(1, 21))
+            max_selection = 19
+            default_sections = list(range(1, 20))
         else:
-            max_section = 10
+            max_selection = 10
             default_sections = list(range(1, 11))
             
         # Section multiselect
         selected_sections = st.multiselect(
             "Select Sections to Study:",
-            options=list(range(1, max_section + 1)),
+            options=list(range(1, max_selection + 1)),
             default=default_sections,
             key='section_select'
         )
@@ -391,6 +391,18 @@ def display_question():
             st.session_state.current_question += 1
             st.session_state.show_answer = False
             st.rerun()
+
+        try: 
+            if st.session_state.selected.get('dataset') == '200':
+                section = int("1"+str(drug['section']))
+            else:
+                section = drug['section']
+            st.image(f"images/{section}.png",  # Match image filename
+                    caption=f"Week {section} Drug Chart",
+                    use_container_width = True)
+        except FileNotFoundError:
+            st.warning("Chart image not found")
+
 
 def update_analytics(result):
     """Update analytics with detailed tracking"""
