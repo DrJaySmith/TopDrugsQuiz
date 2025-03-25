@@ -621,7 +621,12 @@
           "Seizures"
         ],
         "section": 5
-      },
+      }
+    ]
+  },
+  {
+    "section_number": 6,
+    "drugs": [
       {
         "generic_name": "Conjugated estrogen",
         "brand_names": [
@@ -632,13 +637,8 @@
           "Menopause",
           "Primary ovarian failure"
         ],
-        "section": 5
-      }
-    ]
-  },
-  {
-    "section_number": 6,
-    "drugs": [
+        "section": 6
+      }, 
       {
         "generic_name": "Estradiol",
         "brand_names": [

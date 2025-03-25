@@ -2087,24 +2087,24 @@
             "Seizures"
             ],
             "section": 15
-        },
-        {
-            "generic_name": "Conjugated estrogen",
-            "brand_names": [
-            "Premarin"
-            ],
-            "drug_class": "Estrogen",
-            "conditions": [
-            "Menopause",
-            "Primary ovarian failure"
-            ],
-            "section": 15
         }
         ]
     },
     {
         "section_number": 16,
         "drugs": [
+        {
+          "generic_name": "Conjugated estrogen",
+          "brand_names": [
+            "Premarin"
+          ],
+          "drug_class": "Estrogen",
+          "conditions": [
+            "Menopause",
+            "Primary ovarian failure"
+          ],
+          "section": 16
+        }, 
         {
             "generic_name": "Estradiol",
             "brand_names": [
