@@ -966,23 +966,23 @@
           "Migraine & Cluster headaches"
         ],
         "section": 8
-      },
-      {
-        "generic_name": "Benzonatate",
-        "brand_names": [
-          "Tessalon Perles"
-        ],
-        "drug_class": "Antitussive",
-        "conditions": [
-          "Cough"
-        ],
-        "section": 8
       }
     ]
   },
   {
     "section_number": 9,
     "drugs": [
+      {
+        "generic_name": "Benzonatate",
+        "brand_names": [
+        "Tessalon Perles"
+        ],
+        "drug_class": "Antitussive",
+        "conditions": [
+        "Cough"
+        ],
+        "section": 9
+      },
       {
         "generic_name": "Bimatoprost",
         "brand_names": [

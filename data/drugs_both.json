@@ -2432,7 +2432,12 @@
             "Migraine & Cluster headaches"
             ],
             "section": 18
-        },
+        }
+        ]
+    },
+    {
+        "section_number": 19,
+        "drugs": [
         {
             "generic_name": "Benzonatate",
             "brand_names": [
@@ -2442,13 +2447,8 @@
             "conditions": [
             "Cough"
             ],
-            "section": 18
-        }
-        ]
-    },
-    {
-        "section_number": 19,
-        "drugs": [
+            "section": 19
+        }, 
         {
             "generic_name": "Bimatoprost",
             "brand_names": [
