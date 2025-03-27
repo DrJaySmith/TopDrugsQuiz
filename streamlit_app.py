@@ -149,32 +149,33 @@ def initialize_quiz():
     
     for drug in drugs:
         if "Generic to Brand" in st.session_state.selected['quiz_types']:
-            generic = drug['generic_name']
             target_brands = drug['brand_names']
-            target_brand = random.choice(target_brands)
-            # Get all brands EXCEPT current drug's brands
-            other_brands = list({
-                b for d in drugs 
-                for b in d['brand_names'] 
-                if d != drug and b not in target_brands
-            })
-            
-            options = get_brand_options(target_brand, other_brands, num_choices)  # Modified function call
-            question_pool.append({
-                'type': 'generic_to_brand',
-                'question': f"Which is a brand name for {generic}?",
-                'answer': target_brands,
-                'drug': drug,
-                'options': options
-            })
+            generic = drug['generic_name']
+            for target_brand in target_brands:
+                # Get all brands EXCEPT current drug's brands
+                other_brands = list({
+                    b for d in drugs 
+                    for b in d['brand_names'] 
+                    if d != drug and b not in target_brands
+                })
+                
+                options = get_brand_options(target_brand, other_brands, num_choices)  # Modified function call
+                question_pool.append({
+                    'type': 'generic_to_brand',
+                    'question': f"Which is a brand name for {generic}?",
+                    'answer': target_brands,
+                    'drug': drug,
+                    'options': options
+                })
         if "Brand to Generic" in st.session_state.selected['quiz_types']:
-            question_pool.append({
-                'type': 'brand_to_generic',
-                'question': f"What is the generic name for {random.choice(drug['brand_names'])}?",
-                'answer': [drug['generic_name']],
-                'drug': drug,
-                'options': get_generic_options(drugs, drug, num_choices)
-            })
+            for brand in drug['brand_names']: 
+                question_pool.append({
+                    'type': 'brand_to_generic',
+                    'question': f"What is the generic name for {brand}?",
+                    'answer': [drug['generic_name']],
+                    'drug': drug,
+                    'options': get_generic_options(drugs, drug, num_choices)
+                })
         # Generic to Class
         if "Generic to Class" in st.session_state.selected['quiz_types']:
             question_pool.append({
@@ -187,54 +188,56 @@ def initialize_quiz():
         
         # Brand to Class
         if "Brand to Class" in st.session_state.selected['quiz_types']:
-            question_pool.append({
-                'type': 'brand_to_class',
-                'question': f"What is the drug class of {random.choice(drug['brand_names'])}?",
-                'answer': [drug['drug_class']],
-                'drug': drug,
-                'options': get_class_options(drugs, drug, num_choices)
-            })
+            for brand in drug['brand_names']: 
+                question_pool.append({
+                    'type': 'brand_to_class',
+                    'question': f"What is the drug class of {brand}?",
+                    'answer': [drug['drug_class']],
+                    'drug': drug,
+                    'options': get_class_options(drugs, drug, num_choices)
+                })
         
         # Generic to Indication (updated)
         if "Generic to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
             generic = drug['generic_name']
             target_indications = drug['conditions']
-            target_indication = random.choice(target_indications)
-            # Get all brands EXCEPT current drug's brands
-            other_indications = list({
-                cond for d in drugs 
-                for cond in d['conditions'] 
-                if d != drug and cond not in target_indications
-            })
-            
-            options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
-            question_pool.append({
-                'type': 'generic_to_indication',
-                'question': f"Which FDA approved indication applies to {generic}?",
-                'answer': target_indications,
-                'drug': drug,
-                'options': options
-            })
+            for target_indication in target_indications: 
+                # Get all brands EXCEPT current drug's brands
+                other_indications = list({
+                    cond for d in drugs 
+                    for cond in d['conditions'] 
+                    if d != drug and cond not in target_indications
+                })
+                
+                options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
+                question_pool.append({
+                    'type': 'generic_to_indication',
+                    'question': f"Which FDA approved indication applies to {generic}?",
+                    'answer': target_indications,
+                    'drug': drug,
+                    'options': options
+                })
         # Brand to Indication (updated)
         if "Brand to Indication" in st.session_state.selected['quiz_types'] and drug['conditions']:
-            target_brand = random.choice(drug['brand_names'])
+            target_brands = drug['brand_names']
             target_indications = drug['conditions']
-            target_indication = random.choice(target_indications)
-            # Get all brands EXCEPT current drug's brands
-            other_indications = list({
-                cond for d in drugs 
-                for cond in d['conditions'] 
-                if d != drug and cond not in target_indications
-            })
-            
-            options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
-            question_pool.append({
-                'type': 'brand_to_indication',
-                'question': f"Which FDA approved indication applies to {target_brand}?",
-                'answer': target_indications,
-                'drug': drug,
-                'options': options
-            })    # Add shuffle and session state update
+            for target_brand in target_brands:
+                for target_indication in target_indications: 
+                    # Get all brands EXCEPT current drug's brands
+                    other_indications = list({
+                        cond for d in drugs 
+                        for cond in d['conditions'] 
+                        if d != drug and cond not in target_indications
+                    })
+                    
+                    options = get_indication_options(target_indication, other_indications, num_choices)  # Modified function call
+                    question_pool.append({
+                        'type': 'brand_to_indication',
+                        'question': f"Which FDA approved indication applies to {target_brand}?",
+                        'answer': target_indications,
+                        'drug': drug,
+                        'options': options
+                    })    # Add shuffle and session state update
     random.shuffle(question_pool)
     st.session_state.update({
         'questions': question_pool[:st.session_state.selected['num_questions']],
