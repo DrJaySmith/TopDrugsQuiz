@@ -518,16 +518,16 @@ def show_minimal_analytics():
                 return
             
             # Calculate metrics
-            total_quizzes = len(filtered)
-            total_questions = sum(q['total'] for q in filtered)
-            correct_answers = sum(q['score'] for q in filtered)
+            total_quizzes = len(filtered) + 174  # Add 174 quizzes to save analytics during git push
+            total_questions = sum(q['total'] for q in filtered) + 5390  # Add 5390 questions to save analytics during git push
+            correct_answers = sum(q['score'] for q in filtered) + 4802  # Add 4802 correct answers to save analytics during git push
             avg_score = (correct_answers / total_questions) * 100 if total_questions else 0
             
             # Calculate total time
             total_seconds = sum(q['time_taken'] for q in filtered)
             
             # Convert to hours and minutes with proper rounding
-            total_minutes = round(total_seconds / 60)
+            total_minutes = round(total_seconds / 60) + 1360  # Add 1360 minutes to save analytics during git push
             hours = total_minutes // 60
             minutes = total_minutes % 60
             
@@ -556,7 +556,7 @@ def show_minimal_analytics():
             # Display metrics
             # Update performance insights
             st.markdown('<div class="performance-insights"><h3>Performance Insights</h3></div>', unsafe_allow_html=True)
-            st.markdown('(section in progress)')
+            #st.markdown('(section in progress)')
             col11, col12 = st.columns(2)
             col21, col22 = st.columns(2)
             col11.metric("Total Quizzes", total_quizzes)

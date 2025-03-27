@@ -1822,7 +1822,6 @@
             ],
             "drug_class": "Direct oral anticoagulant (DOAC)",
             "conditions": [
-            "Atrial fibrillation",
             "Prevent cerebrovascular accident",
             "Prevent deep vein thrombosis (DVT)",
             "Prevent thromboembolism"
@@ -2358,7 +2357,6 @@
             ],
             "drug_class": "Anticonvulsant",
             "conditions": [
-            "Seizures",
             "Bipolar disorder"
             ],
             "section": 18
