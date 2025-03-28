@@ -520,17 +520,29 @@ def show_minimal_analytics():
                 st.warning("No data matching filters")
                 return
             
+            add_data = [[957, 6825, 2813], # questions for sections 100, 200, both
+                        [37, 211, 70], # quizzes taken
+                        [235, 1616, 687], # time spent
+                        [843, 6013, 2478]] # correct answers
+            if dataset == "100": 
+                add_data = [add_data[0][0], add_data[1][0], add_data[2][0], add_data[3][0]]
+            elif dataset == "200":
+                add_data = [add_data[0][1], add_data[1][1], add_data[2][1], add_data[3][1]]
+            elif dataset == "Both":
+                add_data = [add_data[0][2], add_data[1][2], add_data[2][2], add_data[3][2]]
+            elif dataset == "All": 
+                add_data = [sum(add_data[0]), sum(add_data[1]), sum(add_data[2]), sum(add_data[3])]
             # Calculate metrics
-            total_quizzes = len(filtered) + 174  # Add 174 quizzes to save analytics during git push
-            total_questions = sum(q['total'] for q in filtered) + 5390  # Add 5390 questions to save analytics during git push
-            correct_answers = sum(q['score'] for q in filtered) + 4802  # Add 4802 correct answers to save analytics during git push
+            total_quizzes = len(filtered) + add_data[1]  # Add 174 quizzes to save analytics during git push
+            total_questions = sum(q['total'] for q in filtered) + add_data[0]  # Add 5390 questions to save analytics during git push
+            correct_answers = sum(q['score'] for q in filtered) + add_data[3]  # Add 4802 correct answers to save analytics during git push
             avg_score = (correct_answers / total_questions) * 100 if total_questions else 0
             
             # Calculate total time
             total_seconds = sum(q['time_taken'] for q in filtered)
             
             # Convert to hours and minutes with proper rounding
-            total_minutes = round(total_seconds / 60) + 1360  # Add 1360 minutes to save analytics during git push
+            total_minutes = round(total_seconds / 60) + add_data[2]  # Add 1360 minutes to save analytics during git push
             hours = total_minutes // 60
             minutes = total_minutes % 60
             
