@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 4: Antiulcer Agents, Constipation, and Dietary Supplements
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 4. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Famotidine?
+*a) Pepcid
+b) Klor-Con
+c) Protonix
+d) Cobolin-M
+
+2. Which is a brand name for Potassium Chloride?
+a) Protonix
+b) Prilosec
+c) Nexium
+*d) Klor-Con
+
+3. Which is a brand name for Cyanocobalamin?
+*a) Cobolin-M
+b) Pepcid
+c) Klor-Con
+d) Golytely
+
+4. Which is a brand name for Pantoprazole?
+a) Cobolin-M
+b) Nexium
+*c) Protonix
+d) Pepcid
+
+5. Which is a brand name for Esomeprazole?
+a) Prevacid
+*b) Nexium
+c) Pepcid
+d) Prilosec
+
+6. What is the generic name for Nexium?
+a) Cyanocobalamin
+b) Famotidine
+c) Lansoprazole
+*d) Esomeprazole
+
+7. What is the generic name for Cobolin-M?
+a) Polyethylene Glycol
+b) Lansoprazole
+*c) Cyanocobalamin
+d) Esomeprazole
+
+8. What is the generic name for Prevacid?
+a) Pantoprazole
+*b) Lansoprazole
+c) Esomeprazole
+d) Potassium Chloride
+
+9. What is the generic name for Klor-Con?
+a) Polyethylene Glycol
+b) Lansoprazole
+c) Pantoprazole
+*d) Potassium Chloride
+
+10. What is the generic name for Pepcid?
+*a) Famotidine
+b) Polyethylene Glycol
+c) Potassium Chloride
+d) Cyanocobalamin
+
+11. What is the drug class of Lansoprazole?
+a) Hyperosmotic laxative
+b) Essential vitamin
+*c) Proton Pump Inhibitor (PPI)
+d) Electrolyte, potassium
+
+12. What is the drug class of Esomeprazole?
+a) Essential vitamin
+b) Histamine H2 receptor antagonist (H2RA)
+c) Electrolyte, potassium
+*d) Proton Pump Inhibitor (PPI)
+
+13. What is the drug class of Polyethylene Glycol?
+a) Proton Pump Inhibitor (PPI)
+*b) Hyperosmotic laxative
+c) Essential vitamin
+d) Electrolyte, potassium
+
+14. What is the drug class of Pantoprazole?
+a) Histamine H2 receptor antagonist (H2RA)
+*b) Proton Pump Inhibitor (PPI)
+c) Electrolyte, potassium
+d) Essential vitamin
+
+15. What is the drug class of Cyanocobalamin?
+a) Hyperosmotic laxative
+b) Histamine H2 receptor antagonist (H2RA)
+c) Proton Pump Inhibitor (PPI)
+*d) Essential vitamin
+
+16. What is the drug class of Pepcid?
+a) Essential vitamin
+b) Proton Pump Inhibitor (PPI)
+c) Electrolyte, potassium
+*d) Histamine H2 receptor antagonist (H2RA)
+
+17. What is the drug class of Prilosec?
+a) Essential vitamin
+b) Hyperosmotic laxative
+*c) Proton Pump Inhibitor (PPI)
+d) Histamine H2 receptor antagonist (H2RA)
+
+18. What is the drug class of Golytely?
+a) Proton Pump Inhibitor (PPI)
+*b) Hyperosmotic laxative
+c) Essential vitamin
+d) Electrolyte, potassium
+
+19. What is the drug class of Nexium?
+a) Essential vitamin
+*b) Proton Pump Inhibitor (PPI)
+c) Electrolyte, potassium
+d) Hyperosmotic laxative
+
+20. What is the drug class of Prevacid?
+a) Electrolyte, potassium
+b) Histamine H2 receptor antagonist (H2RA)
+c) Hyperosmotic laxative
+*d) Proton Pump Inhibitor (PPI)
+
+21. Which FDA approved indication applies to Potassium Chloride?
+a) Duodenal or gastric ulcer disease
+b) Zollinger-Ellison syndrome
+*c) Hypokalemia
+d) Cobalamin (vitamin B12) deficiency
+
+22. Which FDA approved indication applies to Famotidine?
+*a) Gastroesophageal reflux disease (GERD)
+b) Helicobacter pylori GI tract infection
+c) Colonoscopy or barium enema preparation
+d) Hypokalemia
+
+23. Which FDA approved indication applies to Polyethylene Glycol?
+a) Zollinger-Ellison syndrome
+b) Helicobacter pylori GI tract infection
+*c) Constipation
+d) Gastroesophageal reflux disease (GERD)
+
+24. Which FDA approved indication applies to Lansoprazole?
+a) Colonoscopy or barium enema preparation
+b) Helicobacter pylori GI tract infection (part of triple therapy)
+c) Duodenal or gastric ulcer disease
+*d) Gastroesophageal reflux disease (GERD)
+
+25. Which FDA approved indication applies to Pantoprazole?
+*a) Gastric hypersecretion
+b) Gastroesophageal reflux disease (GERD)
+c) Colonoscopy or barium enema preparation
+d) Helicobacter pylori GI tract infection
+
+26. Which FDA approved indication applies to Protonix?
+*a) Gastroesophageal reflux disease (GERD)
+b) Duodenal or gastric ulcer disease
+c) Helicobacter pylori GI tract infection
+d) Constipation
+
+27. Which FDA approved indication applies to Golytely?
+a) Hypokalemia
+b) Gastric hypersecretion
+*c) Colonoscopy or barium enema preparation
+d) Helicobacter pylori GI tract infection (part of triple therapy)
+
+28. Which FDA approved indication applies to Cobolin-M?
+a) Constipation
+b) Zollinger-Ellison syndrome
+*c) Cobalamin (vitamin B12) deficiency
+d) Prevention of NSAID-induced gastropathy
+
+29. Which FDA approved indication applies to Klor-Con?
+a) Duodenal or gastric ulcer disease
+b) Cobalamin (vitamin B12) deficiency
+*c) Hypokalemia
+d) Helicobacter pylori GI tract infection
+
+30. Which FDA approved indication applies to Pepcid?
+a) Constipation
+b) Hypokalemia
+*c) Duodenal or gastric ulcer disease
+d) Colonoscopy or barium enema preparation
+

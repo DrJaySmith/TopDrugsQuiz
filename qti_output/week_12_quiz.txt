@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 2: Cardiovascular II
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 2. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Digoxin?
+a) Aldactone
+b) Eliquis
+c) Pacerone
+*d) Lanoxin
+
+2. Which is a brand name for Apixaban?
+*a) Eliquis
+b) Nexterone
+c) Aldactone
+d) Crestor
+
+3. Which is a brand name for Rosuvastatin?
+a) Lopid
+b) Nexterone
+*c) Crestor
+d) Lanoxin
+
+4. Which is a brand name for Warfarin?
+a) Dyazide
+b) Pradaxa
+c) Lopid
+*d) Coumadin
+
+5. Which is a brand name for Chlorthalidone?
+a) Pravachol
+b) Lanoxin
+c) Pradaxa
+*d) Thalitone
+
+6. What is the generic name for Pacerone?
+*a) Amiodarone
+b) Apixaban
+c) Gemfibrozil
+d) Triamterene/hydrochlorothiazide
+
+7. What is the generic name for Thalitone?
+a) Enoxaparin
+b) Rosuvastatin
+c) Warfarin
+*d) Chlorthalidone
+
+8. What is the generic name for Crestor?
+a) Chlorthalidone
+b) Spironolactone
+*c) Rosuvastatin
+d) Dabigatran
+
+9. What is the generic name for Maxzide?
+*a) Triamterene/hydrochlorothiazide
+b) Gemfibrozil
+c) Rivaroxaban
+d) Warfarin
+
+10. What is the generic name for Coumadin?
+*a) Warfarin
+b) Pravastatin
+c) Apixaban
+d) Gemfibrozil
+
+11. What is the drug class of Digoxin?
+a) Anticoagulant
+*b) Digitalis glycoside
+c) Thiazide diuretic
+d) Direct oral anticoagulant (DOAC)
+
+12. What is the drug class of Spironolactone?
+a) Anticoagulant
+b) Antiarrhythmic, Class III
+c) Antihyperlipidemic
+*d) Potassium-sparing diuretic
+
+13. What is the drug class of Amiodarone?
+*a) Antiarrhythmic, Class III
+b) Potassium sparing/thiazide diuretic combination
+c) Antihyperlipidemic
+d) HMG-CoA reductase inhibitor
+
+14. What is the drug class of Ezetimibe?
+*a) Antihyperlipidemic
+b) Direct oral anticoagulant (DOAC)
+c) Potassium sparing/thiazide diuretic combination
+d) Digitalis glycoside
+
+15. What is the drug class of Apixaban?
+a) Potassium sparing/thiazide diuretic combination
+b) Antiarrhythmic, Class III
+c) Antihyperlipidemic
+*d) Direct oral anticoagulant (DOAC)
+
+16. What is the drug class of Lopid?
+a) Antiarrhythmic, Class III
+*b) Antihyperlipidemic
+c) HMG-CoA reductase inhibitor
+d) Potassium sparing/thiazide diuretic combination
+
+17. What is the drug class of Lovenox?
+a) Potassium-sparing diuretic
+b) Digitalis glycoside
+c) Potassium sparing/thiazide diuretic combination
+*d) Anticoagulant
+
+18. What is the drug class of Pravachol?
+*a) HMG-CoA reductase inhibitor
+b) Antiarrhythmic, Class III
+c) Potassium-sparing diuretic
+d) Thiazide diuretic
+
+19. What is the drug class of Thalitone?
+a) Antiarrhythmic, Class III
+b) Anticoagulant
+*c) Thiazide diuretic
+d) Antihyperlipidemic
+
+20. What is the drug class of Eliquis?
+a) Digitalis glycoside
+*b) Direct oral anticoagulant (DOAC)
+c) Antihyperlipidemic
+d) Potassium-sparing diuretic
+
+21. Which FDA approved indication applies to Triamterene/hydrochlorothiazide?
+*a) Edema
+b) Ventricular arrhythmias
+c) Treat deep vein thrombosis (DVT)
+d) Prevent cerebrovascular accident
+
+22. Which FDA approved indication applies to Apixaban?
+*a) Prevent deep vein thrombosis (DVT)
+b) Treat pulmonary embolism and thrombosis after Myocardial Infarction
+c) Hypertension
+d) Coronary atherosclerosis
+
+23. Which FDA approved indication applies to Rivaroxaban?
+a) Edema
+b) Atrial fibrillation
+*c) Prevent deep vein thrombosis (DVT)
+d) Hypertension
+
+24. Which FDA approved indication applies to Warfarin?
+a) Edema
+b) Prevent thromboembolism
+c) Acute coronary syndromes
+*d) Treat pulmonary embolism and thrombosis after Myocardial Infarction
+
+25. Which FDA approved indication applies to Enoxaparin?
+a) Hyperlipidemia
+*b) Acute coronary syndromes
+c) Prevent pulmonary embolism and thrombosis
+d) Edema
+
+26. Which FDA approved indication applies to Pravachol?
+a) Heart failure
+b) Treat pulmonary embolism and thrombosis after Myocardial Infarction
+*c) Hyperlipidemia
+d) Atrial fibrillation
+
+27. Which FDA approved indication applies to Lovenox?
+*a) Acute coronary syndromes
+b) Prevent cerebrovascular accident
+c) Hypertension
+d) Prevent deep vein thrombosis (DVT)
+
+28. Which FDA approved indication applies to Eliquis?
+a) Heart failure
+*b) Prevent deep vein thrombosis (DVT)
+c) Prevent pulmonary embolism and thrombosis
+d) Treat pulmonary embolism and thrombosis after Myocardial Infarction
+
+29. Which FDA approved indication applies to Pradaxa?
+a) Hypertension
+b) Hyperlipidemia
+c) Prevent pulmonary embolism and thrombosis
+*d) Atrial fibrillation
+
+30. Which FDA approved indication applies to Aldactone?
+a) Hyperlipidemia
+*b) Hypokalemia
+c) Supraventricular tachyarrhythmia
+d) Atrial fibrillation
+

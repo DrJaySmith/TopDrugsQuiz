@@ -39,7 +39,7 @@
         "drug_class": "1st generation antihistamine",
         "conditions": [
           "Anxiety",
-          "Pruritis",
+          "Pruritus",
           "Sedation"
         ],
         "section": 1
@@ -78,18 +78,6 @@
         "conditions": [
           "Seasonal allergic rhinitis",
           "Urticaria"
-        ],
-        "section": 1
-      },
-      {
-        "generic_name": "Olopatadine (eye)",
-        "brand_names": [
-          "Patanol", 
-          "Pataday"
-        ],
-        "drug_class": "2nd generation antihistamine",
-        "conditions": [
-          "Allergic conjunctivitis"
         ],
         "section": 1
       },
@@ -140,18 +128,6 @@
           "Bydureon"
         ],
         "drug_class": "Sulfonylurea",
-        "conditions": [
-          "Type 2 diabetes mellitus"
-        ],
-        "section": 2
-      },
-      {
-        "generic_name": "Exenatide",
-        "brand_names": [
-          "Byetta", 
-          "Bydureon"
-        ],
-        "drug_class": "Glucagon-like peptide-1 receptor agonist",
         "conditions": [
           "Type 2 diabetes mellitus"
         ],
@@ -211,6 +187,58 @@
         "conditions": [
           "Myocardial infarction",
           "Prevention of thrombosis in arteriosclerotic vascular disease"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Dapagliflozin",
+        "brand_names": [
+          "Farxiga"
+        ],
+        "drug_class": "Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor",
+        "conditions": [
+          "Type 2 diabetes mellitus",
+          "Heart failure",
+          "Chronic kidney disease"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Empagliflozin",
+        "brand_names": [
+          "Jardiance"
+        ],
+        "drug_class": "Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor",
+        "conditions": [
+          "Type 2 diabetes mellitus", 
+          "Heart failure", 
+          "Chronic kidney disease"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Semaglutide",
+        "brand_names": [
+          "Ozempic", 
+          "Rybelsus", 
+          "Wegovy"
+        ],
+        "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+        "conditions": [
+          "Type 2 diabetes mellitus",
+          "Weight loss"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Dulaglutide",
+        "brand_names": [
+          "Trulicity"
+        ],
+        "drug_class": "Glucagon-like peptide-1 (GLP-1) receptor agonist",
+        "conditions": [
+          "Type 2 diabetes mellitus", 
+          "Weight loss"
         ],
         "section": 2
       }
@@ -286,7 +314,7 @@
         ],
         "drug_class": "CNS stimulant [C-II]",
         "conditions": [
-          "Attention-deficit hyperactivity disorder (ADHD)",
+          "Attention-Deficit Hyperactivity Disorder (ADHD)",
           "Binge eating disorder"
         ],
         "section": 3
@@ -310,7 +338,7 @@
         ],
         "drug_class": "Norepinephrine reuptake inhibitor (NRI)",
         "conditions": [
-          "Attention-deficit hyperactivity disorder (ADHD)"
+          "Attention-Deficit Hyperactivity Disorder (ADHD)"
         ],
         "section": 3
       },
@@ -321,8 +349,8 @@
         ],
         "drug_class": "Central cholinesterase inhibitor",
         "conditions": [
-          "Alzheimer disease",
-          "dementia"
+          "Alzheimer Disease",
+          "Dementia"
         ],
         "section": 3
       },
@@ -333,7 +361,7 @@
         ],
         "drug_class": "N-methyl-d-aspartate receptor antagonist",
         "conditions": [
-          "Alzheimer disease"
+          "Alzheimer Disease"
         ],
         "section": 3
       }
@@ -367,21 +395,7 @@
           "Gastric hypersecretion",
           "Zollinger-Ellison syndrome"
         ],
-        "section": 4
-      },
-      {
-        "generic_name": "Rabeprazole",
-        "brand_names": [
-          "AcipHex"
-        ],
-        "drug_class": "Proton Pump Inhibitor (PPI)",
-        "conditions": [
-          "Duodenal or gastric ulcer disease",
-          "Gastroesophageal reflux disease (GERD)",
-          "Gastric hypersecretion",
-          "Helicobacter pylori GI tract infection (part of triple therapy)"
-        ],
-        "section": 4
+                "section": 4
       },
       {
         "generic_name": "Omeprazole",
@@ -419,20 +433,7 @@
           "Duodenal or gastric ulcer disease",
           "Gastroesophageal reflux disease (GERD)"
         ],
-        "section": 4
-      },
-      {
-        "generic_name": "Ranitidine",
-        "brand_names": [
-          "Zantac"
-        ],
-        "drug_class": "Histamine H2 receptor antagonist (H2RA)",
-        "conditions": [
-          "Duodenal ulcer",
-          "Indigestion (prevention or treatment)",
-          "Helicobacter pylori GI tract infection"
-        ],
-        "section": 4
+      "section": 4
       },
       {
         "generic_name": "Polyethylene Glycol",
@@ -651,20 +652,7 @@
           "Diabetic nephropathy",
           "Hypertension"
         ],
-        "section": 6
-      },
-      {
-        "generic_name": "Valsartan",
-        "brand_names": [
-          "Diovan"
-        ],
-        "drug_class": "Angiotensin II Receptor Antagonist/Blocker (ARB)",
-        "conditions": [
-          "Heart failure",
-          "Hypertension",
-          "Myocardial infarction"
-        ],
-        "section": 6
+                "section": 6
       },
       {
         "generic_name": "Atenolol",
@@ -759,7 +747,7 @@
         "generic_name": "Fenofibrate",
         "brand_names": [
           "Lofibra", 
-          "Tricor"
+                    "Tricor"
         ],
         "drug_class": "Antihyperlipidemic",
         "conditions": [
@@ -767,19 +755,8 @@
           "Hypertriglyceridemia"
         ],
         "section": 6
-      },
-      {
-        "generic_name": "Omega 3",
-        "brand_names": [
-          "Lovaza"
-        ],
-        "drug_class": "Antihyperlipidemic",
-        "conditions": [
-          "Hypertriglyceridemia"
-        ],
-        "section": 6
       }
-    ]
+      ]
   },
   {
     "section_number": 7,
@@ -796,20 +773,7 @@
           "Community-acquired pneumonia",
           "Streptococcal pharyngitis"
         ],
-        "section": 7
-      },
-      {
-        "generic_name": "Clarithromycin",
-        "brand_names": [
-          "Biaxin"
-        ],
-        "drug_class": "Macrolide antibiotic",
-        "conditions": [
-          "Community-acquired pneumonia",
-          "Sinusitis",
-          "Pharyngitis"
-        ],
-        "section": 7
+                "section": 7
       },
       {
         "generic_name": "Ciprofloxacin (oral)",
@@ -848,29 +812,6 @@
           "Bacterial sinusitis",
           "Bronchitis",
           "Community-acquired pneumonia"
-        ],
-        "section": 7
-      },
-      {
-        "generic_name": "Moxifloxacin (oral)",
-        "brand_names": [
-          "Avelox"
-        ],
-        "drug_class": "Fluoroquinolone antibiotic",
-        "conditions": [
-          "Bacterial sinusitis",
-          "Community-acquired pneumonia"
-        ],
-        "section": 7
-      },
-      {
-        "generic_name": "Moxifloxacin (eye)",
-        "brand_names": [
-          "Vigamox"
-        ],
-        "drug_class": "Fluoroquinolone antibiotic",
-        "conditions": [
-          "Bacterial conjunctivitis"
         ],
         "section": 7
       },
@@ -936,20 +877,7 @@
           "Bronchitis",
           "Community-acquired pneumonia"
         ],
-        "section": 7
-      },
-      {
-        "generic_name": "Acyclovir",
-        "brand_names": [
-          "Zovirax"
-        ],
-        "drug_class": "Viral DNA polymerase inhibitor",
-        "conditions": [
-          "Genital herpes simplex",
-          "Herpes zoster",
-          "Varicella"
-        ],
-        "section": 7
+                "section": 7
       },
       {
         "generic_name": "Valacyclovir",
@@ -1121,18 +1049,7 @@
         "conditions": [
           "Candidiasis of skin"
         ],
-        "section": 8
-      },
-      {
-        "generic_name": "Terbinafine",
-        "brand_names": [
-          "Lamisil"
-        ],
-        "drug_class": "Antifungal",
-        "conditions": [
-          "Onychomycosis"
-        ],
-        "section": 8
+                "section": 8
       },
       {
         "generic_name": "Clobetasol",
@@ -1427,18 +1344,7 @@
           "Anxiety",
           "Seizure"
         ],
-        "section": 10
-      },
-      {
-        "generic_name": "Temazepam",
-        "brand_names": [
-          "Restoril"
-        ],
-        "drug_class": "Benzodiazepine [C-IV]",
-        "conditions": [
-          "Insomnia"
-        ],
-        "section": 10
+                "section": 10
       },
       {
         "generic_name": "Lorazepam",

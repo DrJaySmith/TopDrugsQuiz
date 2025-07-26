@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 7: Neurology
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 7. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Phenobarbital?
+a) Topamax
+b) Keppra
+*c) Luminal
+d) Lamictal
+
+2. Which is a brand name for Sumatriptan?
+a) Requip
+b) Topamax
+*c) Imitrex
+d) Sinemet
+
+3. Which is a brand name for Carbidopa/levodopa?
+*a) Sinemet
+b) Topamax
+c) Mirapex
+d) Imitrex
+
+4. Which is a brand name for Divalproex?
+a) Luminal
+b) Imitrex
+*c) Depakote
+d) Mirapex
+
+5. Which is a brand name for Lamotrigine?
+a) Requip
+*b) Lamictal
+c) Keppra
+d) Sinemet
+
+6. What is the generic name for Requip?
+*a) Ropinirole
+b) Levetiracetam
+c) Divalproex
+d) Phenobarbital
+
+7. What is the generic name for Keppra?
+a) Lamotrigine
+b) Phenobarbital
+c) Sumatriptan
+*d) Levetiracetam
+
+8. What is the generic name for Luminal?
+*a) Phenobarbital
+b) Divalproex
+c) Levetiracetam
+d) Carbidopa/levodopa
+
+9. What is the generic name for Depakote?
+*a) Divalproex
+b) Ropinirole
+c) Topiramate
+d) Lamotrigine
+
+10. What is the generic name for Mirapex?
+a) Lamotrigine
+b) Divalproex
+*c) Pramipexole
+d) Levetiracetam
+
+11. What is the drug class of Carbidopa/levodopa?
+*a) Antiparkinson
+b) Long-acting barbiturate
+c) Antimigraine serotonergic receptor agonist
+d) Anticonvulsant
+
+12. What is the drug class of Sumatriptan?
+*a) Antimigraine serotonergic receptor agonist
+b) Antiparkinson
+c) Long-acting barbiturate
+d) Dopamine agonist
+
+13. What is the drug class of Levetiracetam?
+a) Dopamine agonist
+*b) Anticonvulsant
+c) Antimigraine serotonergic receptor agonist
+d) Long-acting barbiturate
+
+14. What is the drug class of Lamotrigine?
+a) Antiparkinson
+*b) Anticonvulsant
+c) Dopamine agonist
+d) Antimigraine serotonergic receptor agonist
+
+15. What is the drug class of Pramipexole?
+a) Long-acting barbiturate
+b) Antiparkinson
+c) Antimigraine serotonergic receptor agonist
+*d) Dopamine agonist
+
+16. What is the drug class of Mirapex?
+a) Anticonvulsant
+*b) Dopamine agonist
+c) Antiparkinson
+d) Antimigraine serotonergic receptor agonist
+
+17. What is the drug class of Depakote?
+a) Dopamine agonist
+b) Long-acting barbiturate
+*c) Anticonvulsant
+d) Antimigraine serotonergic receptor agonist
+
+18. What is the drug class of Keppra?
+a) Antimigraine serotonergic receptor agonist
+b) Antiparkinson
+c) Long-acting barbiturate
+*d) Anticonvulsant
+
+19. What is the drug class of Lamictal?
+*a) Anticonvulsant
+b) Antimigraine serotonergic receptor agonist
+c) Long-acting barbiturate
+d) Antiparkinson
+
+20. What is the drug class of Requip?
+*a) Dopamine agonist
+b) Antimigraine serotonergic receptor agonist
+c) Long-acting barbiturate
+d) Anticonvulsant
+
+21. Which FDA approved indication applies to Sumatriptan?
+a) Restless Legs Syndrome
+b) Bipolar disorder
+c) Seizures
+*d) Migraine & Cluster headaches
+
+22. Which FDA approved indication applies to Pramipexole?
+a) Daytime sedation
+*b) Parkinson Disease
+c) Migraine & Cluster headaches
+d) Restless Legs Syndrome
+
+23. Which FDA approved indication applies to Ropinirole?
+a) Migraine & Cluster headaches
+b) Migraine headaches
+c) Bipolar disorder
+*d) Restless Legs Syndrome
+
+24. Which FDA approved indication applies to Lamotrigine?
+a) Migraine headaches
+*b) Bipolar disorder
+c) Daytime sedation
+d) Restless Legs Syndrome
+
+25. Which FDA approved indication applies to Carbidopa/levodopa?
+*a) Parkinson Disease
+b) Seizures
+c) Restless Legs Syndrome
+d) Migraine headaches
+
+26. Which FDA approved indication applies to Keppra?
+*a) Seizures
+b) Parkinson Disease
+c) Daytime sedation
+d) Migraine & Cluster headaches
+
+27. Which FDA approved indication applies to Imitrex?
+a) Restless Legs Syndrome
+*b) Migraine & Cluster headaches
+c) Migraine headaches
+d) Seizures
+
+28. Which FDA approved indication applies to Sinemet?
+a) Migraine headaches
+b) Bipolar disorder
+*c) Parkinson Disease
+d) Daytime sedation
+
+29. Which FDA approved indication applies to Depakote?
+*a) Seizures
+b) Restless Legs Syndrome
+c) Bipolar disorder
+d) Daytime sedation
+
+30. Which FDA approved indication applies to Mirapex?
+a) Parkinson Disease
+b) Migraine headaches
+*c) Restless Legs Syndrome
+d) Bipolar disorder
+

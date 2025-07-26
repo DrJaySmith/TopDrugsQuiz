@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 1: Cardiovascular I
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 1. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Diltiazem?
+a) Lotensin
+b) Nitro-Dur
+c) Minitran
+*d) Tiazac
+
+2. Which is a brand name for Verapamil?
+a) Adalat CC
+*b) Calan SR
+c) Inderal LA
+d) Vasotec
+
+3. Which is a brand name for Terazosin?
+a) Catapres
+b) Calan
+c) Adalat CC
+*d) Hytrin
+
+4. Which is a brand name for Enalapril?
+*a) Vasotec
+b) Nitrostat
+c) Normodyne
+d) Catapres
+
+5. Which is a brand name for Tizanidine?
+a) Adalat CC
+*b) Zanaflex
+c) Inderal
+d) Coreg CR
+
+6. What is the generic name for Cardura XL?
+a) Propranolol
+b) Terazosin
+*c) Doxazosin
+d) Verapamil
+
+7. What is the generic name for Dilt-XR?
+*a) Diltiazem
+b) Olmesartan
+c) Nitroglycerin
+d) Verapamil
+
+8. What is the generic name for Vasotec?
+a) Nifedipine
+b) Diltiazem
+c) Olmesartan
+*d) Enalapril
+
+9. What is the generic name for Coreg?
+a) Diltiazem
+b) Tizanidine
+*c) Carvedilol
+d) Doxazosin
+
+10. What is the generic name for Lotensin?
+a) Nifedipine
+*b) Benazepril
+c) Labetalol
+d) Doxazosin
+
+11. What is the drug class of Enalapril?
+*a) Angiotensin converting enzyme inhibitor (ACE-I)
+b) Calcium channel blocker (non-dihydropyridine)
+c) Calcium channel blocker (dihydropyridine)
+d) β-adrenergic blocker, nonselective
+
+12. What is the drug class of Benazepril?
+a) β-adrenergic blocker, nonselective
+b) Calcium channel blocker (dihydropyridine)
+c) α1-adrenergic blocker
+*d) Angiotensin converting enzyme inhibitor (ACE-I)
+
+13. What is the drug class of Olmesartan?
+a) α2-adrenergic agonist
+b) Angiotensin converting enzyme inhibitor (ACE-I)
+c) Calcium channel blocker (dihydropyridine)
+*d) Angiotensin II receptor antagonist (ARB)
+
+14. What is the drug class of Clonidine?
+a) Nitrate
+b) Calcium channel blocker (dihydropyridine)
+c) β-adrenergic blocker, nonselective
+*d) α2-adrenergic agonist
+
+15. What is the drug class of Tizanidine?
+a) α/β-adrenergic blocker
+b) Nitrate
+c) β-adrenergic blocker, nonselective
+*d) α2-adrenergic agonist
+
+16. What is the drug class of Calan?
+a) Nitrate
+b) α1-adrenergic blocker
+*c) Calcium channel blocker (non-dihydropyridine)
+d) α/β-adrenergic blocker
+
+17. What is the drug class of Tiazac?
+*a) Calcium channel blocker (non-dihydropyridine)
+b) β-adrenergic blocker, nonselective
+c) Nitrate
+d) α/β-adrenergic blocker
+
+18. What is the drug class of Dilt-XR?
+*a) Calcium channel blocker (non-dihydropyridine)
+b) α2-adrenergic agonist
+c) β-adrenergic blocker, nonselective
+d) Angiotensin converting enzyme inhibitor (ACE-I)
+
+19. What is the drug class of Normodyne?
+*a) α/β-adrenergic blocker
+b) Calcium channel blocker (non-dihydropyridine)
+c) Angiotensin II receptor antagonist (ARB)
+d) Nitrate
+
+20. What is the drug class of Coreg CR?
+a) Calcium channel blocker (non-dihydropyridine)
+b) β-adrenergic blocker, nonselective
+c) Angiotensin converting enzyme inhibitor (ACE-I)
+*d) α/β-adrenergic blocker
+
+21. Which FDA approved indication applies to Labetalol?
+a) Heart failure
+b) Angina pectoris
+*c) Hypertension
+d) Paroxysmal supraventricular tachycardia
+
+22. Which FDA approved indication applies to Diltiazem?
+*a) Paroxysmal supraventricular tachycardia
+b) Cardiac dysrhythmia
+c) Atrial arrhythmia
+d) Migraine
+
+23. Which FDA approved indication applies to Nifedipine?
+a) Heart failure
+b) Benign prostatic hyperplasia
+*c) Hypertension
+d) Paroxysmal supraventricular tachycardia
+
+24. Which FDA approved indication applies to Olmesartan?
+*a) Hypertension
+b) Attention-Deficit Hyperactivity Disorder (ADHD)
+c) Angina
+d) Angina pectoris
+
+25. Which FDA approved indication applies to Terazosin?
+a) Heart failure
+b) Hypertension
+*c) Benign prostatic hyperplasia
+d) Muscle spasticity
+
+26. Which FDA approved indication applies to Minitran?
+a) Angina pectoris
+b) Attention-Deficit Hyperactivity Disorder (ADHD)
+c) Atrial arrhythmia
+*d) Anal fissure
+
+27. Which FDA approved indication applies to Imdur?
+*a) Angina
+b) Paroxysmal supraventricular tachycardia
+c) Angina pectoris
+d) Atrial arrhythmia
+
+28. Which FDA approved indication applies to Catapres?
+*a) Hypertension
+b) Heart failure
+c) Paroxysmal supraventricular tachycardia
+d) Migraine
+
+29. Which FDA approved indication applies to Inderal LA?
+a) Benign prostatic hyperplasia
+*b) Angina pectoris
+c) Anal fissure
+d) Heart failure
+
+30. Which FDA approved indication applies to Normodyne?
+a) Atrial arrhythmia
+b) Anal fissure
+c) Cardiac dysrhythmia
+*d) Hypertension
+

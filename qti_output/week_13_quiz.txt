@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 3: Pain I
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 3. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Naproxen?
+*a) Naprosyn
+b) Zyloprim
+c) Lioresal
+d) Flexeril
+
+2. Which is a brand name for Allopurinol?
+a) Colcrys
+b) Zorvolex
+*c) Zyloprim
+d) Zipsor
+
+3. Which is a brand name for Celecoxib?
+*a) Celebrex
+b) Voltaren (gel)
+c) Zipsor
+d) Lioresal
+
+4. Which is a brand name for Diclofenac (gel)?
+*a) Voltaren (gel)
+b) Colcrys
+c) Lidoderm
+d) Zyloprim
+
+5. Which is a brand name for Indomethacin?
+*a) Indocin
+b) Colcrys
+c) Voltaren (gel)
+d) Zyloprim
+
+6. What is the generic name for Colcrys?
+a) Diclofenac (oral)
+b) Celecoxib
+*c) Colchicine
+d) Allopurinol
+
+7. What is the generic name for Lidoderm?
+a) Naproxen
+b) Diclofenac (oral)
+c) Colchicine
+*d) Lidocaine patch
+
+8. What is the generic name for Zyloprim?
+a) Baclofen
+b) Naproxen
+c) Cyclobenzaprine
+*d) Allopurinol
+
+9. What is the generic name for Celebrex?
+a) Naproxen
+*b) Celecoxib
+c) Baclofen
+d) Allopurinol
+
+10. What is the generic name for Lioresal?
+a) Allopurinol
+b) Colchicine
+*c) Baclofen
+d) Lidocaine patch
+
+11. What is the drug class of Lidocaine patch?
+*a) Local anesthetic
+b) Xanthine oxidase inhibitor
+c) Centrally acting skeletal muscle relaxant
+d) Nonsteroidal anti-inflammatory agent (NSAID)
+
+12. What is the drug class of Baclofen?
+a) Xanthine oxidase inhibitor
+b) Antigout
+c) Local anesthetic
+*d) Centrally acting skeletal muscle relaxant
+
+13. What is the drug class of Naproxen?
+a) Local anesthetic
+*b) Nonsteroidal anti-inflammatory agent (NSAID)
+c) Centrally acting skeletal muscle relaxant
+d) Antigout
+
+14. What is the drug class of Diclofenac (oral)?
+a) Centrally acting skeletal muscle relaxant
+b) Antigout
+*c) Nonsteroidal anti-inflammatory agent (NSAID)
+d) Xanthine oxidase inhibitor
+
+15. What is the drug class of Celecoxib?
+a) Local anesthetic
+*b) Nonsteroidal anti-inflammatory agent (NSAID)
+c) Antigout
+d) Xanthine oxidase inhibitor
+
+16. What is the drug class of Flexeril?
+a) Antigout
+*b) Centrally acting skeletal muscle relaxant
+c) Nonsteroidal anti-inflammatory agent (NSAID)
+d) Xanthine oxidase inhibitor
+
+17. What is the drug class of Colcrys?
+*a) Antigout
+b) Xanthine oxidase inhibitor
+c) Nonsteroidal anti-inflammatory agent (NSAID)
+d) Centrally acting skeletal muscle relaxant
+
+18. What is the drug class of Zipsor?
+a) Antigout
+b) Local anesthetic
+c) Xanthine oxidase inhibitor
+*d) Nonsteroidal anti-inflammatory agent (NSAID)
+
+19. What is the drug class of Naprosyn?
+a) Centrally acting skeletal muscle relaxant
+b) Antigout
+*c) Nonsteroidal anti-inflammatory agent (NSAID)
+d) Local anesthetic
+
+20. What is the drug class of Zorvolex?
+a) Centrally acting skeletal muscle relaxant
+*b) Nonsteroidal anti-inflammatory agent (NSAID)
+c) Antigout
+d) Xanthine oxidase inhibitor
+
+21. Which FDA approved indication applies to Indomethacin?
+a) Pain (localized)
+*b) Rheumatoid arthritis
+c) Spasticity
+d) Migraine
+
+22. Which FDA approved indication applies to Naproxen?
+a) Pain (localized)
+b) Osteoarthritis
+*c) Gout
+d) Migraine
+
+23. Which FDA approved indication applies to Baclofen?
+*a) Spasticity
+b) Dysmenorrhea
+c) Osteoarthritis
+d) Rheumatoid arthritis
+
+24. Which FDA approved indication applies to Cyclobenzaprine?
+*a) Spasticity
+b) Migraine
+c) Osteoarthritis
+d) Pain (localized)
+
+25. Which FDA approved indication applies to Diclofenac (oral)?
+*a) Dysmenorrhea
+b) Fever
+c) Gout
+d) Rheumatoid arthritis
+
+26. Which FDA approved indication applies to Naprosyn?
+a) Pain (localized)
+b) Osteoarthritis
+*c) Gout
+d) Dysmenorrhea
+
+27. Which FDA approved indication applies to Celebrex?
+*a) Rheumatoid arthritis
+b) Dysmenorrhea
+c) Gout
+d) Osteoarthritis
+
+28. Which FDA approved indication applies to Colcrys?
+a) Pain (localized)
+b) Migraine
+*c) Gout
+d) Fever
+
+29. Which FDA approved indication applies to Lidoderm?
+a) Fever
+b) Spasticity
+c) Gout
+*d) Pain (localized)
+
+30. Which FDA approved indication applies to Indocin?
+a) Rheumatoid arthritis
+b) Dysmenorrhea
+*c) Osteoarthritis
+d) Migraine
+

@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 6: Asthma and COPD
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 6. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Mometasone (Nasal)?
+a) Advair HFA
+b) Advair Diskus
+*c) Nasonex
+d) No Brand
+
+2. Which is a brand name for Fluticasone/salmeterol?
+a) Chantix
+b) Nasonex
+*c) Advair HFA
+d) Flonase
+
+3. Which is a brand name for Fluticasone nasal?
+a) Advair HFA
+b) Advair Diskus
+c) Nasonex
+*d) Flonase
+
+4. Which is a brand name for Tiotropium?
+a) No Brand
+*b) Sprivia HandiHaler
+c) Symbicort
+d) Chantix
+
+5. Which is a brand name for Triamcinolone (Topical)?
+a) Sprivia HandiHaler
+*b) No Brand
+c) Chantix
+d) Sprivia Respimat
+
+6. What is the generic name for Chantix?
+*a) Varenicline
+b) Methylprednisolone
+c) Fluticasone nasal
+d) Fluticasone oral
+
+7. What is the generic name for Medrol?
+*a) Methylprednisolone
+b) Fluticasone/salmeterol
+c) Budesonide/formoterol
+d) Mometasone (Nasal)
+
+8. What is the generic name for Advair HFA?
+*a) Fluticasone/salmeterol
+b) Varenicline
+c) Fluticasone nasal
+d) Mometasone (Nasal)
+
+9. What is the generic name for Flovent Diskus?
+a) Budesonide/formoterol
+*b) Fluticasone oral
+c) Ipratropium/albuterol
+d) Fluticasone/salmeterol
+
+10. What is the generic name for Symbicort?
+*a) Budesonide/formoterol
+b) Mometasone (Nasal)
+c) Fluticasone oral
+d) Methylprednisolone
+
+11. What is the drug class of Fluticasone nasal?
+a) Adrenal corticosteroid
+b) Inhaled adrenal corticosteroid
+*c) Intranasal adrenal glucocorticosteroid
+d) Anticholinergic/selective β2-agonist combination
+
+12. What is the drug class of Triamcinolone (Topical)?
+a) Anticholinergic/selective β2-agonist combination
+b) Inhaled adrenal corticosteroid
+*c) Topical corticosteroid
+d) Intranasal adrenal glucocorticosteroid
+
+13. What is the drug class of Fluticasone/salmeterol?
+a) Smoking cessation agent
+*b) Inhaled corticosteroid and long-acting β2-adrenergic agonist combination
+c) Adrenal corticosteroid
+d) Topical corticosteroid
+
+14. What is the drug class of Mometasone (Nasal)?
+a) Inhaled corticosteroid/bronchodilator combination
+*b) Intranasal corticosteroid
+c) Inhaled adrenal corticosteroid
+d) Anticholinergic/selective β2-agonist combination
+
+15. What is the drug class of Budesonide/formoterol?
+*a) Inhaled corticosteroid/bronchodilator combination
+b) Anticholinergic bronchodilator
+c) Anticholinergic/selective β2-agonist combination
+d) Intranasal corticosteroid
+
+16. What is the drug class of Nasonex?
+a) Anticholinergic bronchodilator
+b) Inhaled corticosteroid and long-acting β2-adrenergic agonist combination
+c) Topical corticosteroid
+*d) Intranasal corticosteroid
+
+17. What is the drug class of Sprivia Respimat?
+a) Smoking cessation agent
+b) Inhaled corticosteroid/bronchodilator combination
+c) Topical corticosteroid
+*d) Anticholinergic bronchodilator
+
+18. What is the drug class of Symbicort?
+a) Inhaled corticosteroid and long-acting β2-adrenergic agonist combination
+b) Topical corticosteroid
+*c) Inhaled corticosteroid/bronchodilator combination
+d) Intranasal adrenal glucocorticosteroid
+
+19. What is the drug class of Advair Diskus?
+a) Anticholinergic bronchodilator
+b) Intranasal corticosteroid
+*c) Inhaled corticosteroid and long-acting β2-adrenergic agonist combination
+d) Intranasal adrenal glucocorticosteroid
+
+20. What is the drug class of Flovent Diskus?
+a) Topical corticosteroid
+*b) Inhaled adrenal corticosteroid
+c) Anticholinergic bronchodilator
+d) Inhaled corticosteroid/bronchodilator combination
+
+21. Which FDA approved indication applies to Methylprednisolone?
+a) Tobacco cessation
+*b) Conditions affecting the majority of organ systems
+c) Skin rash
+d) Asthma
+
+22. Which FDA approved indication applies to Fluticasone oral?
+a) Tobacco cessation
+b) Non-allergic rhinitis
+*c) Asthma
+d) Chronic obstructive pulmonary disease (COPD)
+
+23. Which FDA approved indication applies to Tiotropium?
+a) Conditions affecting the majority of organ systems
+b) Allergic rhinitis
+*c) Asthma
+d) Tobacco cessation
+
+24. Which FDA approved indication applies to Varenicline?
+*a) Tobacco cessation
+b) Non-allergic rhinitis
+c) Skin rash
+d) Allergic rhinitis
+
+25. Which FDA approved indication applies to Triamcinolone (Topical)?
+a) Non-allergic rhinitis
+*b) Skin rash
+c) Conditions affecting the majority of organ systems
+d) Allergic rhinitis
+
+26. Which FDA approved indication applies to Flovent Diskus?
+a) Chronic obstructive pulmonary disease (COPD)
+b) Tobacco cessation
+c) Non-allergic rhinitis
+*d) Asthma
+
+27. Which FDA approved indication applies to Advair HFA?
+a) Chronic obstructive pulmonary disease (COPD)
+b) Conditions affecting the majority of organ systems
+c) Allergic rhinitis
+*d) Asthma
+
+28. Which FDA approved indication applies to Chantix?
+a) Conditions affecting the majority of organ systems
+b) Asthma
+c) Skin rash
+*d) Tobacco cessation
+
+29. Which FDA approved indication applies to No Brand?
+*a) Skin rash
+b) Chronic obstructive pulmonary disease (COPD)
+c) Allergic rhinitis
+d) Asthma
+
+30. Which FDA approved indication applies to Sprivia HandiHaler?
+*a) Chronic obstructive pulmonary disease (COPD)
+b) Conditions affecting the majority of organ systems
+c) Skin rash
+d) Non-allergic rhinitis
+

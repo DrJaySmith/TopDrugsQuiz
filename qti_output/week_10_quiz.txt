@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 10: Antipsychotics & Antianxiety
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 10. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Aripiprazole?
+*a) Abilify
+b) BuSpar
+c) Risperdal
+d) Seroquel XR
+
+2. Which is a brand name for Olanzapine?
+a) Abilify
+b) Klonopin
+c) Xanax
+*d) Zyprexa
+
+3. Which is a brand name for Clonazepam?
+a) Risperdal
+b) Seroquel
+*c) Klonopin
+d) Seroquel XR
+
+4. Which is a brand name for Lorazepam?
+a) Xanax
+*b) Ativan
+c) Risperdal
+d) Klonopin
+
+5. Which is a brand name for Alprazolam?
+a) Abilify
+*b) Xanax
+c) Ativan
+d) Klonopin
+
+6. What is the generic name for Seroquel XR?
+a) Aripiprazole
+b) Lorazepam
+c) Risperidone
+*d) Quetiapine
+
+7. What is the generic name for Risperdal?
+a) Diazepam
+b) Lorazepam
+*c) Risperidone
+d) Quetiapine
+
+8. What is the generic name for Ativan?
+a) Risperidone
+*b) Lorazepam
+c) Olanzapine
+d) Diazepam
+
+9. What is the generic name for Xanax?
+a) Olanzapine
+b) Diazepam
+*c) Alprazolam
+d) Risperidone
+
+10. What is the generic name for Klonopin?
+a) Lorazepam
+b) Buspirone
+*c) Clonazepam
+d) Diazepam
+
+11. What is the drug class of Aripiprazole?
+a) Benzodiazepine [C-IV]
+b) Option 2
+*c) 2nd generation (atypical) antipsychotic
+d) Antianxiety
+
+12. What is the drug class of Buspirone?
+a) Option 2
+*b) Antianxiety
+c) Benzodiazepine [C-IV]
+d) 2nd generation (atypical) antipsychotic
+
+13. What is the drug class of Lorazepam?
+a) Antianxiety
+*b) Benzodiazepine [C-IV]
+c) 2nd generation (atypical) antipsychotic
+d) Option 2
+
+14. What is the drug class of Alprazolam?
+*a) Benzodiazepine [C-IV]
+b) 2nd generation (atypical) antipsychotic
+c) Antianxiety
+d) Option 2
+
+15. What is the drug class of Olanzapine?
+a) Antianxiety
+b) Benzodiazepine [C-IV]
+*c) 2nd generation (atypical) antipsychotic
+d) Option 2
+
+16. What is the drug class of Klonopin?
+a) 2nd generation (atypical) antipsychotic
+*b) Benzodiazepine [C-IV]
+c) Option 2
+d) Antianxiety
+
+17. What is the drug class of Abilify?
+a) Antianxiety
+*b) 2nd generation (atypical) antipsychotic
+c) Benzodiazepine [C-IV]
+d) Option 2
+
+18. What is the drug class of Risperdal?
+a) Antianxiety
+*b) 2nd generation (atypical) antipsychotic
+c) Option 2
+d) Benzodiazepine [C-IV]
+
+19. What is the drug class of Xanax?
+a) 2nd generation (atypical) antipsychotic
+b) Option 2
+c) Antianxiety
+*d) Benzodiazepine [C-IV]
+
+20. What is the drug class of BuSpar?
+*a) Antianxiety
+b) Option 2
+c) Benzodiazepine [C-IV]
+d) 2nd generation (atypical) antipsychotic
+
+21. Which FDA approved indication applies to Clonazepam?
+a) Bipolar disorder
+b) Alcohol withdrawal syndrome
+*c) Seizure
+d) Irritability associated with autism spectrum disorder
+
+22. Which FDA approved indication applies to Buspirone?
+a) Panic disorder
+b) Insomnia due to anxiety or situational stress
+c) Irritability associated with autism spectrum disorder
+*d) Anxiety
+
+23. Which FDA approved indication applies to Aripiprazole?
+*a) Depression
+b) Tourette’s disorder (syndrome)
+c) Insomnia due to anxiety or situational stress
+d) Panic disorder
+
+24. Which FDA approved indication applies to Risperidone?
+a) Insomnia due to anxiety or situational stress
+*b) Tourette’s disorder (syndrome)
+c) Alcohol withdrawal syndrome
+d) Anxiety
+
+25. Which FDA approved indication applies to Quetiapine?
+a) Panic disorder
+b) Alcohol withdrawal syndrome
+*c) Major depressive disorder (adjunct to antidepressant)
+d) Bipolar disorder
+
+26. Which FDA approved indication applies to Abilify?
+a) Major depressive disorder (adjunct to antidepressant)
+*b) Bipolar disorder
+c) Tourette’s disorder (syndrome)
+d) Panic disorder
+
+27. Which FDA approved indication applies to Zyprexa?
+a) Anxiety
+b) Alcohol withdrawal syndrome
+*c) Depression
+d) Seizure
+
+28. Which FDA approved indication applies to Klonopin?
+a) Panic disorder
+b) Alcohol withdrawal syndrome
+c) Tourette’s disorder (syndrome)
+*d) Seizure
+
+29. Which FDA approved indication applies to Risperdal?
+a) Depression
+b) Seizure
+*c) Tourette’s disorder (syndrome)
+d) Anxiety
+
+30. Which FDA approved indication applies to BuSpar?
+a) Schizophrenia
+b) Insomnia due to anxiety or situational stress
+c) Panic disorder
+*d) Anxiety
+

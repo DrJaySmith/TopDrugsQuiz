@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 5: Women's and Men's Health and HIV
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 5. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Efavirenz?
+a) Proscar
+*b) Sustiva
+c) Triumeq
+d) NuvaRing
+
+2. Which is a brand name for Progesterone?
+a) Premarin
+b) NuvaRing
+c) Propecia
+*d) Prometrium
+
+3. Which is a brand name for Oral contraceptives?
+a) Sustiva
+b) Estrace
+*c) Various
+d) Prometrium
+
+4. Which is a brand name for Estradiol?
+*a) Estrace
+b) Prometrium
+c) Proscar
+d) Endometrin
+
+5. Which is a brand name for Finasteride?
+a) Endometrin
+*b) Proscar
+c) Triumeq
+d) Prometrium
+
+6. What is the generic name for Proscar?
+a) Conjugated estrogen
+b) Ethinyl estradiol
+*c) Finasteride
+d) Efavirenz
+
+7. What is the generic name for Truvada?
+a) Progesterone
+b) Efavirenz
+*c) Emtricitabine/tenofovir
+d) Abacavir-dolutegravir-lamivudine
+
+8. What is the generic name for NuvaRing?
+a) Progesterone
+b) Emtricitabine/tenofovir
+c) Estradiol
+*d) Ethinyl estradiol
+
+9. What is the generic name for Triumeq?
+*a) Abacavir-dolutegravir-lamivudine
+b) Oral contraceptives
+c) Testosterone (Topical)
+d) Emtricitabine/tenofovir
+
+10. What is the generic name for Estrace?
+*a) Estradiol
+b) Finasteride
+c) Efavirenz
+d) Testosterone (Topical)
+
+11. What is the drug class of Efavirenz?
+a) Progestin hormone
+*b) Antiretroviral agent, reverse transcriptase inhibitor
+c) Contraceptive
+d) 5α-reductase inhibitor
+
+12. What is the drug class of Oral contraceptives?
+a) 5α-reductase inhibitor
+b) Progestin hormone
+c) Antiretroviral agent, reverse transcriptase inhibitor
+*d) Contraceptive
+
+13. What is the drug class of Emtricitabine/tenofovir?
+*a) Antiretroviral agent, reverse transcriptase inhibitor
+b) Androgen
+c) Progestin hormone
+d) Contraceptive
+
+14. What is the drug class of Conjugated estrogen?
+a) Contraceptive
+*b) Estrogen
+c) Androgen
+d) Antiretroviral agent, reverse transcriptase inhibitor
+
+15. What is the drug class of Progesterone?
+a) Antiretroviral agent, reverse transcriptase inhibitor
+b) Androgen
+*c) Progestin hormone
+d) Contraceptive
+
+16. What is the drug class of Prometrium?
+a) 5α-reductase inhibitor
+*b) Progestin hormone
+c) Androgen
+d) Antiretroviral agent, reverse transcriptase inhibitor
+
+17. What is the drug class of Proscar?
+*a) 5α-reductase inhibitor
+b) Progestin hormone
+c) Androgen
+d) Contraceptive
+
+18. What is the drug class of Endometrin?
+a) 5α-reductase inhibitor
+b) Androgen
+c) Estrogen
+*d) Progestin hormone
+
+19. What is the drug class of Premarin?
+*a) Estrogen
+b) Androgen
+c) Contraceptive
+d) Antiretroviral agent, reverse transcriptase inhibitor
+
+20. What is the drug class of Estrace?
+a) 5α-reductase inhibitor
+b) Antiretroviral agent, reverse transcriptase inhibitor
+*c) Estrogen
+d) Androgen
+
+21. Which FDA approved indication applies to Finasteride?
+a) Prevention of HIV-1
+b) Contraception
+c) Menopause
+*d) Male pattern alopecia
+
+22. Which FDA approved indication applies to Testosterone (Topical)?
+a) Assisted reproductive technology
+b) Primary ovarian failure
+*c) Hypogonadism
+d) Abnormal uterine bleeding
+
+23. Which FDA approved indication applies to Ethinyl estradiol?
+a) Breast cancer
+b) Menopause
+*c) Contraception
+d) Acne
+
+24. Which FDA approved indication applies to Conjugated estrogen?
+a) Assisted reproductive technology
+b) Breast cancer
+c) Treatment of HIV-1 infections
+*d) Menopause
+
+25. Which FDA approved indication applies to Efavirenz?
+a) Assisted reproductive technology
+b) Prevention of HIV-1
+*c) Treatment of HIV-1 infections
+d) Male pattern alopecia
+
+26. Which FDA approved indication applies to Truvada?
+a) Breast cancer
+*b) Treatment of HIV-1 infections
+c) Acne
+d) Primary ovarian failure
+
+27. Which FDA approved indication applies to Propecia?
+a) Abnormal uterine bleeding
+b) Menopause
+c) Contraception
+*d) Benign prostatic hyperplasia
+
+28. Which FDA approved indication applies to Triumeq?
+*a) Treatment of HIV-1 infections
+b) Assisted reproductive technology
+c) Abnormal uterine bleeding
+d) Decreased estrogen level
+
+29. Which FDA approved indication applies to Endometrin?
+*a) Abnormal uterine bleeding
+b) Abnormal vasomotor function
+c) Menopause
+d) Acne
+
+30. Which FDA approved indication applies to NuvaRing?
+*a) Contraception
+b) Acne
+c) Abnormal vasomotor function
+d) Prevention of estrogen therapy-associated endometrial hyperplasia
+

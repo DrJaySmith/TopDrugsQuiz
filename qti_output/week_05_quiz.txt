@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 5: Women's and Men's Health
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 5. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Ibandronate?
+a) Binosto
+b) Detrol
+*c) Boniva
+d) Fosamax
+
+2. Which is a brand name for Tolterodine?
+a) Actonel
+b) Cialis
+c) Ditropan
+*d) Detrol LA
+
+3. Which is a brand name for Oxybutynin?
+a) Synthroid
+b) Atelvia
+*c) Ditropan
+d) Detrol LA
+
+4. Which is a brand name for Thyroid?
+a) Atelvia
+b) Detrol
+*c) Armour Thyroid
+d) Fosamax
+
+5. Which is a brand name for Levothyroxine?
+a) Cialis
+b) Detrol
+c) Boniva
+*d) Synthroid
+
+6. What is the generic name for Atelvia?
+*a) Risedronate
+b) Levothyroxine
+c) Ibandronate
+d) Raloxifene
+
+7. What is the generic name for Adcirca?
+a) Tamsulosin
+*b) Tadalafil
+c) Tolterodine
+d) Alendronate
+
+8. What is the generic name for Binosto?
+a) Oxybutynin
+*b) Alendronate
+c) Levothyroxine
+d) Tadalafil
+
+9. What is the generic name for Detrol LA?
+a) Thyroid
+*b) Tolterodine
+c) Risedronate
+d) Raloxifene
+
+10. What is the generic name for Synthroid?
+a) Tolterodine
+*b) Levothyroxine
+c) Tamsulosin
+d) Oxybutynin
+
+11. What is the drug class of Risedronate?
+a) Selective estrogen receptor modular
+*b) Bisphosphonate
+c) α1-Adrenergic blocker
+d) Thyroid supplement
+
+12. What is the drug class of Ibandronate?
+a) Selective estrogen receptor modular
+b) Thyroid supplement
+c) Antimuscarinic
+*d) Bisphosphonate
+
+13. What is the drug class of Tadalafil?
+*a) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+b) α1-Adrenergic blocker
+c) Antimuscarinic
+d) Bisphosphonate
+
+14. What is the drug class of Sildenafil?
+*a) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+b) Thyroid supplement
+c) α1-Adrenergic blocker
+d) Urinary antispasmodic
+
+15. What is the drug class of Levothyroxine?
+a) Selective estrogen receptor modular
+*b) Thyroid supplement
+c) α1-Adrenergic blocker
+d) Urinary antispasmodic
+
+16. What is the drug class of Synthroid?
+a) α1-Adrenergic blocker
+*b) Thyroid supplement
+c) Selective estrogen receptor modular
+d) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+
+17. What is the drug class of Ditropan?
+a) Thyroid supplement
+b) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+c) Bisphosphonate
+*d) Urinary antispasmodic
+
+18. What is the drug class of Actonel?
+a) α1-Adrenergic blocker
+b) Selective estrogen receptor modular
+c) Thyroid supplement
+*d) Bisphosphonate
+
+19. What is the drug class of Revatio?
+a) Thyroid supplement
+*b) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+c) Urinary antispasmodic
+d) Bisphosphonate
+
+20. What is the drug class of Adcirca?
+a) α1-Adrenergic blocker
+b) Thyroid supplement
+c) Bisphosphonate
+*d) Phosphodiesterase-5 inhibitor (PDE-5 inhibitor)
+
+21. Which FDA approved indication applies to Sildenafil?
+a) Osteoporosis due to glucocorticoids
+*b) Erectile dysfunction
+c) Paget disease
+d) Benign prostatic hyperplasia (Cialis)
+
+22. Which FDA approved indication applies to Tolterodine?
+a) Pulmonary hypertension (Adcirca)
+b) Erectile dysfunction (Cialis)
+*c) Overactive bladder
+d) Hypothyroidism
+
+23. Which FDA approved indication applies to Tadalafil?
+a) Paget disease
+*b) Benign prostatic hyperplasia (Cialis)
+c) Overactive bladder
+d) Overactive or neurogenic bladder
+
+24. Which FDA approved indication applies to Thyroid?
+a) Erectile dysfunction (Cialis)
+b) Overactive or neurogenic bladder
+c) Benign prostatic hyperplasia (Cialis)
+*d) Hypothyroidism
+
+25. Which FDA approved indication applies to Risedronate?
+*a) Paget disease
+b) Overactive bladder
+c) Pulmonary hypertension (Adcirca)
+d) Erectile dysfunction
+
+26. Which FDA approved indication applies to Adcirca?
+a) Overactive or neurogenic bladder
+*b) Benign prostatic hyperplasia (Cialis)
+c) Benign prostatic hyperplasia
+d) Erectile dysfunction
+
+27. Which FDA approved indication applies to Evista?
+a) Benign prostatic hyperplasia (Cialis)
+*b) Prevention or treatment of postmenopausal osteoporosis
+c) Erectile dysfunction
+d) Overactive or neurogenic bladder
+
+28. Which FDA approved indication applies to Binosto?
+a) Erectile dysfunction
+*b) Osteoporosis due to glucocorticoids
+c) Prevention or treatment of postmenopausal osteoporosis
+d) Benign prostatic hyperplasia (Cialis)
+
+29. Which FDA approved indication applies to Detrol LA?
+*a) Overactive bladder
+b) Prophylaxis or treatment of postmenopausal osteoporosis
+c) Prevention or treatment of postmenopausal osteoporosis
+d) Erectile dysfunction
+
+30. Which FDA approved indication applies to Atelvia?
+*a) Paget disease
+b) Benign prostatic hyperplasia
+c) Hypothyroidism
+d) Osteoporosis due to glucocorticoids
+

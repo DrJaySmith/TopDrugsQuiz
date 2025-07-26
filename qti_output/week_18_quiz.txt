@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 8: Miscellaneous I
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 8. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Hydrocortisone (Topical)?
+a) Lumigan
+*b) Cortizone
+c) Trexall
+d) Phenergan
+
+2. Which is a brand name for Ondansetron?
+a) Latisse
+*b) Zofran
+c) Tessalon Perles
+d) Plaquenil
+
+3. Which is a brand name for Phenazopyridine?
+a) Cortizone
+*b) Pyridium
+c) Phenergan
+d) Latisse
+
+4. Which is a brand name for Benzonatate?
+a) Latisse
+b) Cortizone
+c) Plaquenil
+*d) Tessalon Perles
+
+5. Which is a brand name for Latanoprost?
+a) Zofran
+*b) Xalantan
+c) Cortizone
+d) Latisse
+
+6. What is the generic name for Trexall?
+*a) Methotrexate
+b) Ondansetron
+c) Hydrocortisone (Topical)
+d) Promethazine
+
+7. What is the generic name for Latisse?
+a) Ondansetron
+b) Benzonatate
+*c) Bimatoprost
+d) Hydrocortisone (Topical)
+
+8. What is the generic name for Pyridium?
+a) Promethazine
+*b) Phenazopyridine
+c) Hydroxychloroquine
+d) Bimatoprost
+
+9. What is the generic name for Lumigan?
+a) Phenazopyridine
+b) Methotrexate
+*c) Bimatoprost
+d) Promethazine
+
+10. What is the generic name for Plaquenil?
+a) Phenazopyridine
+*b) Hydroxychloroquine
+c) Benzonatate
+d) Methotrexate
+
+11. What is the drug class of Benzonatate?
+a) Aminoquinoline
+b) Urinary tract analgesic
+c) Antiemetic
+*d) Antitussive
+
+12. What is the drug class of Ondansetron?
+a) Urinary tract analgesic
+b) Aminoquinoline
+*c) Antiemetic
+d) Prostaglandin, antiglaucoma agent
+
+13. What is the drug class of Methotrexate?
+a) Urinary tract analgesic
+b) Phenothiazine antihistamine
+c) Antitussive
+*d) Antimetabolite
+
+14. What is the drug class of Phenazopyridine?
+a) Antitussive
+*b) Urinary tract analgesic
+c) Prostaglandin, antiglaucoma agent
+d) Phenothiazine antihistamine
+
+15. What is the drug class of Hydrocortisone (Topical)?
+*a) Topical corticosteroid
+b) Urinary tract analgesic
+c) Prostaglandin, antiglaucoma agent
+d) Antimetabolite
+
+16. What is the drug class of Zofran?
+*a) Antiemetic
+b) Prostaglandin, antiglaucoma agent
+c) Topical corticosteroid
+d) Antimetabolite
+
+17. What is the drug class of Cortizone?
+a) Prostaglandin, antiglaucoma agent
+*b) Topical corticosteroid
+c) Urinary tract analgesic
+d) Antimetabolite
+
+18. What is the drug class of Latisse?
+*a) Prostaglandin, antiglaucoma agent, cosmetic agent for eyelash growth
+b) Phenothiazine antihistamine
+c) Urinary tract analgesic
+d) Antitussive
+
+19. What is the drug class of Pyridium?
+a) Antiemetic
+*b) Urinary tract analgesic
+c) Antitussive
+d) Antimetabolite
+
+20. What is the drug class of Xalantan?
+a) Topical corticosteroid
+b) Prostaglandin, antiglaucoma agent, cosmetic agent for eyelash growth
+c) Antitussive
+*d) Prostaglandin, antiglaucoma agent
+
+21. Which FDA approved indication applies to Hydrocortisone (Topical)?
+a) Open-Angle Glaucoma
+b) Ocular Hypertension
+c) Rheumatoid arthritis
+*d) Skin disorders
+
+22. Which FDA approved indication applies to Phenazopyridine?
+a) Nausea & vomiting
+b) Ocular Hypertension
+c) Nausea
+*d) Dysuria
+
+23. Which FDA approved indication applies to Bimatoprost?
+a) Motion sickness
+b) Psoriasis
+c) Dysuria
+*d) Ocular Hypertension
+
+24. Which FDA approved indication applies to Benzonatate?
+*a) Cough
+b) Malaria
+c) Open-Angle Glaucoma
+d) Motion sickness
+
+25. Which FDA approved indication applies to Ondansetron?
+*a) Nausea
+b) Motion sickness
+c) Rheumatoid arthritis
+d) Nausea & vomiting
+
+26. Which FDA approved indication applies to Lumigan?
+*a) Hypotrichosis of the Eyelashes
+b) Malaria
+c) Motion sickness
+d) Skin disorders
+
+27. Which FDA approved indication applies to Cortizone?
+a) Lupus
+*b) Skin disorders
+c) Cough
+d) Malaria
+
+28. Which FDA approved indication applies to Pyridium?
+a) Hypotrichosis of the Eyelashes
+b) Rheumatoid arthritis
+*c) Dysuria
+d) Motion sickness
+
+29. Which FDA approved indication applies to Xalantan?
+a) Motion sickness
+b) Lupus
+c) Dysuria
+*d) Open-Angle Glaucoma
+
+30. Which FDA approved indication applies to Tessalon Perles?
+*a) Cough
+b) Nausea
+c) Ocular Hypertension
+d) Malaria
+

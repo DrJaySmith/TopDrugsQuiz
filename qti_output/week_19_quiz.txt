@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 9: Miscellaneous II
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 9. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Galcanezumab?
+a) Adderall
+b) Wezlana
+c) Latuda
+*d) Emgality
+
+2. Which is a brand name for Erenumab?
+*a) Aimovig
+b) Simlandi
+c) Hadlima
+d) Mydayis
+
+3. Which is a brand name for Ustekinumab?
+a) Prograf
+*b) Otulfi
+c) Adderall XR
+d) Simlandi
+
+4. Which is a brand name for Mirabegron?
+a) Simlandi
+b) Adderall XR
+*c) Myrbetriq
+d) Hadlima
+
+5. Which is a brand name for Tacrolimus?
+a) Latuda
+*b) Envarsus XR
+c) Keytruda
+d) Emgality
+
+6. What is the generic name for Wezlana?
+a) Mirabegron
+*b) Ustekinumab
+c) Adalimumab
+d) Lurasidone
+
+7. What is the generic name for Envarsus XR?
+a) Lurasidone
+*b) Tacrolimus
+c) Galcanezumab
+d) Pembrolizumab
+
+8. What is the generic name for Latuda?
+a) Pembrolizumab
+b) Erenumab
+c) Galcanezumab
+*d) Lurasidone
+
+9. What is the generic name for Adderall XR?
+*a) Amphetamine/dextroamphetamine salts
+b) Tacrolimus
+c) Pembrolizumab
+d) Mirabegron
+
+10. What is the generic name for Simlandi?
+a) Amphetamine/dextroamphetamine salts
+b) Mirabegron
+c) Pembrolizumab
+*d) Adalimumab
+
+11. What is the drug class of Amphetamine/dextroamphetamine salts?
+*a) CNS Stimulant
+b) Calcineurin inhibitor
+c) Second generation antipsychotic
+d) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+
+12. What is the drug class of Pembrolizumab?
+a) Tumor Necrosis Factor (TNF) blocking agent
+*b) Anti-PD-1
+c) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+d) β3-agonist
+
+13. What is the drug class of Tacrolimus?
+*a) Calcineurin inhibitor
+b) Tumor Necrosis Factor (TNF) blocking agent
+c) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+d) β3-agonist
+
+14. What is the drug class of Erenumab?
+*a) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+b) Second generation antipsychotic
+c) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+d) β3-agonist
+
+15. What is the drug class of Mirabegron?
+a) Tumor Necrosis Factor (TNF) blocking agent
+*b) β3-agonist
+c) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+d) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+
+16. What is the drug class of Latuda?
+*a) Second generation antipsychotic
+b) Tumor Necrosis Factor (TNF) blocking agent
+c) Anti-PD-1
+d) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+
+17. What is the drug class of Stelara?
+a) Calcineurin inhibitor
+b) β3-agonist
+*c) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+d) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+
+18. What is the drug class of Prograf?
+a) Second generation antipsychotic
+*b) Calcineurin inhibitor
+c) Tumor Necrosis Factor (TNF) blocking agent
+d) Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor
+
+19. What is the drug class of Emgality?
+a) Tumor Necrosis Factor (TNF) blocking agent
+b) Calcineurin inhibitor
+c) CNS Stimulant
+*d) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+
+20. What is the drug class of Keytruda?
+a) Calcitonin Gene-Related Peptide (CGRP) receptor antagonist
+*b) Anti-PD-1
+c) CNS Stimulant
+d) Second generation antipsychotic
+
+21. Which FDA approved indication applies to Amphetamine/dextroamphetamine salts?
+a) Schizophrenia
+b) Multiple cancers
+c) Rheumatoid arthritis
+*d) Attention-Deficit/Hyperactivity Disorder
+
+22. Which FDA approved indication applies to Tacrolimus?
+*a) Organ rejection prophylaxis
+b) Psoriasis
+c) Multiple cancers
+d) Schizophrenia
+
+23. Which FDA approved indication applies to Mirabegron?
+*a) Overactive bladder
+b) Migraine prevention
+c) Ulcerative colitis
+d) Bipolar disorder
+
+24. Which FDA approved indication applies to Adalimumab?
+a) Organ rejection prophylaxis
+b) Attention-Deficit/Hyperactivity Disorder
+c) Schizophrenia
+*d) Psoriasis
+
+25. Which FDA approved indication applies to Erenumab?
+*a) Migraine prevention
+b) Overactive bladder
+c) Rheumatoid arthritis
+d) Attention-Deficit/Hyperactivity Disorder
+
+26. Which FDA approved indication applies to Prograf?
+a) Schizophrenia
+b) Multiple cancers
+c) Psoriatic arthritis
+*d) Organ rejection prophylaxis
+
+27. Which FDA approved indication applies to Latuda?
+a) Psoriasis
+*b) Bipolar disorder
+c) Overactive bladder
+d) Rheumatoid arthritis
+
+28. Which FDA approved indication applies to Stelara?
+a) Overactive bladder
+b) Crohn disease
+*c) Ulcerative colitis
+d) Schizophrenia
+
+29. Which FDA approved indication applies to Myrbetriq?
+a) Ulcerative colitis
+b) Rheumatoid arthritis
+c) Psoriatic arthritis
+*d) Overactive bladder
+
+30. Which FDA approved indication applies to Hadlima?
+a) Multiple cancers
+*b) Crohn disease
+c) Psoriatic arthritis
+d) Psoriasis
+

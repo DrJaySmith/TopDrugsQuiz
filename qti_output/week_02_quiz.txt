@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 2: Diabetes & Antiplatelet Medications
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 2. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Insulin Aspart?
+*a) Novolog FexPen
+b) Bydureon
+c) Glucotrol
+d) Plavix
+
+2. Which is a brand name for Sitagliptin?
+a) Novolog FexPen
+*b) Januvia
+c) NovoLog
+d) Wegovy
+
+3. Which is a brand name for Dapagliflozin?
+a) Rybelsus
+b) Bydureon
+c) Glucophage
+*d) Farxiga
+
+4. Which is a brand name for Insulin glargine?
+a) Actos
+b) NovoLog
+c) Rybelsus
+*d) Lantus
+
+5. Which is a brand name for Semaglutide?
+*a) Wegovy
+b) Lantus
+c) Bydureon
+d) Actos
+
+6. What is the generic name for NovoLog?
+a) Insulin glargine
+*b) Insulin Aspart
+c) Clopidogrel
+d) Empagliflozin
+
+7. What is the generic name for Amaryl?
+a) Insulin Aspart
+*b) Glimepiride
+c) Dulaglutide
+d) Glipizide
+
+8. What is the generic name for Wegovy?
+a) Insulin glargine
+b) Clopidogrel
+c) Empagliflozin
+*d) Semaglutide
+
+9. What is the generic name for Lantus?
+a) Glimepiride
+b) Metformin
+c) Empagliflozin
+*d) Insulin glargine
+
+10. What is the generic name for Rybelsus?
+a) Dulaglutide
+b) Insulin glargine
+c) Sitagliptin
+*d) Semaglutide
+
+11. What is the drug class of Sitagliptin?
+a) Platelet aggregation inhibitor
+*b) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+c) Long-acting insulin
+d) Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor
+
+12. What is the drug class of Glipizide?
+a) Glucagon-like peptide-1 (GLP-1) receptor agonist
+*b) Sulfonylurea
+c) Long-acting insulin
+d) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+
+13. What is the drug class of Metformin?
+*a) Biguanide
+b) Thiazolidinedione
+c) Sulfonylurea
+d) Rapid-acting insulin
+
+14. What is the drug class of Semaglutide?
+a) Long-acting insulin
+*b) Glucagon-like peptide-1 (GLP-1) receptor agonist
+c) Thiazolidinedione
+d) Sulfonylurea
+
+15. What is the drug class of Glimepiride?
+a) Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor
+*b) Sulfonylurea
+c) Long-acting insulin
+d) Platelet aggregation inhibitor
+
+16. What is the drug class of Novolog FexPen?
+a) Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor
+b) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+*c) Rapid-acting insulin
+d) Biguanide
+
+17. What is the drug class of Rybelsus?
+*a) Glucagon-like peptide-1 (GLP-1) receptor agonist
+b) Long-acting insulin
+c) Biguanide
+d) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+
+18. What is the drug class of Ozempic?
+a) Biguanide
+b) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+*c) Glucagon-like peptide-1 (GLP-1) receptor agonist
+d) Thiazolidinedione
+
+19. What is the drug class of Glucotrol?
+a) Dipeptidyl peptidase-4 inhibitor (DPP4-inhibitor)
+b) Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor
+c) Rapid-acting insulin
+*d) Sulfonylurea
+
+20. What is the drug class of Farxiga?
+a) Long-acting insulin
+b) Rapid-acting insulin
+c) Platelet aggregation inhibitor
+*d) Sodium-Glucose Cotransporter 2 (SGLT2) inhibitor
+
+21. Which FDA approved indication applies to Metformin?
+a) Type 2 diabetes mellitus
+b) Type 1 and type 2 diabetes mellitus
+c) Chronic kidney disease
+*d) Polycystic ovary syndrome
+
+22. Which FDA approved indication applies to Sitagliptin?
+a) Prevention of thrombosis in arteriosclerotic vascular disease
+b) Heart failure
+*c) Type 2 diabetes mellitus
+d) Type 1 and type 2 diabetes mellitus
+
+23. Which FDA approved indication applies to Insulin Aspart?
+a) Prevention of thrombosis in arteriosclerotic vascular disease
+*b) Type 1 and type 2 diabetes mellitus
+c) Chronic kidney disease
+d) Heart failure
+
+24. Which FDA approved indication applies to Dapagliflozin?
+a) Heart failure
+b) Prevention of thrombosis in arteriosclerotic vascular disease
+*c) Chronic kidney disease
+d) Type 1 and type 2 diabetes mellitus
+
+25. Which FDA approved indication applies to Glimepiride?
+a) Heart failure
+*b) Type 2 diabetes mellitus
+c) Myocardial infarction
+d) Chronic kidney disease
+
+26. Which FDA approved indication applies to Plavix?
+a) Type 1 and type 2 diabetes mellitus
+*b) Prevention of thrombosis in arteriosclerotic vascular disease
+c) Heart failure
+d) Weight loss
+
+27. Which FDA approved indication applies to Actos?
+a) Prevention of thrombosis in arteriosclerotic vascular disease
+*b) Type 2 diabetes mellitus
+c) Weight loss
+d) Polycystic ovary syndrome
+
+28. Which FDA approved indication applies to Glucophage?
+a) Chronic kidney disease
+b) Type 2 diabetes mellitus
+c) Weight loss
+*d) Polycystic ovary syndrome
+
+29. Which FDA approved indication applies to Rybelsus?
+*a) Weight loss
+b) Type 1 and type 2 diabetes mellitus
+c) Prevention of thrombosis in arteriosclerotic vascular disease
+d) Myocardial infarction
+
+30. Which FDA approved indication applies to Trulicity?
+a) Polycystic ovary syndrome
+*b) Weight loss
+c) Myocardial infarction
+d) Chronic kidney disease
+

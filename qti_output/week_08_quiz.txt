@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 8: More Antibiotics & Topical Antibiotics, Antifungals, & Corticosteroids
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 8. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Clindamycin oral?
+*a) Cleocin
+b) Cleocin T
+c) Septra
+d) Nizoral
+
+2. Which is a brand name for Fluconazole?
+a) Bio-Statin
+*b) Diflucan
+c) Vibramycin
+d) Bactrim
+
+3. Which is a brand name for Doxycycline?
+a) Cleocin
+b) Peridex
+c) Temovate
+*d) Vibramycin
+
+4. Which is a brand name for Nitrofurantoin?
+a) Deltasone
+*b) Macrodantin
+c) Nystop
+d) Hibiclens
+
+5. Which is a brand name for Metronidazole?
+a) Vibramycin
+*b) Flagyl
+c) Cleocin
+d) Deltasone
+
+6. What is the generic name for Vibramycin?
+*a) Doxycycline
+b) Ketoconazole
+c) Clindamycin oral
+d) Nystatin systemic
+
+7. What is the generic name for Flagyl?
+a) Fluconazole
+b) Doxycycline
+*c) Metronidazole
+d) Chlorhexidine Gluconate
+
+8. What is the generic name for Temovate?
+*a) Clobetasol
+b) Mupirocin
+c) Clindamycin topical
+d) Nitrofurantoin
+
+9. What is the generic name for Nyamyc?
+a) Mupirocin
+b) Trimethoprim-sulfamethoxazole
+c) Fluconazole
+*d) Nystatin topical
+
+10. What is the generic name for Diflucan?
+a) Clobetasol
+b) Nitrofurantoin
+c) Chlorhexidine Gluconate
+*d) Fluconazole
+
+11. What is the drug class of Nitrofurantoin?
+a) Topical Antibiotic
+b) Sulfonamide Antibiotic
+c) Imidazole Antifungal
+*d) Nitrofuran Antibiotic
+
+12. What is the drug class of Clindamycin topical?
+*a) Lincosamide Antibiotic
+b) Nitroimidazole Antibiotic, Antiprotozoal
+c) Imidazole Antifungal
+d) Nitrofuran Antibiotic
+
+13. What is the drug class of Nystatin topical?
+*a) Polyene Antifungal
+b) Topical Antibiotic
+c) Lincosamide Antibiotic
+d) Imidazole Antifungal
+
+14. What is the drug class of Metronidazole?
+*a) Nitroimidazole Antibiotic, Antiprotozoal
+b) Tetracycline Antibiotic
+c) Sulfonamide Antibiotic
+d) Corticosteroid
+
+15. What is the drug class of Clindamycin oral?
+*a) Lincosamide Antibiotic
+b) Polyene Antifungal
+c) Tetracycline Antibiotic
+d) Topical Antibiotic
+
+16. What is the drug class of Deltasone?
+a) Lincosamide Antibiotic
+*b) Corticosteroid
+c) Nitrofuran Antibiotic
+d) Topical corticosteroid
+
+17. What is the drug class of Hibiclens?
+a) Sulfonamide Antibiotic
+b) Topical Antibiotic
+c) Tetracycline Antibiotic
+*d) Antibacterial Cleansing Agent
+
+18. What is the drug class of Peridex?
+a) Sulfonamide Antibiotic
+*b) Antibacterial Cleansing Agent
+c) Polyene Antifungal
+d) Topical corticosteroid
+
+19. What is the drug class of Septra?
+*a) Sulfonamide Antibiotic
+b) Nitrofuran Antibiotic
+c) Nitroimidazole Antibiotic, Antiprotozoal
+d) Tetracycline Antibiotic
+
+20. What is the drug class of Diflucan?
+a) Polyene Antifungal
+b) Topical Antibiotic
+*c) Imidazole Antifungal
+d) Lincosamide Antibiotic
+
+21. Which FDA approved indication applies to Trimethoprim-sulfamethoxazole?
+a) Acne vulgaris
+*b) Urinary tract infection
+c) Skin or wound cleansing
+d) Tinea cruris
+
+22. Which FDA approved indication applies to Doxycycline?
+a) Tinea pedis
+b) Oropharyngeal candidiasis
+c) Infection of skin/ subcutaneous tissue
+*d) Staphylococcal infection of the skin
+
+23. Which FDA approved indication applies to Clindamycin topical?
+*a) Acne vulgaris
+b) Dandruff
+c) Skin or wound cleansing
+d) Disorders due to an inflammatory response (e.g. asthma， ulcerative colitis， multiple sclerosis， rheumatoid arthritis)
+
+24. Which FDA approved indication applies to Nystatin systemic?
+a) Urinary tract infection
+b) Dandruff
+c) Gingivitis
+*d) Oropharyngeal candidiasis
+
+25. Which FDA approved indication applies to Mupirocin?
+a) Skin or wound cleansing
+b) Oropharyngeal candidiasis
+*c) Impetigo
+d) Infection of skin/ subcutaneous tissue
+
+26. Which FDA approved indication applies to Deltasone?
+*a) Disorders due to an inflammatory response (e.g. asthma， ulcerative colitis， multiple sclerosis， rheumatoid arthritis)
+b) Gingivitis
+c) Abscess
+d) Infection of skin/ subcutaneous tissue
+
+27. Which FDA approved indication applies to Cleocin?
+a) Plaque psoriasis
+*b) Lower respiratory tract infection
+c) Impetigo
+d) Urinary tract infection
+
+28. Which FDA approved indication applies to Hibiclens?
+a) Urinary tract infection
+b) Impetigo
+c) Infection of skin/ subcutaneous tissue
+*d) Gingivitis
+
+29. Which FDA approved indication applies to Bio-Statin?
+*a) Oropharyngeal candidiasis
+b) Gingivitis
+c) Urinary tract infection
+d) Skin or wound cleansing
+
+30. Which FDA approved indication applies to Bactroban?
+a) Acne vulgaris
+b) Oropharyngeal candidiasis
+*c) Impetigo
+d) Infection of skin/ subcutaneous tissue
+

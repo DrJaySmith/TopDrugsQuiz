@@ -25,30 +25,6 @@
         "section": 1
       },
       {
-        "generic_name": "Quinapril",
-        "brand_names": [
-          "Accupril"
-        ],
-        "drug_class": "Angiotensin converting enzyme inhibitor (ACE-I)",
-        "conditions": [
-          "Hypertension",
-          "Heart failure"
-        ],
-        "section": 1
-      },
-      {
-        "generic_name": "Irbesartan",
-        "brand_names": [
-          "Avapro"
-        ],
-        "drug_class": "Angiotensin II receptor antagonist (ARB)",
-        "conditions": [
-          "Hypertension",
-          "Diabetic nephropathy in patients with type II diabetes"
-        ],
-        "section": 1
-      },
-      {
         "generic_name": "Olmesartan",
         "brand_names": [
           "Benicar"
@@ -65,7 +41,7 @@
           "Cardura", 
           "Cardura XL"
         ],
-        "drug_class": "alpha1-adrenergic blocker",
+        "drug_class": "\u03b11-adrenergic blocker",
         "conditions": [
           "Hypertension",
           "Benign prostatic hyperplasia"
@@ -77,7 +53,7 @@
         "brand_names": [
           "Hytrin"
         ],
-        "drug_class": "alpha1-adrenergic blocker",
+        "drug_class": "\u03b11-adrenergic blocker",
         "conditions": [
           "Hypertension",
           "Benign prostatic hyperplasia"
@@ -90,7 +66,7 @@
           "Coreg", 
           "Coreg CR"
         ],
-        "drug_class": "alpha/beta-adrenergic blocker",
+        "drug_class": "\u03b1/\u03b2-adrenergic blocker",
         "conditions": [
           "Hypertension",
           "Heart failure"
@@ -102,7 +78,7 @@
         "brand_names": [
           "Normodyne"
         ],
-        "drug_class": "alpha/beta-adrenergic blocker",
+        "drug_class": "\u03b1/\u03b2-adrenergic blocker",
         "conditions": [
           "Hypertension"
         ],
@@ -115,7 +91,7 @@
           "Inderal LA", 
           "Inderal XL"
         ],
-        "drug_class": "beta-adrenergic blocker, nonselective",
+        "drug_class": "\u03b2-adrenergic blocker, nonselective",
         "conditions": [
           "Hypertension",
           "Angina pectoris",
@@ -123,12 +99,7 @@
           "Migraine"
         ],
         "section": 1
-      }
-    ]
-  },
-  {
-    "section_number": 2,
-    "drugs": [
+      },
       {
         "generic_name": "Diltiazem",
         "brand_names": [
@@ -144,7 +115,7 @@
           "Atrial arrhythmia",
           "Paroxysmal supraventricular tachycardia"
         ],
-        "section": 2
+        "section": 1
       },
       {
         "generic_name": "Verapamil",
@@ -159,7 +130,7 @@
           "Atrial arrhythmia",
           "Paroxysmal supraventricular tachycardia"
         ],
-        "section": 2
+        "section": 1
       },
       {
         "generic_name": "Nifedipine",
@@ -172,7 +143,7 @@
           "Hypertension",
           "Angina"
         ],
-        "section": 2
+        "section": 1
       },
       {
         "generic_name": "Isosorbide Mononitrate",
@@ -183,7 +154,7 @@
         "conditions": [
           "Angina"
         ],
-        "section": 2
+        "section": 1
       },
       {
         "generic_name": "Nitroglycerin",
@@ -196,6 +167,81 @@
         "conditions": [
           "Angina",
           "Anal fissure"
+        ],
+        "section": 1
+      },
+      {
+        "generic_name": "Clonidine",
+        "brand_names": [
+          "Catapres"
+        ],
+        "drug_class": "\u03b12-adrenergic agonist",
+        "conditions": [
+          "Hypertension",
+          "Attention-Deficit Hyperactivity Disorder (ADHD)"
+        ],
+        "section": 1
+      },
+      {
+        "generic_name": "Tizanidine",
+        "brand_names": [
+          "Zanaflex"
+        ],
+        "drug_class": "\u03b12-adrenergic agonist",
+        "conditions": [
+          "Muscle spasticity"
+        ],
+        "section": 1
+      }
+    ]
+  },
+  {
+    "section_number": 2,
+    "drugs": [
+      {
+        "generic_name": "Ezetimibe",
+        "brand_names": [
+          "Zetia"
+        ],
+        "drug_class": "Antihyperlipidemic",
+        "conditions": [
+          "Hyperlipidemia"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Gemfibrozil",
+        "brand_names": [
+          "Lopid"
+        ],
+        "drug_class": "Antihyperlipidemic",
+        "conditions": [
+          "Hyperlipidemia",
+          "Coronary atherosclerosis"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Pravastatin",
+        "brand_names": [
+          "Pravachol"
+        ],
+        "drug_class": "HMG-CoA reductase inhibitor",
+        "conditions": [
+          "Hyperlipidemia",
+          "Coronary atherosclerosis",
+          "Prevent cerebrovascular accident"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Rosuvastatin",
+        "brand_names": [
+          "Crestor"
+        ],
+        "drug_class": "HMG-CoA reductase inhibitor",
+        "conditions": [
+          "Hyperlipidemia"
         ],
         "section": 2
       },
@@ -239,115 +285,18 @@
         "section": 2
       },
       {
-        "generic_name": "Clonidine",
+        "generic_name": "Apixaban",
         "brand_names": [
-          "Catapres"
+          "Eliquis"
         ],
-        "drug_class": "alpha2-adrenergic agonist",
+        "drug_class": "Direct oral anticoagulant (DOAC)",
         "conditions": [
-          "Hypertension",
-          "Attention-deficit hyperactivity disorder (ADHD)"
-        ],
-        "section": 2
-      },
-      {
-        "generic_name": "Tizanidine",
-        "brand_names": [
-          "Zanaflex"
-        ],
-        "drug_class": "alpha2-adrenergic agonist",
-        "conditions": [
-          "Muscle spasticity"
-        ],
-        "section": 2
-      }
-    ]
-  },
-  {
-    "section_number": 3,
-    "drugs": [
-      {
-        "generic_name": "Ezetimibe",
-        "brand_names": [
-          "Zetia"
-        ],
-        "drug_class": "Antihyperlipidemic",
-        "conditions": [
-          "Hyperlipidemia"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Gemfibrozil",
-        "brand_names": [
-          "Lopid"
-        ],
-        "drug_class": "Antihyperlipidemic",
-        "conditions": [
-          "Hyperlipidemia",
-          "Coronary atherosclerosis"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Niacin",
-        "brand_names": [
-          "Niaspan", 
-          "Slo-Niacin"
-        ],
-        "drug_class": "Antihyperlipidemic",
-        "conditions": [
-          "Hyperlipidemia",
-          "Prevent myocardial infarction"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Lovastatin",
-        "brand_names": [
-          "Altoprev"
-        ],
-        "drug_class": "HMG-CoA reductase inhibitor",
-        "conditions": [
-          "Hyperlipidemia",
-          "Coronary atherosclerosis"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Pravastatin",
-        "brand_names": [
-          "Pravachol"
-        ],
-        "drug_class": "HMG-CoA reductase inhibitor",
-        "conditions": [
-          "Hyperlipidemia",
-          "Coronary atherosclerosis",
-          "Prevent cerebrovascular accident"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Rosuvastatin",
-        "brand_names": [
-          "Crestor"
-        ],
-        "drug_class": "HMG-CoA reductase inhibitor",
-        "conditions": [
-          "Hyperlipidemia"
-        ],
-        "section": 3
-      },
-      {
-        "generic_name": "Prasugrel",
-        "brand_names": [
-          "Effient"
-        ],
-        "drug_class": "Antiplatelet agent",
-        "conditions": [
+          "Atrial fibrillation",
+          "Prevent cerebrovascular accident",
+          "Prevent deep vein thrombosis (DVT)",
           "Prevent thromboembolism"
         ],
-        "section": 3
+        "section": 2
       },
       {
         "generic_name": "Dabigatran",
@@ -356,11 +305,26 @@
         ],
         "drug_class": "Direct oral anticoagulant (DOAC)",
         "conditions": [
+          "Atrial fibrillation",
           "Prevent cerebrovascular accident",
           "Prevent deep vein thrombosis (DVT)",
           "Prevent thromboembolism"
         ],
-        "section": 3
+        "section": 2
+      },
+      {
+        "generic_name": "Rivaroxaban",
+        "brand_names": [
+          "Xarelto"
+        ],
+        "drug_class": "Direct oral anticoagulant (DOAC)",
+        "conditions": [
+          "Atrial fibrillation",
+          "Prevent cerebrovascular accident",
+          "Prevent deep vein thrombosis (DVT)",
+          "Prevent thromboembolism"
+        ],
+        "section": 2
       },
       {
         "generic_name": "Warfarin",
@@ -373,7 +337,32 @@
           "Prevent pulmonary embolism and thrombosis",
           "Treat pulmonary embolism and thrombosis after Myocardial Infarction"
         ],
-        "section": 3
+        "section": 2
+      },
+      {
+        "generic_name": "Enoxaparin",
+        "brand_names": [
+          "Lovenox"
+        ],
+        "drug_class": "Anticoagulant",
+        "conditions": [
+          "Prevent deep vein thrombosis (DVT)",
+          "Acute coronary syndromes", 
+          "Treat deep vein thrombosis (DVT)"
+        ],
+        "section": 2
+      },
+      {
+        "generic_name": "Amiodarone",
+        "brand_names": [
+          "Nexterone", 
+          "Pacerone"
+        ],
+        "drug_class": "Antiarrhythmic, Class III",
+        "conditions": [
+          "Ventricular arrhythmias"
+        ],
+        "section": 2
       },
       {
         "generic_name": "Digoxin",
@@ -386,12 +375,12 @@
           "Heart failure",
           "Supraventricular tachyarrhythmia"
         ],
-        "section": 3
+        "section": 2
       }
     ]
   },
   {
-    "section_number": 4,
+    "section_number": 3,
     "drugs": [
       {
         "generic_name": "Celecoxib",
@@ -403,7 +392,7 @@
           "Osteoarthritis",
           "Rheumatoid arthritis"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Diclofenac (oral)",
@@ -418,7 +407,7 @@
           "Dysmenorrhea",
           "Migraine"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Diclofenac (gel)",
@@ -429,7 +418,7 @@
         "conditions": [
           "Osteoarthritis"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Indomethacin",
@@ -442,7 +431,7 @@
           "Rheumatoid arthritis",
           "Gout"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Naproxen",
@@ -456,7 +445,7 @@
           "Gout",
           "Fever"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Lidocaine patch",
@@ -467,7 +456,7 @@
         "conditions": [
           "Pain (localized)"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Allopurinol",
@@ -478,7 +467,7 @@
         "conditions": [
           "Gout"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Colchicine",
@@ -489,7 +478,7 @@
         "conditions": [
           "Gout"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Baclofen",
@@ -500,7 +489,7 @@
         "conditions": [
           "Spasticity"
         ],
-        "section": 4
+        "section": 3
       },
       {
         "generic_name": "Cyclobenzaprine",
@@ -511,15 +500,15 @@
         "conditions": [
           "Spasticity"
         ],
-        "section": 4
+        "section": 3
       }
     ]
   },
   {
-    "section_number": 5,
+    "section_number": 4,
     "drugs": [
       {
-        "generic_name": "Codeine",
+        "generic_name": "Acetaminophen/Codeine",
         "brand_names": [
           "Tylenol with Codeine"
         ],
@@ -527,7 +516,7 @@
         "conditions": [
           "Pain"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Fentanyl (Transdermal)",
@@ -538,7 +527,7 @@
         "conditions": [
           "Pain"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Methadone",
@@ -550,7 +539,7 @@
           "Pain",
           "Drug detoxification after opioid abuse"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Morphine",
@@ -562,7 +551,7 @@
         "conditions": [
           "Pain"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Tramadol",
@@ -573,7 +562,7 @@
         "conditions": [
           "Pain"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Buprenorphine/naloxone",
@@ -584,7 +573,7 @@
         "conditions": [
           "Opioid use disorder"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Naloxone",
@@ -595,7 +584,7 @@
         "conditions": [
           "Opioid overdose"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Gabapentin",
@@ -607,7 +596,7 @@
           "Nerve pain",
           "Seizures"
         ],
-        "section": 5
+        "section": 4
       },
       {
         "generic_name": "Pregabalin",
@@ -619,12 +608,12 @@
           "Nerve pain",
           "Seizures"
         ],
-        "section": 5
+        "section": 4
       }
     ]
   },
   {
-    "section_number": 6,
+    "section_number": 5,
     "drugs": [
       {
         "generic_name": "Conjugated estrogen",
@@ -636,7 +625,7 @@
           "Menopause",
           "Primary ovarian failure"
         ],
-        "section": 6
+        "section": 5
       }, 
       {
         "generic_name": "Estradiol",
@@ -650,7 +639,7 @@
           "Breast cancer",
           "Decreased estrogen level"
         ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Ethinyl estradiol",
@@ -661,7 +650,7 @@
         "conditions": [
           "Contraception"
         ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Oral contraceptives",
@@ -673,19 +662,7 @@
           "Contraception",
           "Acne"
         ],
-        "section": 6
-      },
-      {
-        "generic_name": "Medroxyprogesterone",
-        "brand_names": [
-          "Depo-Provera",
-          "Provera"
-        ],
-        "drug_class": "Progestin hormone",
-        "conditions": [
-          "Breast cancer"
-        ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Testosterone (Topical)",
@@ -697,7 +674,7 @@
         "conditions": [
           "Hypogonadism"
         ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Finasteride",
@@ -705,12 +682,12 @@
           "Proscar",
           "Propecia"
         ],
-        "drug_class": "5alpha-reductase inhibitor",
+        "drug_class": "5\u03b1-reductase inhibitor",
         "conditions": [
           "Benign prostatic hyperplasia",
           "Male pattern alopecia"
         ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Efavirenz",
@@ -721,7 +698,7 @@
         "conditions": [
           "Treatment of HIV-1 infections"
         ],
-        "section": 6
+        "section": 5
       },
       {
         "generic_name": "Emtricitabine/tenofovir",
@@ -733,12 +710,37 @@
           "Treatment of HIV-1 infections",
           "Prevention of HIV-1"
         ],
-        "section": 6
+        "section": 5
+      },
+      {
+        "generic_name": "Abacavir-dolutegravir-lamivudine",
+        "brand_names": [
+          "Triumeq"
+        ],
+        "drug_class": "Antiretroviral agent, reverse transcriptase inhibitor",
+        "conditions": [
+          "Treatment of HIV-1 infections"
+        ],
+        "section": 5
+      },
+      {
+        "generic_name": "Progesterone",
+        "brand_names": [
+          "Endometrin", 
+          "Prometrium"
+        ],
+        "drug_class": "Progestin hormone",
+        "conditions": [
+          "Prevention of estrogen therapy-associated endometrial hyperplasia",
+          "Abnormal uterine bleeding",
+          "Assisted reproductive technology"
+        ],
+        "section": 5
       }
     ]
   },
   {
-    "section_number": 7,
+    "section_number": 6,
     "drugs": [
       {
         "generic_name": "Budesonide/formoterol",
@@ -750,7 +752,7 @@
           "Asthma",
           "Chronic obstructive pulmonary disease (COPD)"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Fluticasone nasal",
@@ -762,7 +764,7 @@
           "Allergic rhinitis",
           "Non-allergic rhinitis"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Fluticasone oral",
@@ -773,7 +775,7 @@
         "conditions": [
           "Asthma"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Fluticasone/salmeterol",
@@ -782,22 +784,22 @@
           "Advair HFA",
           "AirDuo RespiClick"
         ],
-        "drug_class": "Inhaled corticosteroid and long-acting beta2-adrenergic agonist combination",
+        "drug_class": "Inhaled corticosteroid and long-acting \u03b22-adrenergic agonist combination",
         "conditions": [
           "Asthma"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Ipratropium/albuterol",
         "brand_names": [
           "Combivent respimat"
         ],
-        "drug_class": "Anticholinergic/selective beta2-agonist combination",
+        "drug_class": "Anticholinergic/selective \u03b22-agonist combination",
         "conditions": [
           "Chronic obstructive pulmonary disease (COPD)"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Methylprednisolone",
@@ -808,7 +810,7 @@
         "conditions": [
           "Conditions affecting the majority of organ systems"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Mometasone (Nasal)",
@@ -819,7 +821,7 @@
         "conditions": [
           "Allergic rhinitis"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Tiotropium",
@@ -832,7 +834,7 @@
           "Asthma",
           "Chronic obstructive pulmonary disease (COPD)"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Triamcinolone (Topical)",
@@ -843,7 +845,7 @@
         "conditions": [
           "Skin rash"
         ],
-        "section": 7
+        "section": 6
       },
       {
         "generic_name": "Varenicline",
@@ -854,12 +856,12 @@
         "conditions": [
           "Tobacco cessation"
         ],
-        "section": 7
+        "section": 6
       }
     ]
   },
   {
-    "section_number": 8,
+    "section_number": 7,
     "drugs": [
       {
         "generic_name": "Carbidopa/levodopa",
@@ -870,7 +872,7 @@
         "conditions": [
           "Parkinson Disease"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Divalproex",
@@ -882,7 +884,7 @@
           "Seizures",
           "Bipolar disorder"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Lamotrigine",
@@ -893,7 +895,7 @@
         "conditions": [
           "Bipolar disorder"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Levetiracetam",
@@ -904,7 +906,7 @@
         "conditions": [
           "Seizures"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Topiramate",
@@ -916,7 +918,7 @@
           "Seizures",
           "Migraine headaches"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Pramipexole",
@@ -928,7 +930,7 @@
           "Parkinson Disease",
           "Restless Leg Syndrome"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Ropinirole",
@@ -940,7 +942,7 @@
           "Parkinson Disease",
           "Restless Leg Syndrome"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Phenobarbital",
@@ -952,7 +954,7 @@
           "Seizures",
           "Daytime sedation"
         ],
-        "section": 8
+        "section": 7
       },
       {
         "generic_name": "Sumatriptan",
@@ -963,12 +965,12 @@
         "conditions": [
           "Migraine & Cluster headaches"
         ],
-        "section": 8
+        "section": 7
       }
     ]
   },
   {
-    "section_number": 9,
+    "section_number": 8,
     "drugs": [
       {
         "generic_name": "Benzonatate",
@@ -979,7 +981,7 @@
         "conditions": [
         "Cough"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Bimatoprost",
@@ -989,11 +991,11 @@
         ],
         "drug_class": "Prostaglandin, antiglaucoma agent, cosmetic agent for eyelash growth",
         "conditions": [
-          "Ocular hypertension",
-          "open-angle glaucoma",
-          "Hypotrichosis of the eyelashes"
+          "Ocular Hypertension",
+          "Open-Angle Glaucoma",
+          "Hypotrichosis of the Eyelashes"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Hydrocortisone (Topical)",
@@ -1004,7 +1006,7 @@
         "conditions": [
           "Skin disorders"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Hydroxychloroquine",
@@ -1016,7 +1018,7 @@
           "Lupus",
           "Malaria"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Latanoprost",
@@ -1025,10 +1027,10 @@
         ],
         "drug_class": "Prostaglandin, antiglaucoma agent",
         "conditions": [
-          "Ocular hypertension",
-          "open-angle glaucoma"
+          "Ocular Hypertension",
+          "Open-Angle Glaucoma"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Methotrexate",
@@ -1040,7 +1042,7 @@
           "Psoriasis",
           "Rheumatoid arthritis"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Ondansetron",
@@ -1051,7 +1053,7 @@
         "conditions": [
           "Nausea"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Phenazopyridine",
@@ -1062,7 +1064,7 @@
         "conditions": [
           "Dysuria"
         ],
-        "section": 9
+        "section": 8
       },
       {
         "generic_name": "Promethazine",
@@ -1074,10 +1076,129 @@
           "Motion sickness",
           "Nausea & vomiting"
         ],
-        "section": 9
+        "section": 8
       }
     ]
   },
+  {
+    "section_number": 9,
+    "drugs": [
+      {
+        "generic_name": "Amphetamine/dextroamphetamine salts",
+        "brand_names": [
+          "Adderall", 
+          "Adderall XR", 
+          "Mydayis"
+        ],
+        "drug_class": "CNS Stimulant",
+        "conditions": [
+          "Attention-Deficit Hyperactivity Disorder (ADHD)",
+          "Narcolepsy"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Lurasidone",
+        "brand_names": [
+          "Latuda"
+        ],
+        "drug_class": "Second generation antipsychotic",
+        "conditions": [
+          "Bipolar disorder",
+          "Schizophrenia"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Erenumab",
+        "brand_names": [
+          "Aimovig"
+        ],
+        "drug_class": "Calcitonin Gene-Related Peptide (CGRP) receptor antagonist",
+        "conditions": [
+          "Migraine prevention"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Galcanezumab",
+        "brand_names": [
+          "Emgality"
+        ],
+        "drug_class": "Calcitonin Gene-Related Peptide (CGRP) receptor antagonist",
+        "conditions": [
+          "Migraine prevention"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Tacrolimus",
+        "brand_names": [
+          "Prograf", 
+          "Envarsus XR"
+        ],
+        "drug_class": "Calcineurin inhibitor",
+        "conditions": [
+          "Organ rejection prophylaxis"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Adalimumab",
+        "brand_names": [
+          "Humira", 
+          "Hadlima", 
+          "Simlandi"
+        ],
+        "drug_class": "Tumor Necrosis Factor (TNF) blocking agent",
+        "conditions": [
+          "Psoriasis",
+          "Rheumatoid arthritis",
+          "Crohn disease",
+          "Ulcerative colitis"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Ustekinumab",
+        "brand_names": [
+          "Stelara", 
+          "Otulfi", 
+          "Wezlana"
+        ],
+        "drug_class": "Interleukin-12 (IL-12) and Interleukin-23 (IL-23) inhibitor",
+        "conditions": [
+          "Psoriasis",
+          "Psoriatic arthritis",
+          "Crohn disease",
+          "Ulcerative colitis"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Pembrolizumab",
+        "brand_names": [
+          "Keytruda"
+        ],
+        "drug_class": "Anti-PD-1",
+        "conditions": [
+          "Multiple cancers"
+        ],
+        "section": 9
+      },
+      {
+        "generic_name": "Mirabegron",
+        "brand_names": [
+          "Myrbetriq"
+        ],
+        "drug_class": "\u03b23-agonist",
+        "conditions": [
+          "Overactive bladder"
+        ],
+        "section": 9
+      }
+    ]
+  }, 
   {
     "section_number": 10,
     "drugs": []

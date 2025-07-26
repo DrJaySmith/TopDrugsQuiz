@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 7: Antibiotics
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 7. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Valacyclovir?
+a) Otiprio
+b) Keflex
+c) Augmentin
+*d) Valtrex
+
+2. Which is a brand name for Oseltamivir?
+a) Cipro XR
+*b) Tamiflu
+c) Augmentin
+d) Otiprio
+
+3. Which is a brand name for Ciprofloxacin (oral)?
+a) Valtrex
+b) Keflex
+*c) Cipro XR
+d) Augmentin
+
+4. Which is a brand name for Penicillin?
+a) Tamiflu
+*b) no brand
+c) Keflex
+d) Augmentin
+
+5. Which is a brand name for Amoxicillin?
+a) Valtrex
+*b) Amoxil
+c) Tamiflu
+d) Keflex
+
+6. What is the generic name for Amoxil?
+a) Valacyclovir
+b) Levofloxacin
+c) Azithromycin
+*d) Amoxicillin
+
+7. What is the generic name for Keflex?
+a) Ciprofloxacin (oral)
+*b) Cephalexin
+c) Amoxicillin/Clavulanate
+d) Ciprofloxacin (ear)
+
+8. What is the generic name for Zithromax?
+a) Oseltamivir
+*b) Azithromycin
+c) Amoxicillin/Clavulanate
+d) Ciprofloxacin (oral)
+
+9. What is the generic name for Valtrex?
+a) Ciprofloxacin (oral)
+b) Amoxicillin
+*c) Valacyclovir
+d) Cefdinir
+
+10. What is the generic name for Cipro?
+a) Valacyclovir
+b) Oseltamivir
+*c) Ciprofloxacin (oral)
+d) Ciprofloxacin (ear)
+
+11. What is the drug class of Amoxicillin?
+a) β-Lactam antibiotic + β-Lactamase inhibitor
+b) Viral DNA polymerase inhibitor
+*c) β-Lactam antibiotic
+d) First-generation cephalosporin
+
+12. What is the drug class of Penicillin?
+*a) β-Lactam antibiotic
+b) Third-generation cephalosporin
+c) β-Lactam antibiotic + β-Lactamase inhibitor
+d) Neuraminidase Inhibitor, antiviral
+
+13. What is the drug class of Cephalexin?
+a) Neuraminidase Inhibitor, antiviral
+b) Macrolide antibiotic
+*c) First-generation cephalosporin
+d) β-Lactam antibiotic
+
+14. What is the drug class of Azithromycin?
+a) Third-generation cephalosporin
+b) β-Lactam antibiotic
+*c) Macrolide antibiotic
+d) β-Lactam antibiotic + β-Lactamase inhibitor
+
+15. What is the drug class of Cefdinir?
+a) β-Lactam antibiotic
+b) Viral DNA polymerase inhibitor
+c) Macrolide antibiotic
+*d) Third-generation cephalosporin
+
+16. What is the drug class of Z-Pak?
+a) Viral DNA polymerase inhibitor
+b) Fluoroquinolone antibiotic
+*c) Macrolide antibiotic
+d) First-generation cephalosporin
+
+17. What is the drug class of no brand?
+a) Macrolide antibiotic
+*b) β-Lactam antibiotic
+c) Fluoroquinolone antibiotic
+d) Neuraminidase Inhibitor, antiviral
+
+18. What is the drug class of Augmentin?
+a) Third-generation cephalosporin
+b) Macrolide antibiotic
+c) First-generation cephalosporin
+*d) β-Lactam antibiotic + β-Lactamase inhibitor
+
+19. What is the drug class of Otiprio?
+a) First-generation cephalosporin
+*b) Fluoroquinolone antibiotic
+c) β-Lactam antibiotic
+d) Viral DNA polymerase inhibitor
+
+20. What is the drug class of Cetraxal?
+*a) Fluoroquinolone antibiotic
+b) Viral DNA polymerase inhibitor
+c) β-Lactam antibiotic
+d) β-Lactam antibiotic + β-Lactamase inhibitor
+
+21. Which FDA approved indication applies to Amoxicillin?
+a) Urinary tract infection
+b) Otitis externa
+c) Bacterial sinusitis
+*d) Acute otitis media
+
+22. Which FDA approved indication applies to Ciprofloxacin (oral)?
+*a) Bronchitis
+b) Otitis media
+c) Herpes labialis (cold sores)
+d) Urinary tract infections
+
+23. Which FDA approved indication applies to Ciprofloxacin (ear)?
+a) Urinary tract infection
+*b) Otitis externa
+c) Herpes zoster
+d) Pharyngitis
+
+24. Which FDA approved indication applies to Oseltamivir?
+*a) Influenza virus types A and B: treatment and prophylaxis
+b) Genital herpes simplex
+c) Herpes labialis (cold sores)
+d) Sinusitis
+
+25. Which FDA approved indication applies to Penicillin?
+*a) Streptococcal pharyngitis
+b) Genital herpes simplex
+c) Community-acquired pneumonia
+d) Urinary tract infection
+
+26. Which FDA approved indication applies to Amoxil?
+a) Bronchitis
+b) Acute otitis media
+c) Community-acquired pneumonia
+*d) Streptococcal pharyngitis
+
+27. Which FDA approved indication applies to Cipro XR?
+a) Otitis media
+b) Acute otitis media
+c) Bacterial sinusitis
+*d) Bronchitis
+
+28. Which FDA approved indication applies to no brand?
+a) Otitis externa
+b) Bacterial sinusitis
+c) Genital herpes simplex
+*d) Otitis media
+
+29. Which FDA approved indication applies to Z-Pak?
+a) Influenza virus types A and B: treatment and prophylaxis
+b) Pharyngitis
+*c) Bacterial sinusitis
+d) Herpes labialis (cold sores)
+
+30. Which FDA approved indication applies to Tamiflu?
+a) Acute otitis media
+*b) Influenza virus types A and B: treatment and prophylaxis
+c) Bacterial sinusitis
+d) Urinary tract infections
+

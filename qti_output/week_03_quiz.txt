@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 3: Insomnia, Pain, Stimulants, and Dementia
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 3. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Memantine?
+a) Aricept
+*b) Namenda
+c) Norco
+d) Motrin
+
+2. Which is a brand name for Atomoxetine?
+a) Motrin
+b) Ambien
+*c) Strattera
+d) Mobic
+
+3. Which is a brand name for Eszopiclone?
+a) Vyvanse
+b) Namenda
+c) Ambien
+*d) Lunesta
+
+4. Which is a brand name for Donepezil?
+a) Namenda
+b) Concerta
+c) Lorcet
+*d) Aricept
+
+5. Which is a brand name for Meloxicam?
+a) Motrin
+b) Lunesta
+c) Strattera
+*d) Mobic
+
+6. What is the generic name for Lorcet?
+a) Zolpidem
+b) Donepezil
+c) Atomoxetine
+*d) Hydrocodone and acetaminophen
+
+7. What is the generic name for Motrin?
+a) Donepezil
+b) Eszopiclone
+*c) Ibuprofen
+d) Atomoxetine
+
+8. What is the generic name for Lunesta?
+*a) Eszopiclone
+b) Hydrocodone and acetaminophen
+c) Ibuprofen
+d) Donepezil
+
+9. What is the generic name for Concerta?
+a) Eszopiclone
+*b) Methylphenidate
+c) Atomoxetine
+d) Lisdexamfetamine
+
+10. What is the generic name for Vyvanse?
+a) Ibuprofen
+b) Atomoxetine
+c) Methylphenidate
+*d) Lisdexamfetamine
+
+11. What is the drug class of Lisdexamfetamine?
+a) Central cholinesterase inhibitor
+*b) CNS stimulant [C-II]
+c) Nonbarbiturate hypnotic [C-IV]
+d) Norepinephrine reuptake inhibitor (NRI)
+
+12. What is the drug class of Atomoxetine?
+*a) Norepinephrine reuptake inhibitor (NRI)
+b) Nonsteroidal antiinflammatory drug
+c) N-methyl-d-aspartate receptor antagonist
+d) Nonbarbiturate hypnotic [C-IV]
+
+13. What is the drug class of Memantine?
+a) CNS stimulant [C-II]
+*b) N-methyl-d-aspartate receptor antagonist
+c) Norepinephrine reuptake inhibitor (NRI)
+d) Opioid analgesic [C-II]
+
+14. What is the drug class of Eszopiclone?
+a) Norepinephrine reuptake inhibitor (NRI)
+*b) Nonbarbiturate hypnotic [C-IV]
+c) N-methyl-d-aspartate receptor antagonist
+d) CNS stimulant [C-II]
+
+15. What is the drug class of Methylphenidate?
+a) Nonsteroidal antiinflammatory drug
+*b) CNS stimulant [C-II]
+c) Nonbarbiturate hypnotic [C-IV]
+d) Central cholinesterase inhibitor
+
+16. What is the drug class of Mobic?
+a) N-methyl-d-aspartate receptor antagonist
+*b) Nonsteroidal antiinflammatory drug
+c) Norepinephrine reuptake inhibitor (NRI)
+d) Central cholinesterase inhibitor
+
+17. What is the drug class of Ambien?
+a) Opioid analgesic [C-II]
+b) N-methyl-d-aspartate receptor antagonist
+*c) Nonbarbiturate hypnotic [C-IV]
+d) Central cholinesterase inhibitor
+
+18. What is the drug class of Namenda?
+a) Nonsteroidal antiinflammatory drug
+b) Central cholinesterase inhibitor
+*c) N-methyl-d-aspartate receptor antagonist
+d) Nonbarbiturate hypnotic [C-IV]
+
+19. What is the drug class of Aricept?
+a) CNS stimulant [C-II]
+b) Nonbarbiturate hypnotic [C-IV]
+c) Nonsteroidal antiinflammatory drug
+*d) Central cholinesterase inhibitor
+
+20. What is the drug class of Norco?
+a) Nonsteroidal antiinflammatory drug
+b) Central cholinesterase inhibitor
+c) Norepinephrine reuptake inhibitor (NRI)
+*d) Opioid analgesic [C-II]
+
+21. Which FDA approved indication applies to Zolpidem?
+*a) Insomnia
+b) Rheumatoid arthritis
+c) Fever
+d) Binge eating disorder
+
+22. Which FDA approved indication applies to Lisdexamfetamine?
+a) Insomnia
+b) Rheumatoid arthritis
+c) Dementia
+*d) Attention-deficit hyperactivity disorder (ADHD)
+
+23. Which FDA approved indication applies to Memantine?
+a) Attention-deficit hyperactivity disorder
+b) Fever
+c) Pain (severe)
+*d) Alzheimer Disease
+
+24. Which FDA approved indication applies to Eszopiclone?
+a) Attention-deficit hyperactivity disorder
+*b) Insomnia
+c) Binge eating disorder
+d) Fever
+
+25. Which FDA approved indication applies to Methylphenidate?
+a) Attention-deficit hyperactivity disorder (ADHD)
+b) Osteoarthritis
+*c) Attention-deficit hyperactivity disorder
+d) Pain
+
+26. Which FDA approved indication applies to Concerta?
+*a) Attention-deficit hyperactivity disorder
+b) Pain
+c) Insomnia
+d) Pain (severe)
+
+27. Which FDA approved indication applies to Lunesta?
+a) Pain (severe)
+b) Fever
+*c) Insomnia
+d) Binge eating disorder
+
+28. Which FDA approved indication applies to Namenda?
+*a) Alzheimer Disease
+b) Binge eating disorder
+c) Insomnia
+d) Pain (severe)
+
+29. Which FDA approved indication applies to Motrin?
+a) Narcolepsy
+*b) Osteoarthritis
+c) Binge eating disorder
+d) Insomnia
+
+30. Which FDA approved indication applies to Aricept?
+a) Attention-deficit hyperactivity disorder (ADHD)
+b) Pain (severe)
+*c) Alzheimer Disease
+d) Rheumatoid arthritis
+

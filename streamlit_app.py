@@ -45,21 +45,46 @@ def restart_quiz():
 def load_drugs(dataset):
     """Load drugs from selected dataset and sections"""
     try:
-        # Modified filename handling for combined dataset
-        filename = 'data/drugs_both.json' if dataset == 'Both' else f'data/drugs_{dataset}.json'
-        
-        with open(filename, 'r') as f:
-            data = json.load(f)
+        if dataset == 'Both':
+            # Load both datasets and combine them
+            # Load 100 dataset
+            with open('data/drugs_100.json', 'r') as f:
+                data_100 = json.load(f)
             
-        return [
-            drug
-            for section in data
-            if section['section_number'] in st.session_state.selected['sections']
-            for drug in section['drugs']
-        ]
+            # Load 200 dataset
+            with open('data/drugs_200.json', 'r') as f:
+                data_200 = json.load(f)
+            
+            # Add 10 to section numbers in drugs_200 before combining
+            for section in data_200:
+                section['section_number'] = int(section['section_number']) + 10
+                for drug in section['drugs']:
+                    drug['section'] = int(drug['section']) + 10
+            
+            # Combine the datasets
+            combined_data = data_100 + data_200
+            
+            return [
+                drug
+                for section in combined_data
+                if section['section_number'] in st.session_state.selected['sections']
+                for drug in section['drugs']
+            ]
+        else:
+            # Load single dataset
+            filename = f'data/drugs_{dataset}.json'
+            with open(filename, 'r') as f:
+                data = json.load(f)
+                
+            return [
+                drug
+                for section in data
+                if section['section_number'] in st.session_state.selected['sections']
+                for drug in section['drugs']
+            ]
                 
     except FileNotFoundError:
-        st.error(f"Data file not found: {filename}")
+        st.error(f"Data file not found for dataset: {dataset}")
         return []
 def quiz_setup():
     """Quiz configuration sidebar"""

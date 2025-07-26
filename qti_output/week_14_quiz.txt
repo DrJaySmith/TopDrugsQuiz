@@ -1,0 +1,186 @@
+Quiz title: Top 200 Drugs - Week 4: Pain II
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 4. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Naloxone?
+a) Kadian
+b) Dolophine
+c) Lyrica
+*d) Narcan
+
+2. Which is a brand name for Buprenorphine/naloxone?
+a) Kadian
+*b) Suboxone
+c) Duragesic
+d) MS Contin
+
+3. Which is a brand name for Methadone?
+*a) Dolophine
+b) Suboxone
+c) Duragesic
+d) Tylenol with Codeine
+
+4. Which is a brand name for Morphine?
+*a) MS Contin
+b) Suboxone
+c) Tylenol with Codeine
+d) Narcan
+
+5. Which is a brand name for Gabapentin?
+*a) Neurontin
+b) Dolophine
+c) Duragesic
+d) Lyrica
+
+6. What is the generic name for Suboxone?
+a) Methadone
+b) Tramadol
+c) Fentanyl (Transdermal)
+*d) Buprenorphine/naloxone
+
+7. What is the generic name for Ultram?
+a) Pregabalin
+b) Fentanyl (Transdermal)
+*c) Tramadol
+d) Morphine
+
+8. What is the generic name for Neurontin?
+a) Morphine
+b) Buprenorphine/naloxone
+*c) Gabapentin
+d) Tramadol
+
+9. What is the generic name for MS Contin?
+a) Tramadol
+*b) Morphine
+c) Buprenorphine/naloxone
+d) Gabapentin
+
+10. What is the generic name for Tylenol with Codeine?
+a) Tramadol
+b) Morphine
+*c) Acetaminophen/Codeine
+d) Gabapentin
+
+11. What is the drug class of Fentanyl (Transdermal)?
+a) Analgesic, anticonvulsant
+b) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+*c) Opioid
+d) Opioid antagonist
+
+12. What is the drug class of Buprenorphine/naloxone?
+a) Analgesic, anticonvulsant
+*b) Opioid partial agonist and antagonist combination
+c) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+d) Opioid
+
+13. What is the drug class of Methadone?
+a) Opioid antagonist
+b) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+*c) Opioid
+d) Analgesic, anticonvulsant
+
+14. What is the drug class of Pregabalin?
+a) Opioid partial agonist and antagonist combination
+*b) Analgesic, anticonvulsant
+c) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+d) Opioid antagonist
+
+15. What is the drug class of Naloxone?
+a) Opioid
+b) Analgesic, anticonvulsant
+c) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+*d) Opioid antagonist
+
+16. What is the drug class of Lyrica?
+a) Opioid antagonist
+b) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+*c) Analgesic, anticonvulsant
+d) Opioid partial agonist and antagonist combination
+
+17. What is the drug class of Neurontin?
+*a) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+b) Opioid partial agonist and antagonist combination
+c) Opioid
+d) Analgesic, anticonvulsant
+
+18. What is the drug class of Dolophine?
+a) Opioid partial agonist and antagonist combination
+b) Opioid antagonist
+*c) Opioid
+d) Analgesic, anticonvulsant
+
+19. What is the drug class of Kadian?
+a) Opioid partial agonist and antagonist combination
+b) Opioid antagonist
+c) Gamma aminobutyric acid (GABA) analog, anticonvulsant
+*d) Opioid
+
+20. What is the drug class of Narcan?
+a) Analgesic, anticonvulsant
+b) Opioid
+c) Opioid partial agonist and antagonist combination
+*d) Opioid antagonist
+
+21. Which FDA approved indication applies to Buprenorphine/naloxone?
+a) Nerve pain
+*b) Opioid use disorder
+c) Drug detoxification after opioid abuse
+d) Seizures
+
+22. Which FDA approved indication applies to Fentanyl (Transdermal)?
+a) Opioid overdose
+*b) Pain
+c) Opioid use disorder
+d) Seizures
+
+23. Which FDA approved indication applies to Naloxone?
+a) Pain
+b) Nerve pain
+*c) Opioid overdose
+d) Opioid use disorder
+
+24. Which FDA approved indication applies to Morphine?
+a) Opioid use disorder
+b) Nerve pain
+c) Seizures
+*d) Pain
+
+25. Which FDA approved indication applies to Acetaminophen/Codeine?
+a) Nerve pain
+b) Opioid use disorder
+*c) Pain
+d) Seizures
+
+26. Which FDA approved indication applies to Ultram?
+a) Opioid overdose
+b) Seizures
+*c) Pain
+d) Drug detoxification after opioid abuse
+
+27. Which FDA approved indication applies to Dolophine?
+a) Nerve pain
+*b) Pain
+c) Opioid overdose
+d) Opioid use disorder
+
+28. Which FDA approved indication applies to Neurontin?
+a) Opioid overdose
+*b) Nerve pain
+c) Pain
+d) Opioid use disorder
+
+29. Which FDA approved indication applies to Tylenol with Codeine?
+a) Nerve pain
+*b) Pain
+c) Seizures
+d) Opioid use disorder
+
+30. Which FDA approved indication applies to Narcan?
+a) Seizures
+*b) Opioid overdose
+c) Opioid use disorder
+d) Pain
+

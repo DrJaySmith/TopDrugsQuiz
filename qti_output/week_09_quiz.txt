@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 9: Antidepressants
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 9. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Escitalopram?
+a) Zoloft
+b) Cymbalta
+c) Zyban
+*d) Lexapro
+
+2. Which is a brand name for Paroxetine?
+a) Sarafem
+b) Elavil
+*c) Paxil
+d) Lithobid
+
+3. Which is a brand name for Mirtazapine?
+a) Prozac
+*b) Remeron
+c) Zyban
+d) Pamelor
+
+4. Which is a brand name for Venlafaxine?
+a) Cymbalta
+*b) Effexor
+c) Lithobid
+d) Zoloft
+
+5. Which is a brand name for Fluoxetine?
+a) Lithobid
+b) Effexor XR
+c) Paxil
+*d) Prozac
+
+6. What is the generic name for Celexa?
+a) Mirtazapine
+b) Amitriptyline
+*c) Citalopram
+d) Duloxetine
+
+7. What is the generic name for Lexapro?
+a) Mirtazapine
+*b) Escitalopram
+c) Amitriptyline
+d) Trazodone
+
+8. What is the generic name for Effexor?
+a) Escitalopram
+b) Trazodone
+*c) Venlafaxine
+d) Duloxetine
+
+9. What is the generic name for Eskalith?
+a) Amitriptyline
+b) Bupropion
+*c) Lithium
+d) Nortriptyline
+
+10. What is the generic name for Effexor XR?
+*a) Venlafaxine
+b) Citalopram
+c) Lithium
+d) Trazodone
+
+11. What is the drug class of Lithium?
+*a) Antimanic
+b) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+c) Tricyclic antidepressant
+d) Monocyclic antidepressant
+
+12. What is the drug class of Amitriptyline?
+a) Monocyclic antidepressant
+*b) Tricyclic antidepressant
+c) Selective serotonin reuptake inhibitor (SSRI)
+d) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+
+13. What is the drug class of Nortriptyline?
+a) Antidepressant
+b) Selective serotonin reuptake inhibitor (SSRI)
+c) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+*d) Tricyclic antidepressant
+
+14. What is the drug class of Sertraline?
+a) Tricyclic antidepressant
+b) Antimanic
+*c) Selective serotonin reuptake inhibitor (SSRI)
+d) Antidepressant, alpha-2 antagonist
+
+15. What is the drug class of Paroxetine?
+a) Antidepressant, alpha-2 antagonist
+b) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+c) Antimanic
+*d) Selective serotonin reuptake inhibitor (SSRI)
+
+16. What is the drug class of Eskalith-CR?
+a) Selective serotonin reuptake inhibitor (SSRI)
+b) Tricyclic antidepressant
+c) Antidepressant, alpha-2 antagonist
+*d) Antimanic
+
+17. What is the drug class of Paxil CR?
+*a) Selective serotonin reuptake inhibitor (SSRI)
+b) Antimanic
+c) Antidepressant, alpha-2 antagonist
+d) Antidepressant
+
+18. What is the drug class of Lithobid?
+a) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+*b) Antimanic
+c) Tricyclic antidepressant
+d) Monocyclic antidepressant
+
+19. What is the drug class of Cymbalta?
+a) Antimanic
+b) Tricyclic antidepressant
+*c) Serotonin/norepinephrine reuptake inhibitor (SNRI)
+d) Selective serotonin reuptake inhibitor (SSRI)
+
+20. What is the drug class of Lexapro?
+*a) Selective serotonin reuptake inhibitor (SSRI)
+b) Antidepressant, alpha-2 antagonist
+c) Monocyclic antidepressant
+d) Tricyclic antidepressant
+
+21. Which FDA approved indication applies to Escitalopram?
+a) Premenstrual dysphoric disorder
+b) Obsessive compulsive disorder
+c) Vasomotor symptoms of menopause
+*d) Depression
+
+22. Which FDA approved indication applies to Sertraline?
+a) Bipolar disorder
+*b) Depression
+c) Insomnia (off label but typical use)
+d) Posttraumatic stress disorder
+
+23. Which FDA approved indication applies to Bupropion?
+a) Social anxiety disorder
+b) Vasomotor symptoms of menopause
+c) Depression (uncommon use)
+*d) Seasonal affective disorder
+
+24. Which FDA approved indication applies to Duloxetine?
+a) Smoking cessation assistance
+b) Depression (uncommon use)
+c) Insomnia (off label but typical use)
+*d) Depression
+
+25. Which FDA approved indication applies to Citalopram?
+a) Generalized anxiety disorder
+b) Bipolar disorder
+c) Insomnia (off label but typical use)
+*d) Depression
+
+26. Which FDA approved indication applies to Elavil?
+a) Diabetic peripheral neuropathy pain
+b) Premenstrual dysphoric disorder
+*c) Depression
+d) Smoking cessation assistance
+
+27. Which FDA approved indication applies to Desyrel?
+*a) Depression (uncommon use)
+b) Bipolar disorder
+c) Posttraumatic stress disorder
+d) Seasonal affective disorder
+
+28. Which FDA approved indication applies to Pamelor?
+a) Premenstrual dysphoric disorder
+*b) Depression
+c) Vasomotor symptoms of menopause
+d) Social anxiety disorder
+
+29. Which FDA approved indication applies to Zoloft?
+a) Seasonal affective disorder
+*b) Obsessive compulsive disorder
+c) Bipolar disorder
+d) Anxiety
+
+30. Which FDA approved indication applies to Celexa?
+a) Posttraumatic stress disorder
+*b) Depression
+c) Panic disorder
+d) Depression (uncommon use)
+

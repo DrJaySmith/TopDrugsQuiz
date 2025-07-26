@@ -1,0 +1,186 @@
+Quiz title: Top 100 Drugs - Week 6: Hypertension & Hyperlipidemia
+Quiz description: This quiz includes 30 multiple choice questions about the therapeutic class for medications in Drug Quiz 6. You will have 15 minutes to complete this quiz. You may repeat this quiz as many times as you would like and the highest score will be saved to the gradebook. It is highly recommended that you do NOT use your notes when you take the quiz as this will help you to determine your actual knowledge of the top 200 medications.
+
+shuffle answers: true
+show correct answers: true
+
+1. Which is a brand name for Atorvastatin?
+a) Lopressor
+b) Tricor
+c) Zestril
+*d) Lipitor
+
+2. Which is a brand name for Furosemide?
+a) Lipitor
+b) Lofibra
+*c) Lasix
+d) Altace
+
+3. Which is a brand name for Simvastatin?
+a) Lofibra
+b) Tenormin
+*c) Zocor
+d) Cozaar
+
+4. Which is a brand name for Fenofibrate?
+a) Zocor
+*b) Lofibra
+c) No Brand
+d) Tenormin
+
+5. Which is a brand name for Metoprolol?
+a) No Brand
+b) Lofibra
+c) Zestril
+*d) Toprol XL
+
+6. What is the generic name for Tenormin?
+a) Ramipril
+*b) Atenolol
+c) Furosemide
+d) Simvastatin
+
+7. What is the generic name for Lasix?
+a) Atorvastatin
+b) Lisinopril
+c) Amlodipine
+*d) Furosemide
+
+8. What is the generic name for Altace?
+a) Atenolol
+b) Lisinopril
+*c) Ramipril
+d) Losartan
+
+9. What is the generic name for Tricor?
+*a) Fenofibrate
+b) Simvastatin
+c) Lisinopril
+d) Furosemide
+
+10. What is the generic name for Zocor?
+a) Metoprolol
+*b) Simvastatin
+c) Fenofibrate
+d) Hydrochlorothiazide
+
+11. What is the drug class of Atenolol?
+a) Angiotensin converting enzyme (ACE) inhibitor
+*b) β-Adrenergic Blocker, Cardioselective
+c) Antihyperlipidemic
+d) Angiotensin II Receptor Antagonist/Blocker (ARB)
+
+12. What is the drug class of Hydrochlorothiazide?
+a) Angiotensin converting enzyme (ACE) inhibitor
+*b) Thiazide diuretic
+c) β-Adrenergic Blocker, Cardioselective
+d) Angiotensin II Receptor Antagonist/Blocker (ARB)
+
+13. What is the drug class of Metoprolol?
+a) Angiotensin converting enzyme (ACE) inhibitor
+b) Antihyperlipidemic
+c) Thiazide diuretic
+*d) β-Adrenergic Blocker, Cardioselective
+
+14. What is the drug class of Simvastatin?
+*a) HMG-CoA Reductase Inhibitor
+b) Antihyperlipidemic
+c) Thiazide diuretic
+d) β-Adrenergic Blocker, Cardioselective
+
+15. What is the drug class of Amlodipine?
+a) β-Adrenergic Blocker, Cardioselective
+*b) Calcium channel blocker
+c) Antihyperlipidemic
+d) Angiotensin converting enzyme (ACE) inhibitor
+
+16. What is the drug class of Tenormin?
+*a) β-Adrenergic Blocker, Cardioselective
+b) Antihyperlipidemic
+c) Thiazide diuretic
+d) HMG-CoA Reductase Inhibitor
+
+17. What is the drug class of Lipitor?
+a) Loop diuretic
+b) Thiazide diuretic
+c) Antihyperlipidemic
+*d) HMG-CoA Reductase Inhibitor
+
+18. What is the drug class of Lasix?
+a) HMG-CoA Reductase Inhibitor
+b) Thiazide diuretic
+c) Angiotensin converting enzyme (ACE) inhibitor
+*d) Loop diuretic
+
+19. What is the drug class of Tricor?
+a) HMG-CoA Reductase Inhibitor
+*b) Antihyperlipidemic
+c) β-Adrenergic Blocker, Cardioselective
+d) Calcium channel blocker
+
+20. What is the drug class of Toprol XL?
+*a) β-Adrenergic Blocker, Cardioselective
+b) Loop diuretic
+c) Antihyperlipidemic
+d) Angiotensin converting enzyme (ACE) inhibitor
+
+21. Which FDA approved indication applies to Lisinopril?
+a) Familial hypercholesterolemia
+b) Myocardial infarction
+c) Hypercholesterolemia
+*d) Hypertension
+
+22. Which FDA approved indication applies to Metoprolol?
+a) Edema
+b) Angina
+c) Hypertension
+*d) Heart failure
+
+23. Which FDA approved indication applies to Losartan?
+a) Hyperlipidemia
+b) Myocardial infarction
+c) Angina
+*d) Hypertension
+
+24. Which FDA approved indication applies to Atenolol?
+a) Heart failure
+b) Hypertension
+c) Myocardial infarction
+*d) Angina
+
+25. Which FDA approved indication applies to Hydrochlorothiazide?
+a) Diabetic nephropathy
+b) Myocardial infarction
+c) Hypercholesterolemia
+*d) Edema
+
+26. Which FDA approved indication applies to Lipitor?
+a) Diabetic nephropathy
+b) Edema
+c) Primary and secondary prevention of atherosclerotic cardiovascular disease & events
+*d) Familial hypercholesterolemia
+
+27. Which FDA approved indication applies to Zocor?
+*a) Primary and secondary prevention of atherosclerotic cardiovascular disease & events
+b) Edema
+c) Hypertriglyceridemia
+d) Reduce risk of cardiovascular events and death from cardiovascular disease
+
+28. Which FDA approved indication applies to Cozaar?
+a) Hyperlipidemia
+*b) Hypertension
+c) Myocardial infarction
+d) Familial hypercholesterolemia
+
+29. Which FDA approved indication applies to Tenormin?
+a) Familial hypercholesterolemia
+b) Edema
+c) Hyperlipidemia
+*d) Angina
+
+30. Which FDA approved indication applies to Altace?
+a) Angina
+b) Diabetic nephropathy
+*c) Heart failure
+d) Hypertension
+
