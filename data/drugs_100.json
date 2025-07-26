@@ -286,7 +286,7 @@
         "brand_names": [
           "Motrin"
         ],
-        "drug_class": "Nonsteroidal antiinflammatory drug",
+        "drug_class": "Non-Steroidal Anti-Inflammatory Drug (NSAID)",
         "conditions": [
           "Fever",
           "Osteoarthritis",
@@ -300,7 +300,7 @@
         "brand_names": [
           "Mobic"
         ],
-        "drug_class": "Nonsteroidal antiinflammatory drug",
+        "drug_class": "Non-Steroidal Anti-Inflammatory Drug (NSAID)",
         "conditions": [
           "Osteoarthritis",
           "Rheumatoid arthritis"
