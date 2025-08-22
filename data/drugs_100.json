@@ -326,7 +326,7 @@
         ],
         "drug_class": "CNS stimulant [C-II]",
         "conditions": [
-          "Attention-deficit hyperactivity disorder",
+          "Attention-Deficit Hyperactivity Disorder (ADHD)",
           "Narcolepsy"
         ],
         "section": 3
@@ -406,7 +406,7 @@
         "conditions": [
           "Duodenal or gastric ulcer disease",
           "Gastroesophageal reflux disease (GERD)",
-          "Helicobacter pylori GI tract infection (part of triple therapy)"
+          "Helicobacter pylori GI tract infection"
         ],
         "section": 4
       },
@@ -419,7 +419,7 @@
         "conditions": [
           "Duodenal or gastric ulcer disease",
           "Gastroesophageal reflux disease (GERD)",
-          "Helicobacter pylori GI tract infection (part of triple therapy)"
+          "Helicobacter pylori GI tract infection"
         ],
         "section": 4
       },
